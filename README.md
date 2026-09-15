@@ -4,28 +4,28 @@ This repository lists the current terrestrial, astrophysical and cosmological co
 
 **Model assumptions**: While it cannot explain the observed light neutrino masses, we consider the phenomenological benchmark of a single Majorana $N$ with a single flavour of active-sterile mixing. Generic bounds on the mixing strength can be scaled appropriately in the context of a specific neutrino mass model.
 
-### [**Electron mixing**](docs/electron_mixing)
+### [**Electron mixing $U_{eN}$**](docs/electron_mixing)
 
-Current constraints ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_constraints.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_constraints.png))\
-Future sensitivities ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_future.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_future.png))
+Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UeNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UeNsq_future.png))
 
 [<p align="center"><img src="plots/UeNsq_constraints.png" width="700"></p>](docs/electron_mixing.md)
 
 [<p align="center"><img align="center" src="plots/UeNsq_future.png" width="700"></p>](docs/electron_mixing.md)
 
-### [**Muon mixing**](docs/muon_mixing)
+### [**Muon mixing $U_{\mu N}$**](docs/muon_mixing)
 
-Current constraints ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UmuNsq_constraints.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UmuNsq_constraints.png))\
-Future sensitivities ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UmuNsq_future.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UmuNsq_future.png))
+Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UmuNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UmuNsq_future.png))
 
 [<p align="center"><img src="plots/UmuNsq_constraints.png" width="700"></p>](docs/muon_mixing.md)
 
 [<p align="center"><img align="center" src="plots/UmuNsq_future.png" width="700"></p>](docs/muon_mixing.md)
 
-### [**Tau mixing**](docs/tau_mixing)
+### [**Tau mixing $U_{\tau N}$**](docs/tau_mixing)
 
-Current constraints ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UtauNsq_constraints.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UtauNsq_constraints.png))\
-Future sensitivities ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UtauNsq_future.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UtauNsq_future.png))
+Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UtauNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/master/plots/UtauNsq_future.png))
 
 [<p align="center"><img src="plots/UtauNsq_constraints.png" width="700"></p>](docs/tau_mixing.md)
 
