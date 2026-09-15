@@ -19,7 +19,7 @@ def transform(value, *operations):
         'sqrt': np.sqrt,
         'square': np.square,
         'pow10': lambda x: 10 ** x,
-        'pow10': lambda x: 1 - x
+        'complement': lambda x: 1 - x
     }
 
     # Flatten: allow operations as separate args or as a list/tuple
@@ -92,5 +92,6 @@ def plot(m_min=10**(-12.1), m_max=10**(0.1), U_min=10**(-9.1), U_max=10**(4.1),
 
     if svfg == True:
         plt.savefig(f"plots/{title}_constraints.pdf", bbox_inches='tight')
+        plt.savefig(f"plots/{title}_constraints.png", bbox_inches='tight')
 
     return fig, ax
