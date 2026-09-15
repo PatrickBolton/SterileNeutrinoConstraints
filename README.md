@@ -2,7 +2,9 @@
 
 This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the active-sterile mixing between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$ and $\nu_\tau$) and a single heavy neutral lepton ($N$). Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the HNL mass in the range $1~\text{eV} < m_N < 10~\text{TeV}$. These constraints were originally collected in the paper [1912.03058](https://arxiv.org/abs/1912.03058) and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository provides an updated database of results.
 
-**Model assumptions**: While it cannot explain the observed light neutrino masses, we consider the phenomenological benchmark of a single Majorana $N$ with a single flavour of active-sterile mixing. Generic bounds on the mixing strength can be scaled appropriately in the context of a specific neutrino mass model.
+**Model assumptions**: We consider the phenomenological benchmark of a single Majorana $N$ with a single flavour of active-sterile mixing. Generic bounds on the mixing strength can be scaled appropriately in the context of a specific neutrino mass model.
+
+For any queries, comments or additional constraints, contact patrick.d.bolton@gmail.com.
 
 ### [**Electron mixing**](docs/electron_mixing)
 
