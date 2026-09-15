@@ -6,11 +6,11 @@ This repository lists the current constraints and future sensitivities on the ac
 
 Current constraints ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_constraints.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_constraints.png))
 
-<img src="plots/UeNsq_constraints.png" width="400">(docs/electron_mixing.md)
+[<img src="plots/UeNsq_constraints.png" width="700">](docs/electron_mixing.md)
 
 Future sensitivities ([pdf](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_future.pdf), [png](https://github.com/PatrickBolton/SterileNeutrinoConstraints/raw/master/plots/UeNsq_future.png))
 
-<img src="plots/UeNsq_future.png" width="400">(docs/electron_mixing.md)
+[<img src="plots/UeNsq_future.png" width="700">](docs/electron_mixing.md)
 
 ### [**Muon mixing**](docs/muon_mixing)
 
