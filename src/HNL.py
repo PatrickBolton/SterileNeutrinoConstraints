@@ -19,7 +19,8 @@ def transform(value, *operations):
         'sqrt': np.sqrt,
         'square': np.square,
         'pow10': lambda x: 10 ** x,
-        'complement': lambda x: 1 - x
+        'comp': lambda x: 1 - x,
+        'split': lambda x: 0.001**2 + x,
     }
 
     # Flatten: allow operations as separate args or as a list/tuple
@@ -46,33 +47,39 @@ def transform(value, *operations):
     
 
 def plot(m_min=10**(-12.1), m_max=10**(0.1), U_min=10**(-9.1), U_max=10**(4.1),
-         lim_type = 'current', seesaw = True, labels_on = True, svfg = True,
+         lim_type = 'current', seesaw = True, svfg = True,
          constraints = {}, title = None, ylabel = None):
 
     fig, ax = plt.subplots()
 
     for name, con in constraints.items():
-
         label = con["label"]
+        label_on = con["label_on"]
         label_loc = con["loc"]
+        label_rot = con["label_rot"]
         color = con['color']
         ls = con['ls']
         fill = con['fill']
         xr = con['xr']
         yr = con['yr']
+        xy = con['xy']
 
         df = pd.read_csv(con["data"],header=None, sep=",", names = ["X", "Y"])
         data = np.zeros((len(df),2))
         for i in range(len(df.index)):
-            data[i,0] = transform(df.iloc[i]['X'], xr)
-            data[i,1] = transform(df.iloc[i]['Y'], yr)
+            if xy == True:
+                data[i,0] = transform(df.iloc[i]['X'], xr)
+                data[i,1] = transform(df.iloc[i]['Y'], yr)
+            else:
+                data[i,0] = transform(df.iloc[i]['Y'], xr)
+                data[i,1] = transform(df.iloc[i]['X'], yr)
 
         plt.loglog(data[:,0], data[:,1], lw=1.5, ls=ls, color=color)
 
         if lim_type == 'current':
             plt.fill_between(data[:,0], 10, data[:,1], facecolor=color, alpha=fill)
-        if labels_on == True:
-            plt.text(10**label_loc[0], 10**label_loc[1], label,fontsize=13,rotation=0,color=color)
+        if label_on == True:
+            plt.text(10**label_loc[0], 10**label_loc[1], label,fontsize=13,rotation=label_rot,color=color)
 
     if seesaw == True:
         seesaw_bound = 0.05*1e-9/10**np.arange(-12, 6.2, 0.2)
