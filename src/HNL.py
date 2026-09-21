@@ -137,16 +137,22 @@ def plot(m_min=10**(-9.1), m_max=10**(4.1), U_min=10**(-12.1), U_max=10**(0.1),
     ax.set_xlim(m_min, m_max)
     ax.set_ylim(U_min, U_max)
     # Major ticks: one per decade, labeled as 10^n
-    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=7))
+    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=14))
     ax.xaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
     ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=15))
     ax.xaxis.set_minor_formatter(ticker.NullFormatter())
 
     # same for y-axis
-    ax.yaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=7))
+    ax.yaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=14))
     ax.yaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
     ax.yaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=15))
     ax.yaxis.set_minor_formatter(ticker.NullFormatter())
+
+    # Ticks on all four sides, mirrored, pointing inward
+    ax.tick_params(axis='both', which='major', top=True, right=True,
+                direction='in', length=8)
+    ax.tick_params(axis='both', which='minor', top=True, right=True,
+                direction='in', length=4)
 
     x0,x1 = np.log10(ax.get_xlim())
     y0,y1 = np.log10(ax.get_ylim())
