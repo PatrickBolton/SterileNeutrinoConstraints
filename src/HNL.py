@@ -8,12 +8,6 @@ from matplotlib import rc
 rc('font', **{'family': 'serif', 'serif': ['Computer Modern']})
 rc('text', usetex=True)
 
-import numpy as np
-
-import numpy as np
-
-import numpy as np
-
 def transform(value, *operations):
     functions = {
         'log10': np.log10,
@@ -71,7 +65,7 @@ def plot(m_min=10**(-9.1), m_max=10**(4.1), U_min=10**(-12.1), U_max=10**(0.1),
         yr = con['yr']
         xy = con['xy']
 
-        df = pd.read_csv(con["data"],header=None, sep=",", names = ["X", "Y"])
+        df = pd.read_csv(con["data"], sep=",", names = ["X", "Y"], comment = "#")
         data = np.zeros((len(df),2))
         for i in range(len(df.index)):
             if xy == True:
@@ -114,7 +108,7 @@ def plot(m_min=10**(-9.1), m_max=10**(4.1), U_min=10**(-12.1), U_max=10**(0.1),
         xr = con['xr']
         yr = con['yr']
         xy = con['xy']
-        df = pd.read_csv(con["data"],header=None, sep=",", names = ["X", "Y"])
+        df = pd.read_csv(con["data"], sep=",", names = ["X", "Y"], comment = "#")
         data = np.zeros((len(df),2))
         for i in range(len(df.index)):
             if xy == True:
