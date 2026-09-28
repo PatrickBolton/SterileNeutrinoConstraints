@@ -46,6 +46,10 @@ def plot(m_min=10**(-9.1), m_max=10**(4.1), U_min=10**(-12.1), U_max=10**(0.1),
          current_constraints = {}, future_constraints = {}, title = None, ylabel = None):
 
     fig, ax = plt.subplots()
+
+    plt.loglog([1e-6,1e-6,5e-5,5e-5], [1e-13,3e-6,3e-6,1e-13], lw=0.5, ls='--', color='grey')
+    plt.loglog(np.logspace(-6,np.log10(5e-5),100), 1e-18/np.logspace(-6,-4,100)**2, lw=0.5, ls='-', color='k')
+    plt.text(10**(-4.75), 10**(-8.7), r'DW',fontsize=13,rotation=0,color='k')
     if seesaw == True:
         seesaw_bound = 0.05*1e-9/10**np.arange(-12, 6.2, 0.2)
         ax.plot(10**np.arange(-12, 6.2, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
