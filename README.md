@@ -13,6 +13,8 @@ with the neutrino mass scale $m_\nu = 0.05~\text{eV}$. -->
 
 For any queries, comments or additional constraints, contact patrick.d.bolton@gmail.com.
 
+<p align="center"><img src="plots/summary_constraints.png" width="700"></p>
+
 ### [**Electron mixing**](docs/electron_mixing)
 
 Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
