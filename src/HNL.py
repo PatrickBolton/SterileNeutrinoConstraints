@@ -39,21 +39,30 @@ def transform(value, *operations):
             raise TypeError(f"Each operation must be a number or string, got {type(operation)}")
 
     return result
-    
 
-def plot(m_min=10**(-9.1), m_max=10**(4.1), U_min=10**(-12.1), U_max=10**(0.1),
+def N_DarkMatter_lifetime(mN):
+    GeVtoinvsec = 1/6.5821e-25
+    GF = 1.1663788e-5
+    ALPHA = 1/137.035999084
+    Gamma_3nu = GF**2 * mN**5/(96 * np.pi**3)
+    Gamma_nugamma = 9 * ALPHA * GF**2 * mN**5/(256 * np.pi**4)
+    return 1/((Gamma_3nu + Gamma_nugamma) * GeVtoinvsec) * 1/(3600*24*365*13.8e9)
+    
+def plot(m_min=10**(-11.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
          lim_type = 'current', seesaw = True, svfg = True,
          current_constraints = {}, future_constraints = {}, title = None, ylabel = None):
 
     fig, ax = plt.subplots()
 
-    plt.loglog([1e-6,1e-6,5e-5,5e-5], [1e-13,3e-6,3e-6,1e-13], lw=0.5, ls='--', color='grey')
-    plt.loglog(np.logspace(-6,np.log10(5e-5),100), 1e-18/np.logspace(-6,-4,100)**2, lw=0.5, ls='-', color='k')
-    plt.text(10**(-4.75), 10**(-8.7), r'DW',fontsize=13,rotation=0,color='k')
+    plt.loglog([1e-12,1e-12,7.4e-4,7.4e-4], [1e-17,1e-6,1e-6,1e-17], lw=0.5, ls='--', color='grey')
+    plt.loglog(np.logspace(-4.495,-3.1307682803,100), 
+               N_DarkMatter_lifetime(np.logspace(-4.495,-3.1307682803,100)), lw=0.5, ls='--', color='blue')
+    plt.text(10**(-4.4), 10**(-7.4), r'$\tau_N < t_U$',fontsize=13,rotation=-70,color='blue')
+    plt.text(10**(-10.95), 10**(-6.5), r'$N$ Dark Matter',fontsize=13,rotation=0,color='k')
     if seesaw == True:
         seesaw_bound = 0.05*1e-9/10**np.arange(-12, 6.2, 0.2)
         ax.plot(10**np.arange(-12, 6.2, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
-        plt.text(10**(1.4), 10**(-11.5), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
+        plt.text(10**(3), 10**(-13.2), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
 
     for name, con in current_constraints.items():
         label = con["label"]
@@ -135,15 +144,15 @@ def plot(m_min=10**(-9.1), m_max=10**(4.1), U_min=10**(-12.1), U_max=10**(0.1),
     ax.set_xlim(m_min, m_max)
     ax.set_ylim(U_min, U_max)
     # Major ticks: one per decade, labeled as 10^n
-    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=14))
+    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=16))
     ax.xaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
-    ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=15))
+    ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=16))
     ax.xaxis.set_minor_formatter(ticker.NullFormatter())
 
     # same for y-axis
-    ax.yaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=14))
+    ax.yaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=17))
     ax.yaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
-    ax.yaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=15))
+    ax.yaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=17))
     ax.yaxis.set_minor_formatter(ticker.NullFormatter())
 
     # Ticks on all four sides, mirrored, pointing inward
