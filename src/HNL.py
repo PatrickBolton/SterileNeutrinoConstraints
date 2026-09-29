@@ -57,7 +57,7 @@ def plot(m_min=10**(-11.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
     plt.loglog([1e-12,1e-12,7.4e-4,7.4e-4], [1e-17,1e-6,1e-6,1e-17], lw=0.5, ls='--', color='grey')
     plt.loglog(np.logspace(-4.495,-3.1307682803,100), 
                N_DarkMatter_lifetime(np.logspace(-4.495,-3.1307682803,100)), lw=0.5, ls='--', color='blue')
-    plt.text(10**(-4.4), 10**(-7.4), r'$\tau_N < t_U$',fontsize=13,rotation=-70,color='blue')
+    plt.text(10**(-4.2), 10**(-8.4), r'$\tau_N < t_U$',fontsize=13,rotation=-70,color='blue')
     plt.text(10**(-10.95), 10**(-6.5), r'$N$ Dark Matter',fontsize=13,rotation=0,color='k')
     if seesaw == True:
         seesaw_bound = 0.05*1e-9/10**np.arange(-12, 6.2, 0.2)
