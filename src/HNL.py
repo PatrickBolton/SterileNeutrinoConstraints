@@ -142,6 +142,7 @@ def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
          current_constraints = {}, 
          current_xray_constraints = {}, 
          current_cosmo_constraints = {},
+         block_color = 'lightgrey',
          future_constraints = {}, title = None, ylabel = None):
 
     fig, ax = plt.subplots()
@@ -149,7 +150,7 @@ def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
     if seesaw == True:
         seesaw_bound = 0.05e-9/(0.05e-9 + 10**np.arange(-16, 6.2, 0.2))
         ax.plot(10**np.arange(-16, 6.2, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
-        plt.text(10**(3), 10**(-13.2), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
+        plt.text(10**(2.8), 10**(-13.), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
 
     if v_masses == True:
         m1NO = 0
@@ -217,11 +218,11 @@ def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
         elif lim_type == 'future':
             plt.loglog(data[:,0], data[:,1], lw=lw, ls=ls, color=color, alpha = 0)
             if fill_band == 'up':
-                plt.fill_between(data[:,0], data[:,1]*10, data[:,1], facecolor='lightgray', alpha=1)
+                plt.fill_between(data[:,0], data[:,1]*10, data[:,1], facecolor=block_color, alpha=1)
             elif fill_band == 'down':
-                plt.fill_between(data[:,0], data[:,1]/10, data[:,1], facecolor='lightgray', alpha=1)
+                plt.fill_between(data[:,0], data[:,1]/10, data[:,1], facecolor=block_color, alpha=1)
             else:
-                plt.fill_between(data[:,0], 10, data[:,1], facecolor='lightgray', alpha=1)
+                plt.fill_between(data[:,0], 10, data[:,1], facecolor=block_color, alpha=1)
 
     for name, con in current_xray_constraints.items():
             label = con["label"]
@@ -262,7 +263,7 @@ def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
                 if lim_type == 'future':
                     up_lim = np.zeros(len(data[:,1])) + 1e-5
                     plt.loglog(data[:,0], data[:,1], lw=lw, ls=ls, color=color, alpha = 0)
-                    plt.fill_between(data[:,0], np.minimum(data[:,1]*1000,up_lim), data[:,1], facecolor='lightgray', alpha=1)
+                    plt.fill_between(data[:,0], np.minimum(data[:,1]*1000,up_lim), data[:,1], facecolor=block_color, alpha=1)
 
     for name, con in current_cosmo_constraints.items():
             label = con["label"]
@@ -329,7 +330,7 @@ def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
 
     ax.set_xlabel(r'$m_N~[\mathrm{GeV}]$',fontsize=30,rotation=0)
     ax.set_ylabel(ylabel,fontsize=30,rotation=90)
-    ax.tick_params(axis='x', which='major', labelsize=26, pad=7.5)
+    ax.tick_params(axis='x', which='major', labelsize=26, pad=7.5, labelrotation=20)
     ax.tick_params(axis='y', which='major', labelsize=26)
     ax.set_xlim(m_min, m_max)
     ax.set_ylim(U_min, U_max)
