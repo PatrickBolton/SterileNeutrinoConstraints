@@ -1,10 +1,10 @@
 # Sterile Neutrino Constraints
 
-This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the active-sterile mixing between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$ and $\nu_\tau$) and a single sterile neutrino ($\nu_s$). In general, the active and sterile states mix to yield the mass eigenstates $\nu_i$, i.e.
+This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the **active-sterile mixing** between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$ and $\nu_\tau$) and a single sterile neutrino flavour ($\nu_s$). The active and sterile states mix to yield the mass eigenstates $\nu_i$ as
 
 $$ \nu_\ell = \sum_i^{3+1} U_{\ell i} \nu_i ~,$$
 
-where $\ell = e,\mu,\tau,s$. The state $\nu_4$ is often called a heavy neutral lepton ($N$) if its mass satisfies $m_4 = m_N \gtrsim 1~\text{MeV}$. 
+where $\ell = e,\mu,\tau,s$. The state $\nu_4$ is often called a **heavy neutral lepton** ($N$) for $m_4 = m_N \gtrsim 1~\text{MeV}$. 
 
 Here, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the heavy neutral lepton mass in the range $10~\mu \text{eV} < m_N < 10~\text{TeV}$. These constraints were originally collected for the paper [1912.03058](https://arxiv.org/abs/1912.03058) and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and makes corrections where errors have been spotted.
 
