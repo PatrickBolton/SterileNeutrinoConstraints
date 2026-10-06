@@ -1,6 +1,6 @@
 # Sterile Neutrino Constraints
 
-This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the **active-sterile mixing** between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$, and $\nu_\tau$) and a single sterile neutrino flavour ($\nu_s$). The active and sterile states mix to yield the mass eigenstates as
+This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the **active-sterile mixing** between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$, and $\nu_\tau$) and a single sterile neutrino flavour. The active neutrinos are composed of the mass eigenstates as
 
 $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N,$$
 
@@ -14,7 +14,7 @@ We consider the phenomenological scenario of a massive Majorana fermion $N$ with
 
 Bounds from active-sterile neutrino oscillation searches are often given in terms of the mass squared splitting $\Delta m_{41}^2$ and mixing $\sin^2 2\theta_{i4}$. To plot these bounds, we assume the normal ordering of neutrino masses and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined as
 
-$$m_N = \sqrt{\Delta m_{41}^2} ~, \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{1}{4}\sin^22\theta_{\alpha 4} ~,$$
+$$m_N = \sqrt{\Delta m_{41}^2} ~, \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4} ~,$$
 
 respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$.
 
