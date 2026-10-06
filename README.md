@@ -10,9 +10,11 @@ where $\ell = e,\mu,\tau,s$. The state $\nu_4$ is often called a **sterile neutr
 
 For the bounds from active-sterile neutrino oscillation searches, i.e $\nu_\alpha \to \nu_s$, we make use of the results assuming a normal ordering of neutrino masses, with the lightest neutrino being massless, $m_1 = 0$. Thus, the sterile neutrino mass is determined as $m_N = \sqrt{\Delta m_{41}^2}$ and the active-sterile mixing strength as
 
-$$|U_{\alpha N}|^2 \approx \sin^2\theta_{\alpha 4} = \frac{1- \sqrt{1-\sin^22\theta_{\alpha 4}}}{2} \approx \frac{\sin^22\theta_{\alpha 4}}{4}$$
+$$ m_N = \sqrt{\Delta m_{41}^2} $$
 
-where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$.
+$$|U_{\alpha N}|^2 \approx \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4}$$
+
+respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$.
 
 For any queries, comments or additional constraints that should be included here, contact me at patrick.d.bolton@gmail.com.
 
