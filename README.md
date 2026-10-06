@@ -1,8 +1,16 @@
 # Sterile Neutrino Constraints
 
-This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the active-sterile mixing between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$ and $\nu_\tau$) and a single sterile neutrino or heavy neutral lepton ($N$). Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the HNL mass in the range $1~\text{eV} < m_N < 10~\text{TeV}$. These constraints were originally collected for the paper [1912.03058](https://arxiv.org/abs/1912.03058) and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository provides an updated database of results.
+This repository lists the current terrestrial, astrophysical and cosmological constraints and future sensitivities on the active-sterile mixing between the three active neutrino flavours of the Standard Model ($\nu_e$, $\nu_\mu$ and $\nu_\tau$) and a single sterile neutrino ($\nu_s$). In general, the active and sterile states mix to yield the mass eigenstates $\nu_i$, i.e.
 
-**Model assumptions**: We consider the phenomenological benchmark of a single Majorana $N$ with a single flavour of active-sterile mixing. Generic bounds on the mixing strength can be scaled appropriately in the context of a specific neutrino mass model.
+$$ \nu_\ell = \sum_i^{3+1} U_{\ell i} \nu_i ~,$$
+
+where $\ell = e,\mu,\tau,s$. The state $\nu_4$ is often called a heavy neutral lepton ($N$) if its mass satisfies $m_4 = m_N \gtrsim 1~\text{MeV}$. 
+
+Here, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the heavy neutral lepton mass in the range $10~\mu \text{eV} < m_N < 10~\text{TeV}$. These constraints were originally collected for the paper [1912.03058](https://arxiv.org/abs/1912.03058) and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and makes corrections where errors have been spotted.
+
+**Model assumptions**: We consider the phenomenological scenario of a single Majorana $\nu_s/N$ with a single flavour of active-sterile mixing being non-zero. This setup cannot generate masses for two of the light neutrinos, and therefore is incompatible with the neutrino oscillation data. It nevertheless provides a useful benchmark for experimental searches, and the bounds can be scaled appropriately in the context of a specific neutrino mass model.
+
+For the bounds from active-sterile neutrino oscillation searches, i.e $\nu_\alpha \to \nu_s$, we make use of the results assuming a normal ordering of neutrino masses, with the lightest neutrino being massless, $m_1 = 0$. Thus, the sterile neutrino mass is determined as $m_N = \sqrt{\Delta m_{41}^2}$.
 
 <!-- $$ m_N = \sqrt{m_1^2 + \Delta m_{41}^2} $$
 
@@ -11,7 +19,7 @@ $$ \sin^2\theta_{41} = \frac{1- \sqrt{1-\sin^22\theta_{41}}}{2} $$
 $$ |U_{\ell N}|^2 = \frac{m_\nu}{m_N} $$
 with the neutrino mass scale $m_\nu = 0.05~\text{eV}$. -->
 
-For any queries, comments or additional constraints, contact patrick.d.bolton@gmail.com.
+For any queries, comments or additional constraints that should be included here, contact me at patrick.d.bolton@gmail.com.
 
 # Mixing Landscape
 
