@@ -8,11 +8,11 @@ where $\ell = e,\mu,\tau,s$. The state $\nu_4$ is often called a **sterile neutr
 
 **Model assumptions**: We consider the phenomenological scenario of a single Majorana $\nu_4/N$ with a single flavour of active-sterile mixing. This setup cannot generate masses for two of the light neutrinos, and therefore is incompatible with the neutrino oscillation data. It nevertheless provides a useful benchmark for experimental searches, and the bounds can be scaled appropriately in the context of a specific neutrino mass model.
 
-For the bounds from active-sterile neutrino oscillation searches, i.e $\nu_\alpha \to \nu_s$, we make use of the results assuming a normal ordering of neutrino masses, with the lightest neutrino being massless, $m_1 = 0$. Thus, the sterile neutrino mass is determined as $m_N = \sqrt{\Delta m_{41}^2}$ and the active-sterile mixing strength as
+For the bounds from active-sterile neutrino oscillation searches, i.e $\nu_\alpha \to \nu_s$, we make use of the results assuming a normal ordering of neutrino masses, with the lightest neutrino being massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing stregth are determined as
 
-$$ m_N = \sqrt{\Delta m_{41}^2} $$
+$$ m_N = \sqrt{\Delta m_{41}^2} \,,$$
 
-$$|U_{\alpha N}|^2 \approx \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4}$$
+$$|U_{\alpha N}|^2 \approx \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4} \,,$$
 
 respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$.
 
