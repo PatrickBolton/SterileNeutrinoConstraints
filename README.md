@@ -6,7 +6,11 @@ $$ \nu_\ell = \sum_i^{3+1} U_{\ell i} \nu_i ~,$$
 
 where $\ell = e,\mu,\tau,s$. The state $\nu_4$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** ($N$) for $m_4 = m_N \gtrsim 1~\text{MeV}$. Here, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{TeV}$. These constraints were originally collected for the paper [1912.03058](https://arxiv.org/abs/1912.03058) and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and has made corrections where errors were spotted.
 
-**Model assumptions**: We consider the phenomenological scenario of a Majorana sterile neutrino $\nu_4/N$ with a single flavour of active-sterile mixing. This setup cannot generate masses for two of the light neutrinos, and therefore is incompatible with the neutrino oscillation data. It nevertheless provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model.
+For any queries, comments or additional constraints that should be included here, contact me at patrick.d.bolton@gmail.com.
+
+# Assumptions and Mixing Landscape
+
+We consider the phenomenological scenario of a Majorana sterile neutrino $\nu_4/N$ with a single flavour of active-sterile mixing. This setup cannot generate masses for two of the light neutrinos, and therefore is incompatible with the neutrino oscillation data. Nevertheless, it provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model.
 
 For the bounds from active-sterile neutrino oscillation searches, i.e $\nu_\alpha \to \nu_s$, we make use of the results assuming the normal ordering of neutrino masses, with the lightest neutrino being massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing stregth are determined as
 
@@ -16,9 +20,7 @@ $$|U_{\alpha N}|^2 \approx \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sq
 
 respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$.
 
-For any queries, comments or additional constraints that should be included here, contact me at patrick.d.bolton@gmail.com.
-
-# Mixing Landscape
+Below, the general landscape of current bounds are shown for different active flavours.
 
 <p align="center"><img src="plots/summary_constraints.png" width="700"></p>
 
