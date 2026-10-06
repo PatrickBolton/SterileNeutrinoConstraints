@@ -13,9 +13,13 @@ with the neutrino mass scale $m_\nu = 0.05~\text{eV}$. -->
 
 For any queries, comments or additional constraints, contact patrick.d.bolton@gmail.com.
 
+# Mixing Landscape
+
 <p align="center"><img src="plots/summary_constraints.png" width="700"></p>
 
-### [**Electron mixing**](docs/electron_mixing)
+# Electron Mixing
+
+<!-- ### [**Electron mixing**](docs/electron_mixing) -->
 
 Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
@@ -24,7 +28,9 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 [<p align="center"><img align="center" src="plots/UeNsq_future.png" width="700"></p>](docs/electron_mixing.md)
 
-### [**Muon mixing**](docs/muon_mixing)
+# Muon Mixing
+
+<!-- ### [**Muon mixing**](docs/muon_mixing) -->
 
 Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
@@ -33,7 +39,9 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 [<p align="center"><img align="center" src="plots/UmuNsq_future.png" width="700"></p>](docs/muon_mixing.md)
 
-### [**Tau mixing**](docs/tau_mixing)
+# Tau Mixing
+
+<!-- ### [**Tau mixing**](docs/tau_mixing) -->
 
 Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
