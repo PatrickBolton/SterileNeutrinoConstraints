@@ -137,7 +137,7 @@ def N_0vbb_bound(mN, Thalf):
 
     return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0)) * np.sqrt(G01 * Thalf)))
     
-def plot(m_min=1e-14, m_max=1e4, U_min=1e-16, U_max=1,
+def plot(m_min=1e-14, m_max=1e6, U_min=1e-16, U_max=1,
          lim_type = 'current', seesaw = True, v_masses = True, DM_window = True, svfg = True,
          current_constraints = {}, 
          current_xray_constraints = {}, 
@@ -184,7 +184,7 @@ def plot(m_min=1e-14, m_max=1e4, U_min=1e-16, U_max=1,
         xy = con['xy']
 
         if name == '0vbb':
-            mvals = np.logspace(-15.1,4.1,100)
+            mvals = np.logspace(-15.1,6.1,100)
             Uvals = [N_0vbb_bound(m, 3.8e26) for m in mvals]
             data = np.zeros((len(mvals),2))
             data[:,0] = mvals
@@ -335,9 +335,9 @@ def plot(m_min=1e-14, m_max=1e4, U_min=1e-16, U_max=1,
     ax.set_xlim(m_min, m_max)
     ax.set_ylim(U_min, U_max)
     # Major ticks: one per decade, labeled as 10^n
-    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=19))
+    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=21))
     ax.xaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
-    ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=19))
+    ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=21))
     ax.xaxis.set_minor_formatter(ticker.NullFormatter())
 
     # same for y-axis
