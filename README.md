@@ -8,7 +8,7 @@ where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino*
 
 For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com.
 
-# Model Assumptions
+## Model Assumptions
 
 We consider the phenomenological scenario of a massive Majorana fermion $N$ with a single flavour of active-sterile mixing. This setup cannot generate masses for two of the light neutrinos, and therefore is incompatible with neutrino oscillation data. Nevertheless, it provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model.
 
@@ -18,13 +18,13 @@ $$m_N = \sqrt{\Delta m_{41}^2} , \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4
 
 respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$. Note that $m_N > m_{2,3}$ is not strictly required, and we consider $m_N < m_{2,3}$ in the plots below.
 
-# Mixing Landscape
+## Mixing Landscape
 
 Below, the general landscape of current bounds is shown for different active flavours.
 
 <p align="center"><img src="plots/summary_constraints.png" width="700"></p>
 
-# Electron Mixing
+## Electron Mixing
 
 <!-- ### [**Electron mixing**](docs/electron_mixing) -->
 
@@ -35,7 +35,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 [<p align="center"><img align="center" src="plots/UeNsq_future.png" width="700"></p>](docs/electron_mixing.md)
 
-# Muon Mixing
+## Muon Mixing
 
 <!-- ### [**Muon mixing**](docs/muon_mixing) -->
 
@@ -46,7 +46,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 [<p align="center"><img align="center" src="plots/UmuNsq_future.png" width="700"></p>](docs/muon_mixing.md)
 
-# Tau Mixing
+## Tau Mixing
 
 <!-- ### [**Tau mixing**](docs/tau_mixing) -->
 
