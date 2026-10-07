@@ -137,13 +137,13 @@ def N_0vbb_bound(mN, Thalf):
 
     return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0)) * np.sqrt(G01 * Thalf)))
     
-def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
+def plot(m_min=1e-14, m_max=1e4, U_min=1e-16, U_max=1,
          lim_type = 'current', seesaw = True, v_masses = True, DM_window = True, svfg = True,
          current_constraints = {}, 
          current_xray_constraints = {}, 
          current_cosmo_constraints = {},
          block_color = 'lightgrey',
-         future_constraints = {}, title = None, ylabel = None):
+         future_constraints = {}, title = None, ylabel = None, x_rot = 0):
 
     fig, ax = plt.subplots()
 
@@ -330,7 +330,7 @@ def plot(m_min=10**(-14.1), m_max=10**(4.1), U_min=10**(-16.1), U_max=10**(0.1),
 
     ax.set_xlabel(r'$m_N~[\mathrm{GeV}]$',fontsize=30,rotation=0)
     ax.set_ylabel(ylabel,fontsize=30,rotation=90)
-    ax.tick_params(axis='x', which='major', labelsize=26, pad=7.5, labelrotation=20)
+    ax.tick_params(axis='x', which='major', labelsize=26, pad=7.5, labelrotation=x_rot)
     ax.tick_params(axis='y', which='major', labelsize=26)
     ax.set_xlim(m_min, m_max)
     ax.set_ylim(U_min, U_max)
