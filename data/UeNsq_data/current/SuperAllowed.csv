@@ -1,0 +1,7 @@
+# Bryman and Shrock super allowed beta decay bound
+# Uses Seng et al. Vud determination
+# Fig. 1 in https://arxiv.org/pdf/1909.11198
+# See also https://arxiv.org/pdf/1904.06787
+# log10(mN/MeV), log10(|UeN|^2)
+-0.0023183925811436357, -3.564530289727829
+1.0015455950540963, -3.564530289727829

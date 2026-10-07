@@ -45,7 +45,6 @@ build/
 .cache/
 
 # Data & large files (adjust to taste)
-*.csv
 *.h5
 *.root
 *.npy

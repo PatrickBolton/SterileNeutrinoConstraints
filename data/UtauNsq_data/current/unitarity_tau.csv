@@ -1,0 +1,8 @@
+# Non-unitarity mixing global fit incl. electroweak precision data (tau)
+# See https://arxiv.org/pdf/2306.01040
+# See also https://arxiv.org/pdf/0803.4008, https://arxiv.org/pdf/1302.1872, https://arxiv.org/pdf/1307.6173, https://arxiv.org/pdf/1407.6607
+# log10(mN/GeV), log10(|UtauN|^2)
+0.24844720496894412, -2.725663716814158
+1.9534161490683228, -2.725663716814158
+1.9565217391304346, -2.9115044247787605
+10, -2.9115044247787605

@@ -1,0 +1,5 @@
+# Super-Kamiokande 3+1 vmu disappearance analysis (tau)
+# Fig. 7 in https://arxiv.org/pdf/1410.2008
+# log10(|UtauN|^2), log10(Δm41^2/eV^2)
+-0.7447274949, 2.003823092129985
+-0.7447274949, -0.9961769078700144
