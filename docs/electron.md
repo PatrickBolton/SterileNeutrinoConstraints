@@ -2,13 +2,13 @@
 
 ## Current limits
 
-<p align="center"><img src="../plots/UeNsq_constraints.png" width="700"></p>
+<p align="center"><img src="../plots/UeNsq_constraints.png" width="800"></p>
 
 <div align="center">
 
 | Experiment/Analysis    | Type    |Reference      | Data |
 |:--------|:--------|:---------:|------:|
-| Solar $\nu$ | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | [.csv](../data/UeNsq/current/Solar_Cirelli.csv) |
+| Solar $\nu$ | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv |
 | Solar $\nu$ | Oscillations |  [1803.10661](https://arxiv.org/abs/1803.10661) | .csv |
 | Daya Bay | Oscillations | [2404.01687](https://arxiv.org/abs/2404.01687) | .csv |
 | DANSS | Oscillations | [1804.04046](https://arxiv.org/abs/1804.04046)| .csv |
@@ -77,7 +77,7 @@
 | CMS (3 prompt $\ell$) | Collider | [2403.00100](https://arxiv.org/abs/2403.00100) | .csv |
 | CMS (same-sign $\ell$ + $j$) | Collider | [1806.10905](https://arxiv.org/abs/1806.10905) | .csv |
 | Higgs | Collider | [1704.00880](https://arxiv.org/abs/1704.00880) | .csv |
-| Global fit | Unitarity | [2306.01040](https://arxiv.org/abs/2306.01040) | .csv |
+| Global non-unitarity fit | Unitarity | [2306.01040](https://arxiv.org/abs/2306.01040) | .csv |
 | SNe (Shi) | Astrophysics | [hep-ph/9312247](https://arxiv.org/abs/hep-ph/9312247) | .csv |
 | SNe (Abazajian) | Astrophysics | [astro-ph/0101524](https://arxiv.org/abs/astro-ph/0101524) | .csv |
 | SNe (Nunokawa) | Astrophysics | [hep-ph/9702372](https://arxiv.org/abs/hep-ph/9702372) | .csv |
@@ -91,6 +91,8 @@
 ## Future sensitivities
 
 <p align="center"><img align="center" src="../plots/UeNsq_future.png" width="700"></p>
+
+<div align="center">
 
 | Experiment/Analysis    | Type    |Reference      | Data |
 |:--------|:--------|:---------:|------:|
@@ -125,3 +127,5 @@
 | LHeC | Collider |   | .csv |
 | CLIC | Collider | [1810.08970](https://arxiv.org/abs/1810.08970), [1811.04291](https://arxiv.org/abs/1811.04291) | .csv |
 | DUNE (Carbajal) | Unitarity | [2202.09217](https://arxiv.org/abs/2202.09217) | .csv |
+
+</div>
