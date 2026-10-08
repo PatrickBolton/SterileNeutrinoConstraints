@@ -4,15 +4,15 @@ This repository lists the current terrestrial, astrophysical and cosmological co
 
 $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N + \ldots,$$
 
-where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{PeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino/heavy neutral lepton parameter space, see [[2](#ref-2)-[12](#ref-12)].
+where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** (HNL) for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. In ``data``, Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{PeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino/HNL parameter space, see [[2](#ref-2)-[12](#ref-12)].
 
-For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``refs``.
+For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``docs`` and ``refs``.
 
 ## Mixing landscape
 
 <p align="center"><img src="plots/summary_constraints.png" width="700"></p>
 
-## Model and statistical assumptions
+## Assumptions
 
 We consider the phenomenological scenario of a massive **Majorana** fermion $N$ with a **single flavour** active-sterile mixing. For an arbitrary number of sterile states, we have the relation
 
@@ -56,7 +56,7 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 
 [<img align="right" width="400" src="plots/DM_constraints.png">](docs/DM.md)
 
-### [Dark Matter](docs/DM.md)
+### [Sterile Neutrino Dark Matter](docs/DM.md)
 
 [Data files](docs/DM.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
@@ -69,7 +69,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 [<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/electron.md)
 [<img align="right" width="400" src="plots/UeNsq_future.png">](docs/electron.md)
 
-### [Electron mixing](docs/electron.md)
+### [Electron mixing - $|U_{eN}|^2$](docs/electron.md)
 
 [Data files](docs/electron.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
@@ -82,7 +82,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 [<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/muon.md)
 [<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/muon.md)
 
-### [Muon mixing](docs/muon.md)
+### [Muon mixing - $|U_{\mu N}|^2$](docs/muon.md)
 
 [Data files](docs/muon.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
@@ -95,7 +95,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 [<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/tau.md)
 [<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/tau.md)
 
-### [Tau mixing](docs/tau.md)
+### [Tau mixing - $|U_{\tau N}|^2$](docs/tau.md)
 
 [Data files](docs/tau.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\

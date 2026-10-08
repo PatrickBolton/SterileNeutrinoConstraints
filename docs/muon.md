@@ -1,4 +1,4 @@
-# Muon mixing
+# Muon mixing - $|U_{\mu N}|^2$
 
 ## Current limits
 

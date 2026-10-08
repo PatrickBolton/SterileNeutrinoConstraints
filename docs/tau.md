@@ -1,4 +1,4 @@
-# Tau mixing
+# Tau mixing - $|U_{\tau N}|^2$
 
 ## Current limits
 
