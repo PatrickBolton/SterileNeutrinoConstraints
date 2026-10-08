@@ -54,8 +54,8 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 
 ## Electron Mixing
 
-[<p align="right"><img src="plots/UeNsq_constraints.png" width="300"></p>](docs/electron_mixing.md)
-[<p align="right"><img align="center" src="plots/UeNsq_future.png" width="300"></p>](docs/electron_mixing.md)
+[<p align="right"><img src="plots/UeNsq_constraints.png" width="500"></p>](docs/electron_mixing.md)
+<!--[<p align="right"><img align="center" src="plots/UeNsq_future.png" width="300"></p>](docs/electron_mixing.md)-->
 
 Data files\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
