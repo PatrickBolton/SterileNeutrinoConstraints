@@ -8,11 +8,11 @@ where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino*
 
 For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``refs``.
 
-## Mixing Landscape
+## Mixing landscape
 
 <p align="center"><img src="plots/summary_constraints.png" width="700"></p>
 
-## Model and Statistical Assumptions
+## Model and statistical assumptions
 
 We consider the phenomenological scenario of a massive **Majorana** fermion $N$ with a **single flavour** active-sterile mixing. For an arbitrary number of sterile states, we have the relation
 
@@ -54,12 +54,12 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 
 ---
 
-[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/ap.md)
-[<img align="right" width="400" src="plots/UeNsq_future.png">](docs/ap.md)
+[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/electron_mixing.md)
+[<img align="right" width="400" src="plots/UeNsq_future.png">](docs/electron_mixing.md)
 
-### Electron Mixing
+### [Electron mixing](docs/electron_mixing.md)
 
-Data files\
+[Data files](docs/electron_mixing.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
@@ -67,12 +67,12 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/ap.md)
-[<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/ap.md)
+[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/muon_mixing.md)
+[<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/muon_mixing.md)
 
-### Muon Mixing
+### [Muon mixing](docs/muon_mixing.md)
 
-Data files\
+[Data files](docs/muon_mixing.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
 
@@ -80,12 +80,12 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/ap.md)
-[<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/ap.md)
+[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/tau_mixing.md)
+[<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/tau_mixing.md)
 
-### Tau Mixing
+### [Tau mixing](docs/tau_mixing.md)
 
-Data files\
+[Data files](docs/tau_mixing.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
 
