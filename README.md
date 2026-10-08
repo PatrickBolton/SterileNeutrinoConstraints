@@ -52,39 +52,38 @@ where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1
 
 We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}~\text{yr} < T_{1/2}^{0\nu} < 2.5 \times 10^{29}~\text{yr}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
 
-## Electron Mixing
+---
 
-[<p align="right"><img src="plots/UeNsq_constraints.png" width="500"></p>](docs/electron_mixing.md)
-<!--[<p align="right"><img align="center" src="plots/UeNsq_future.png" width="300"></p>](docs/electron_mixing.md)-->
+[<img align="right" width="300" src="plots/UeNsq_constraints.png">](docs/ap.md)
+[<img align="right" width="300" src="plots/UeNsq_future.png">](docs/ap.md)
+
+### Electron Mixing
 
 Data files\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
+---
 
-## Muon Mixing
+[<img align="right" width="300" src="plots/UmuNsq_constraints.png">](docs/ap.md)
+[<img align="right" width="300" src="plots/UmuNsq_future.png">](docs/ap.md)
 
-<!-- ### [**Muon mixing**](docs/muon_mixing) -->
+### Muon Mixing
 
 Data files\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
 
-[<p align="center"><img src="plots/UmuNsq_constraints.png" width="700"></p>](docs/muon_mixing.md)
+---
 
-[<p align="center"><img align="center" src="plots/UmuNsq_future.png" width="700"></p>](docs/muon_mixing.md)
+[<img align="right" width="300" src="plots/UtauNsq_constraints.png">](docs/ap.md)
+[<img align="right" width="300" src="plots/UtauNsq_future.png">](docs/ap.md)
 
-## Tau Mixing
-
-<!-- ### [**Tau mixing**](docs/tau_mixing) -->
+### Tau Mixing
 
 Data files\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
-
-[<p align="center"><img src="plots/UtauNsq_constraints.png" width="700"></p>](docs/tau_mixing.md)
-
-[<p align="center"><img align="center" src="plots/UtauNsq_future.png" width="700"></p>](docs/tau_mixing.md)
 
 ## References
 
