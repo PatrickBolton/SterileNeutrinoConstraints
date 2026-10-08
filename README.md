@@ -50,12 +50,12 @@ $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_
 
 where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[14](#ref-14)]. 
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}~\text{yr} < T_{1/2}^{0\nu} < 2.5 \times 10^{29}~\text{yr}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28} < T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
 
 ---
 
-[<img align="right" width="500" src="plots/UeNsq_constraints.png">](docs/ap.md)\
-[<img align="right" width="500" src="plots/UeNsq_future.png">](docs/ap.md)
+[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/ap.md)\
+[<img align="right" width="400" src="plots/UeNsq_future.png">](docs/ap.md)
 
 ### Electron Mixing
 
@@ -65,8 +65,8 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="500" src="plots/UmuNsq_constraints.png">](docs/ap.md)\
-[<img align="right" width="500" src="plots/UmuNsq_future.png">](docs/ap.md)
+[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/ap.md)\
+[<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/ap.md)
 
 ### Muon Mixing
 
@@ -74,10 +74,12 @@ Data files\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
 
+<br><br><br><br><br><br><br>
+
 ---
 
-[<img align="right" width="500" src="plots/UtauNsq_constraints.png">](docs/ap.md)\
-[<img align="right" width="500" src="plots/UtauNsq_future.png">](docs/ap.md)
+[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/ap.md)\
+[<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/ap.md)
 
 ### Tau Mixing
 
