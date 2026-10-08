@@ -6,9 +6,13 @@ $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N + \ldots,$$
 
 where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{PeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino/heavy neutral lepton parameter space, see [[2](#ref-2)-[12](#ref-12)].
 
-For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com.
+For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``refs``.
 
-## Model Assumptions
+## Mixing Landscape
+
+<p align="center"><img src="plots/summary_constraints.png" width="700"></p>
+
+## Model and Statistical Assumptions
 
 We consider the phenomenological scenario of a massive **Majorana** fermion $N$ with a **single flavour** active-sterile mixing. For an arbitrary number of sterile states, the relation
 
@@ -16,19 +20,23 @@ $$ \sum_i^3 U_{\alpha i}^2 m_i + U_{\alpha N}^2 m_N + \ldots = 0 , \quad(1)$$
 
 holds. A single $N$ cannot generate masses for two of the light neutrinos and therefore is incompatible with neutrino oscillation data. Nevertheless, it provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model. 
 
-To plot some of the constraints below, we make the additional assumptions:
+We make the additional clarifications:
+
+### Confidence levels
+
+For the limits and sensitivities presented here, we have taken the bounds from an extremely wide array of experimental and theory papers, often using slightly different model assumptions, statistical methods, and confidence levels (CLs). We make no attempt to standardise the limits, and simply show the bound presented in each paper.
 
 ### Seesaw line
 
-In the following plots, we show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. (1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and
+In the following plots, we show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. (1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and thus
 
 $$|U_{\alpha N}|^2 = \frac{m_3}{m_3 + m_N}.$$
 
-In the plots below, we show as a dashed black line this relation for $m_3 = 0.05~\text{eV}$.
+In the plots below, we show this relation for $m_3 = 0.05~\text{eV}$ as a dashed black line.
 
 ### Active-sterile neutrino oscillations
 
-Bounds from active-sterile oscillation searches are often given in terms of $\Delta m_{41}^2 = m_4^2 - m_1^2$ and $\sin^2 2\theta_{i4}$ for $i = 1,2,3$. To show these bounds, we assume the normal ordering of neutrino masses ($m_1 < m_2 < m_3$) and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined as
+Bounds from active-sterile oscillation searches are often given in terms of $\Delta m_{41}^2 = m_4^2 - m_1^2$ and $\sin^2 2\theta_{i4}$, for $i = 1,2,3$. To show these bounds, we assume the normal ordering of neutrino masses ($m_1 < m_2 < m_3$) and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined as
 
 $$m_N = \sqrt{\Delta m_{41}^2} , \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4} ,$$
 
@@ -42,19 +50,14 @@ $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_
 
 where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[14](#ref-14)]. 
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}< T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime.
-
-## Mixing Landscape
-
-Below, the general landscape of current bounds is shown for different active flavours.
-
-<p align="center"><img src="plots/summary_constraints.png" width="700"></p>
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}< T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
 
 ## Electron Mixing
 
 <!-- ### [**Electron mixing**](docs/electron_mixing) -->
 
-Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
+Data files\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
 [<p align="center"><img src="plots/UeNsq_constraints.png" width="700"></p>](docs/electron_mixing.md)
@@ -65,7 +68,8 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 <!-- ### [**Muon mixing**](docs/muon_mixing) -->
 
-Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
+Data files\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
 
 [<p align="center"><img src="plots/UmuNsq_constraints.png" width="700"></p>](docs/muon_mixing.md)
@@ -76,7 +80,8 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 <!-- ### [**Tau mixing**](docs/tau_mixing) -->
 
-Current constraints ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
+Data files\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
 
 [<p align="center"><img src="plots/UtauNsq_constraints.png" width="700"></p>](docs/tau_mixing.md)
@@ -127,24 +132,24 @@ JHEP **09** (2023), 001
 [arXiv:2304.06772 [hep-ph]](https://arxiv.org/abs/2304.06772).
 9. <a id="ref-9"></a>ATLAS Collaboration, "Summary plots for Heavy Neutral Leptons,"
 [ATL-PHYS-PUB-2025-038](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2025-038/).
-10. <a id="ref-9"></a>CMS Collaboration, "Heavy Neutral Lepton summary plots,"
+10. <a id="ref-10"></a>CMS Collaboration, "Heavy Neutral Lepton summary plots,"
 [EXO-23-006](https://cms-summary-searches.docs.cern.ch/hnl_summary/).
-11. <a id="ref-9"></a>M. Drewes, T. Lasserre, A. Merle, S. Mertens, R. Adhikari, M. Agostini, N. A. Ky, T. Araki, M. Archidiacono and M. Bahr, *et al.*,
+11. <a id="ref-11"></a>M. Drewes, T. Lasserre, A. Merle, S. Mertens, R. Adhikari, M. Agostini, N. A. Ky, T. Araki, M. Archidiacono and M. Bahr, *et al.*,
 "A White Paper on keV Sterile Neutrino Dark Matter,"
 JCAP **01** (2017), 025
 [doi:10.1088/1475-7516/2017/01/025](https://iopscience.iop.org/article/10.1088/1475-7516/2017/01/025);
 [arXiv:1602.04816 [hep-ph]](https://arxiv.org/abs/1602.04816).
-12. <a id="ref-10"></a>A. Boyarsky, M. Drewes, T. Lasserre, S. Mertens and O. Ruchayskiy,
+12. <a id="ref-12"></a>A. Boyarsky, M. Drewes, T. Lasserre, S. Mertens and O. Ruchayskiy,
 "Sterile neutrino Dark Matter,"
 Prog. Part. Nucl. Phys. **104** (2019), 1-45
 [doi:10.1016/j.ppnp.2018.07.004](https://www.sciencedirect.com/science/article/abs/pii/S0146641018300711?via%3Dihub);
 [arXiv:1807.07938 [hep-ph]](https://arxiv.org/abs/1807.07938).
-12. <a id="ref-11"></a>S. Abe *et al.* [KamLAND-Zen],
+13. <a id="ref-13"></a>S. Abe *et al.* [KamLAND-Zen],
 "Search for Majorana Neutrinos with the Complete KamLAND-Zen Dataset,"
 Phys. Rev. Lett. **135** (2025) no.26, 262501
 [doi:10.1103/jkf6-48j8](https://journals.aps.org/prl/abstract/10.1103/jkf6-48j8);
 [arXiv:2406.11438 [hep-ex]](https://arxiv.org/abs/2406.11438).
-13. <a id="ref-11"></a>W. Dekens, J. de Vries, E. Mereghetti, J. Menéndez, P. Soriano and G. Zhou,
+14. <a id="ref-14"></a>W. Dekens, J. de Vries, E. Mereghetti, J. Menéndez, P. Soriano and G. Zhou,
 "Neutrinoless double-$\beta$ decay in the neutrino-extended standard model,"
 Phys. Rev. C **108** (2023) no.4, 045501
 [doi:10.1103/PhysRevC.108.045501](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.108.045501);
