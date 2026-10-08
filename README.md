@@ -4,7 +4,7 @@ This repository lists the current terrestrial, astrophysical and cosmological co
 
 $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N + \ldots,$$
 
-where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explictly here. Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{PeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors.
+where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{PeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino/heavy neutral lepton parameter space, see [[2](#ref-2)-[12](#ref-12)].
 
 For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com.
 
@@ -12,7 +12,7 @@ For any queries, comments or additional constraints that you think should be inc
 
 We consider the phenomenological scenario of a massive **Majorana** fermion $N$ with a **single flavour** active-sterile mixing. For an arbitrary number of sterile states, the relation
 
-$$ \sum_i^3 U_{\alpha i}^2 m_i + U_{\alpha N}^2 m_N + \ldots = 0 , \tag{1}$$
+$$ \sum_i^3 U_{\alpha i}^2 m_i + U_{\alpha N}^2 m_N + \ldots = 0 , \quad(1)$$
 
 holds. A single $N$ cannot generate masses for two of the light neutrinos and therefore is incompatible with neutrino oscillation data. Nevertheless, it provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model. 
 
@@ -20,7 +20,7 @@ To plot some of the constraints below, we make the additional assumptions:
 
 ### Seesaw line
 
-In the following plots, we show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. [(1)](#eq1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and
+In the following plots, we show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. (1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and
 
 $$|U_{\alpha N}|^2 = \frac{m_3}{m_3 + m_N}.$$
 
@@ -40,9 +40,9 @@ Below, we show the bound from the non-observation of neutrinoless double beta ($
 
 $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu + U_{eN}^2 m_N A_N(m_N)\Big|^2 ,$$
 
-where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from the recent work [[14](#ref-14)]. 
+where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[14](#ref-14)]. 
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the current KamLAND-Zen bound not reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 < T_{1/2}^{0\nu}/(10^{28}~\text{yr}) < 25$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound. If only $N$ is present, the relation Eq. [(1)](#eq1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime.
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}< T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime.
 
 ## Mixing Landscape
 

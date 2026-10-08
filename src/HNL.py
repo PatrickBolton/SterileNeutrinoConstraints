@@ -150,7 +150,7 @@ def plot(m_min=1e-14, m_max=1e7, U_min=1e-16, U_max=1,
     if seesaw == True:
         seesaw_bound = 0.05e-9/(0.05e-9 + 10**np.arange(-16, 6.2, 0.2))
         ax.plot(10**np.arange(-16, 6.2, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
-        plt.text(10**(2.8), 10**(-13.), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
+        plt.text(10**(5.0), 10**(-15.0), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
 
     if v_masses == True:
         m1NO = 0
@@ -158,8 +158,8 @@ def plot(m_min=1e-14, m_max=1e7, U_min=1e-16, U_max=1,
         m3NO = np.sqrt(m2NO**2 + 2.521e-3) * 1e-9
         plt.loglog([m2NO,m2NO], [1e-17,10], lw=1, ls='--', color='grey')
         plt.loglog([m3NO,m3NO], [1e-17,10], lw=1, ls='--', color='grey')
-        plt.text(10**(-11.47), 10**(-15.7), r'$m_2^{\mathrm{min}} = \sqrt{\Delta m_\odot^2}$',fontsize=13,rotation=90,color='k')
-        plt.text(10**(-10.7), 10**(-15.7), r'$m_3^{\mathrm{min}} = \sqrt{\Delta m_\odot^2 + \Delta m_{\mathrm{atm}}^2}$',fontsize=13,rotation=90,color='k')
+        plt.text(10**(-11.5), 10**(-15.7), r'$m_2^{\mathrm{min}} = \sqrt{\Delta m_\odot^2}$',fontsize=13,rotation=90,color='k')
+        plt.text(10**(-10.73), 10**(-15.7), r'$m_3^{\mathrm{min}} = \sqrt{\Delta m_\odot^2 + \Delta m_{\mathrm{atm}}^2}$',fontsize=13,rotation=90,color='k')
 
     if DM_window == True:
         plt.loglog([1e-8,1e-8,7.4e-4,7.4e-4], [1e-17,1e-5,1e-5,1e-17], lw=0.5, ls='--', color='grey')
