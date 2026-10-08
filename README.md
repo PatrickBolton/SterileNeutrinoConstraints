@@ -54,7 +54,7 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 
 ---
 
-[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/ap.md)\
+[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/ap.md)
 [<img align="right" width="400" src="plots/UeNsq_future.png">](docs/ap.md)
 
 ### Electron Mixing
