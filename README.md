@@ -67,7 +67,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/ap.md)\
+[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/ap.md)
 [<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/ap.md)
 
 ### Muon Mixing
@@ -80,7 +80,7 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/ap.md)\
+[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/ap.md)
 [<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/ap.md)
 
 ### Tau Mixing
