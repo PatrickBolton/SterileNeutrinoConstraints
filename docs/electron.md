@@ -8,28 +8,28 @@
 
 | Experiment/Analysis    | Type    |Reference      | Data |
 |:--------|:--------|:---------:|------:|
-| Solar $\nu$ | Osc. |   | .csv |
-| Daya Bay | Osc. | | .csv |
-| DANSS | Osc. | | .csv |
-| NEOS | Osc. | | .csv |
-| RENO + NEOS | Osc. | | .csv |
-| MicroBooNE | Osc. | | .csv |
-| Super-K + IceCube + DeepCore | Osc. | | .csv |
-| PROSPECT | Osc. | | .csv |
-| KATRIN | Osc. | | .csv |
-| $^{3}\text{H}$ (Hiddemann) | $\beta$ decay | | .csv |
-| $^{3}\text{H}$ (Mainz) | $\beta$ decay | | .csv |
-| $^{3}\text{H}$ (Troitsk 2013) | $\beta$ decay | | .csv |
-| $^{3}\text{H}$ (Troitsk 2017) | $\beta$ decay | | .csv |
-| $^{137}\text{Re}$ | $\beta$ decay | | .csv |
-| $^{63}\text{Ni}$ | $\beta$ decay | | .csv |
-| $^{241}\text{Pu}$ | $\beta$ decay | | .csv |
-| $^{35}\text{S}$ | $\beta$ decay | | .csv |
-| $^{45}\text{Ca}$ | $\beta$ decay | | .csv |
-| $^{64}\text{Cu}$ | $\beta$ decay | | .csv |
-| $^{144}\text{Ce}-^{144}\text{Pr}$ | $\beta$ decay | | .csv |
-| $^{20}\text{F}$ | $\beta$ decay | | .csv |
-| $^{7}\text{Be}$ | $\beta$ decay | | .csv |
+| Solar $\nu$ | Osc. |  [0403158](https://arxiv.org/abs/hep-ph/0403158) | [.csv](../data/UeNsq/current/Solar_Cirelli.csv) |
+| Daya Bay | Osc. | [2404.01687](https://arxiv.org/abs/2404.01687) | .csv |
+| DANSS | Osc. | [1804.04046](https://arxiv.org/abs/1804.04046)| .csv |
+| NEOS | Osc. | [1610.05134](https://arxiv.org/abs/1610.05134) | .csv |
+| RENO + NEOS | Osc. | [2011.00896](https://arxiv.org/abs/2011.00896) | .csv |
+| MicroBooNE | Osc. | [2512.07159](https://arxiv.org/abs/2512.07159) | .csv |
+| Super-K + IceCube + DeepCore | Osc. | [1803.10661](https://arxiv.org/abs/1803.10661) | .csv |
+| PROSPECT | Osc. | [2406.10408](https://arxiv.org/abs/2406.10408) | .csv |
+| KATRIN | Osc. | [2503.18667](https://arxiv.org/abs/2503.18667) | .csv |
+| $^{3}\text{H}$ (Hiddemann) | $\beta$ decay | [J.Phys.G 21 (1995) 639-650](https://iopscience.iop.org/article/10.1088/0954-3899/21/5/008) | .csv |
+| $^{3}\text{H}$ (Mainz) | $\beta$ decay | [1210.4194](https://arxiv.org/abs/1210.4194) | .csv |
+| $^{3}\text{H}$ (Troitsk 2013) | $\beta$ decay | [1307.5687](https://arxiv.org/abs/1307.5687) | .csv |
+| $^{3}\text{H}$ (Troitsk 2017) | $\beta$ decay | [1703.10779](https://arxiv.org/abs/1703.10779) | .csv |
+| $^{137}\text{Re}$ | $\beta$ decay | [Phys.Rev.Lett. 86 (2001) 1978-1981](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.86.1978) | .csv |
+| $^{63}\text{Ni}$ | $\beta$ decay | [Phys.Lett.B 451 (1999) 247-255](https://www.sciencedirect.com/science/article/abs/pii/S0370269399002002?via%3Dihub)| .csv |
+| $^{241}\text{Pu}$ | $\beta$ decay | [2503.18350](https://arxiv.org/abs/2503.18350) | .csv |
+| $^{35}\text{S}$ | $\beta$ decay | [Phys.Lett.B 482 (2000) 1-9](https://www.sciencedirect.com/science/article/abs/pii/S0370269300004767?via%3Dihub) | .csv |
+| $^{45}\text{Ca}$ | $\beta$ decay | [JETP Lett. 66 (1997) 88-92](https://link.springer.com/article/10.1134/1.567508) | .csv |
+| $^{64}\text{Cu}$ | $\beta$ decay | [Phys.Lett.B 129 (1983) 265-268](https://www.sciencedirect.com/science/article/abs/pii/0370269383908584?via%3Dihub) | .csv |
+| $^{144}\text{Ce}-^{144}\text{Pr}$ | $\beta$ decay | [JETP Lett. 108 (2018) 8, 499-503](https://link.springer.com/article/10.1134/S0021364018200067) | .csv |
+| $^{20}\text{F}$ | $\beta$ decay | [Nucl.Phys.A 518 (1990) 149-155](https://www.sciencedirect.com/science/article/abs/pii/037594749090541S?via%3Dihub) | .csv |
+| $^{7}\text{Be}$ | $\beta$ decay | [2010.09603](https://arxiv.org/abs/2010.09603) | .csv |
 | Superallowed, $0^+ \to 0^+$ (Hardy) | $\beta$ decay | | .csv |
 | Superallowed, $0^+ \to 0^+$ (Deutsch) | $\beta$ decay | | .csv |
 | Superallowed, $0^+ \to 0^+$ (Bryman) | $\beta$ decay | | .csv |
@@ -61,7 +61,7 @@
 | DELPHI | Collider | | .csv |
 | L3 | Collider | | .csv |
 | ATLAS (2 prompt $\ell$ + $j$) | Collider | | .csv |
-| ATLAS (displaced $W$) | Collider | | .csv |
+| ATLAS (displaced $W$) | Collider | [2503.16213](https://arxiv.org/abs/2503.16213) | .csv |
 | ATLAS (1 prompt $\ell$ + 2 displaced $\ell$) | Collider | | .csv |
 | ATLAS (3 prompt $\ell$) | Collider | | .csv |
 | ATLAS ($t\bar{t}$) | Collider | | .csv |
