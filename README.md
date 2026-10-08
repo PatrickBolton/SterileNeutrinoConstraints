@@ -14,11 +14,11 @@ For any queries, comments or additional constraints that you think should be inc
 
 ## Model and Statistical Assumptions
 
-We consider the phenomenological scenario of a massive **Majorana** fermion $N$ with a **single flavour** active-sterile mixing. For an arbitrary number of sterile states, the relation
+We consider the phenomenological scenario of a massive **Majorana** fermion $N$ with a **single flavour** active-sterile mixing. For an arbitrary number of sterile states, we have the relation
 
-$$ \sum_i^3 U_{\alpha i}^2 m_i + U_{\alpha N}^2 m_N + \ldots = 0 , \quad(1)$$
+$$ \sum_i^3 U_{\alpha i}^2 m_i + U_{\alpha N}^2 m_N + \ldots = 0 . \quad(1)$$
 
-holds. A single $N$ cannot generate masses for two of the light neutrinos and therefore is incompatible with neutrino oscillation data. Nevertheless, it provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model. 
+A single $N$ cannot generate masses for two of the light neutrinos and therefore is incompatible with neutrino oscillation data. Nevertheless, it provides a useful benchmark for experimental searches, and the bounds can be rescaled appropriately in the context of a specific neutrino mass model. 
 
 We make the additional clarifications:
 
@@ -26,43 +26,41 @@ We make the additional clarifications:
 
 For the limits and sensitivities presented here, we have taken the bounds from an extremely wide array of experimental and theory papers, often using slightly different model assumptions, statistical methods, and confidence levels (CLs). We make no attempt to standardise the limits, and simply show the bound presented in each paper.
 
-### Seesaw line
-
-In the following plots, we show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. (1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and thus
-
-$$|U_{\alpha N}|^2 = \frac{m_3}{m_3 + m_N}.$$
-
-In the plots below, we show this relation for $m_3 = 0.05~\text{eV}$ as a dashed black line.
-
 ### Active-sterile neutrino oscillations
 
-Bounds from active-sterile oscillation searches are often given in terms of $\Delta m_{41}^2 = m_4^2 - m_1^2$ and $\sin^2 2\theta_{i4}$, for $i = 1,2,3$. To show these bounds, we assume the normal ordering of neutrino masses ($m_1 < m_2 < m_3$) and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined as
+Bounds from active-sterile oscillation searches are often given in terms of $\Delta m_{41}^2 = m_4^2 - m_1^2$ and $\sin^2 2\theta_{i4}$, for $i = 1,2,3$. To show these bounds, we assume the normal ordering of neutrino masses ($m_1 < m_2 < m_3$) and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined by
 
 $$m_N = \sqrt{\Delta m_{41}^2} , \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4} ,$$
 
 respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$. Note that $m_N > m_{2,3}$ is not strictly required in the model, and we consider $m_N < m_{2,3}$ in the plots below.
 
+### Seesaw line
+
+We show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. (1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and thus
+
+$$|U_{\alpha N}|^2 = \frac{m_3}{m_3 + m_N}.$$
+
+In the plots below, we show this relation for $m_3 = 0.05~\text{eV}$ as a dashed black line.
+
 ### Neutrinoless double beta decay
 
-Below, we show the bound from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ at the KamLAND-Zen experiment, setting the lower bound $T_{1/2}^{0\nu} > 3.8 \times 10^{26}~\text{yr}$ at 90\% CL [[13](#ref-13)]. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
+We show the bound from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ at the KamLAND-Zen experiment, setting the lower bound $T_{1/2}^{0\nu} > 3.8 \times 10^{26}~\text{yr}$ at 90\% CL [[13](#ref-13)]. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
 
 $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu + U_{eN}^2 m_N A_N(m_N)\Big|^2 ,$$
 
 where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[14](#ref-14)]. 
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}< T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28}~\text{yr} < T_{1/2}^{0\nu} < 2.5 \times 10^{29}~\text{yr}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
 
 ## Electron Mixing
 
-<!-- ### [**Electron mixing**](docs/electron_mixing) -->
+[<p align="right"><img src="plots/UeNsq_constraints.png" width="300"></p>](docs/electron_mixing.md)
+[<p align="right"><img align="center" src="plots/UeNsq_future.png" width="300"></p>](docs/electron_mixing.md)
 
 Data files\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
-[<p align="center"><img src="plots/UeNsq_constraints.png" width="700"></p>](docs/electron_mixing.md)
-
-[<p align="center"><img align="center" src="plots/UeNsq_future.png" width="700"></p>](docs/electron_mixing.md)
 
 ## Muon Mixing
 
