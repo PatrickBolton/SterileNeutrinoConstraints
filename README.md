@@ -54,12 +54,11 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 
 ---
 
-[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/electron_mixing.md)
-[<img align="right" width="400" src="plots/UeNsq_future.png">](docs/electron_mixing.md)
+[<img align="right" width="400" src="plots/DM_constraints.png">](docs/DM.md)
 
-### [Electron mixing](docs/electron_mixing.md)
+### [Dark Matter](docs/DM.md)
 
-[Data files](docs/electron_mixing.md)\
+[Data files](docs/DM.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
@@ -67,12 +66,25 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/muon_mixing.md)
-[<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/muon_mixing.md)
+[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/electron.md)
+[<img align="right" width="400" src="plots/UeNsq_future.png">](docs/electron.md)
 
-### [Muon mixing](docs/muon_mixing.md)
+### [Electron mixing](docs/electron.md)
 
-[Data files](docs/muon_mixing.md)\
+[Data files](docs/electron.md)\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+---
+
+[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/muon.md)
+[<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/muon.md)
+
+### [Muon mixing](docs/muon.md)
+
+[Data files](docs/muon.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
 
@@ -80,12 +92,12 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/tau_mixing.md)
-[<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/tau_mixing.md)
+[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/tau.md)
+[<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/tau.md)
 
-### [Tau mixing](docs/tau_mixing.md)
+### [Tau mixing](docs/tau.md)
 
-[Data files](docs/tau_mixing.md)\
+[Data files](docs/tau.md)\
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
 
