@@ -1,8 +1,8 @@
 # Alvey et al. model-independent Pauli exclusion bound
 # See https://arxiv.org/pdf/2010.03572
 # log10(mN/keV), log10(sin^2(2θ))
--8, -30
+-8, -40
 -8, -5
 -6.8860566477, -5
--6.8860566477, -30
--8, -30
+-6.8860566477, -40
+-8, -40

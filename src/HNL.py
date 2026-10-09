@@ -137,7 +137,7 @@ def N_0vbb_bound(mN, Thalf):
 
     return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0)) * np.sqrt(G01 * Thalf)))
     
-def plot(m_min=1e-14, m_max=1e7, U_min=1e-16, U_max=1,
+def plot(m_min=1e-14, m_max=1e5, U_min=1e-15, U_max=1, n_x_ticks = 100, n_y_ticks = 100,
          lim_type = 'current', seesaw = True, v_masses = True, DM_window = True, svfg = True,
          current_constraints = {}, 
          current_xray_constraints = {}, 
@@ -148,9 +148,9 @@ def plot(m_min=1e-14, m_max=1e7, U_min=1e-16, U_max=1,
     fig, ax = plt.subplots()
 
     if seesaw == True:
-        seesaw_bound = 0.05e-9/(0.05e-9 + 10**np.arange(-16, 6.2, 0.2))
-        ax.plot(10**np.arange(-16, 6.2, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
-        plt.text(10**(5.0), 10**(-15.0), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
+        seesaw_bound = 0.05e-9/(0.05e-9 + 10**np.arange(-16, 10, 0.2))
+        ax.plot(10**np.arange(-16, 10, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
+        plt.text(10**(3.5), 10**(-13.5), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
 
     if v_masses == True:
         m1NO = 0
@@ -158,15 +158,15 @@ def plot(m_min=1e-14, m_max=1e7, U_min=1e-16, U_max=1,
         m3NO = np.sqrt(m2NO**2 + 2.521e-3) * 1e-9
         plt.loglog([m2NO,m2NO], [1e-17,10], lw=1, ls='--', color='grey')
         plt.loglog([m3NO,m3NO], [1e-17,10], lw=1, ls='--', color='grey')
-        plt.text(10**(-11.5), 10**(-15.7), r'$m_2^{\mathrm{min}} = \sqrt{\Delta m_\odot^2}$',fontsize=13,rotation=90,color='k')
-        plt.text(10**(-10.73), 10**(-15.7), r'$m_3^{\mathrm{min}} = \sqrt{\Delta m_\odot^2 + \Delta m_{\mathrm{atm}}^2}$',fontsize=13,rotation=90,color='k')
+        plt.text(10**(-11.5), 10**(-14.6), r'$m_2^{\mathrm{min}} = \sqrt{\Delta m_\odot^2}$',fontsize=13,rotation=90,color='k')
+        plt.text(10**(-10.73), 10**(-14.6), r'$m_3^{\mathrm{min}} = \sqrt{\Delta m_\odot^2 + \Delta m_{\mathrm{atm}}^2}$',fontsize=13,rotation=90,color='k')
 
     if DM_window == True:
         plt.loglog([1e-8,1e-8,7.4e-4,7.4e-4], [1e-17,1e-5,1e-5,1e-17], lw=0.5, ls='--', color='grey')
         plt.loglog(np.logspace(-4.695,-3.1307682803,100), 
                    N_DarkMatter_lifetime(np.logspace(-4.695,-3.1307682803,100)), lw=0.5, ls='--', color='blue')
         plt.text(10**(-4.2), 10**(-8.4), r'$\tau_N < t_U$',fontsize=13,rotation=-70,color='blue')
-        plt.text(10**(-8.35), 10**(-15.7), r'$N$ Dark Matter',fontsize=13,rotation=90,color='k')
+        plt.text(10**(-8.35), 10**(-14.6), r'$N$ Dark Matter',fontsize=13,rotation=90,color='k')
 
     for name, con in current_constraints.items():
 
@@ -335,15 +335,15 @@ def plot(m_min=1e-14, m_max=1e7, U_min=1e-16, U_max=1,
     ax.set_xlim(m_min, m_max)
     ax.set_ylim(U_min, U_max)
     # Major ticks: one per decade, labeled as 10^n
-    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=22))
+    ax.xaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=n_x_ticks))
     ax.xaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
-    ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=22))
+    ax.xaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=100))
     ax.xaxis.set_minor_formatter(ticker.NullFormatter())
 
     # same for y-axis
-    ax.yaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=17))
+    ax.yaxis.set_major_locator(ticker.LogLocator(base=10.0, numticks=n_y_ticks))
     ax.yaxis.set_major_formatter(ticker.LogFormatterMathtext(base=10.0))
-    ax.yaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=17))
+    ax.yaxis.set_minor_locator(ticker.LogLocator(base=10.0, subs=[i/10 for i in range(1,10)], numticks=100))
     ax.yaxis.set_minor_formatter(ticker.NullFormatter())
 
     # Ticks on all four sides, mirrored, pointing inward

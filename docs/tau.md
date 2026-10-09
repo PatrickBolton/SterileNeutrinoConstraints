@@ -6,32 +6,32 @@
 
 <div align="center">
 
-| Experiment/Analysis    | Type    |Reference      | Data |
-|:--------|:--------|:---------:|------:|
-| Solar $\nu$ | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv |
-| Super-K | Oscillations | | .csv |
-| Super-K + MACRO | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv |
-| KM3NeT/ORCA | Oscillations | | .csv |
-| IceCube DeepCore | Oscillations | | .csv |
-| Borexino | Decay in flight | | .csv |
-| SOHO | Decay in flight | | .csv |
-| NOMAD | Fixed target | | .csv |
-| BEBC | Fixed target | | .csv |
-| CHARM | Fixed target | | .csv |
-| ArgoNeuT | Fixed target | | .csv |
-| Belle | Collider | | .csv |
-| BaBar | Collider | | .csv |
-| DELPHI | Collider | [Z.Phys.C 74 (1997) 57-71](https://doi.org/10.1007/s002880050370) | .csv |
-| L3 | Collider | [Phys.Lett.B 295 (1992) 371-382](https://doi.org/10.1016/0370-2693(92)91579-X) | .csv |
-| L3 (high mass)| Collider | [hep-ex/0107014](https://arxiv.org/abs/hep-ex/0107014) | .csv |
-| Global non-unitarity fit | Unitarity | [2306.01040](https://arxiv.org/abs/2306.01040) | .csv |
-| SNe cooling | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv |
-| SNe explosion | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv |
-| SNe 511 keV | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv |
-| SNe $\gamma$-ray | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv |
-| SNe diffuse $\gamma$ | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv |
-| X-ray bounds | Astrophysics | Go to [DM page](../docs/DM.md)| - |
-| Cosmological bounds | Cosmology | Go to [DM page](../docs/DM.md) | - |
+| Experiment/Analysis | Type | Reference | Data | Shown |
+|:-:|:-:|:-:|:-:|:-:|
+| SNO + Super-K + SAGE/Gallex/GNO + Homestake + KamLAND | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | ☑ |
+| Super-K | Oscillations | | .csv | ☑ |
+| Super-K + MACRO | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | ☑ |
+| KM3NeT/ORCA | Oscillations | | .csv | ☑ |
+| IceCube DeepCore | Oscillations | | .csv | ☑ |
+| Borexino | Decay in flight | | .csv | ☑ |
+| SOHO | Decay in flight | | .csv | ☑ |
+| NOMAD | Fixed target | | .csv | ☑ |
+| BEBC | Fixed target | | .csv | ☑ |
+| CHARM | Fixed target | | .csv | ☑ |
+| ArgoNeuT | Fixed target | | .csv | ☑ |
+| Belle | Collider | | .csv | ☑ |
+| BaBar | Collider | | .csv | ☑ |
+| DELPHI | Collider | [Z.Phys.C 74 (1997) 57-71](https://doi.org/10.1007/s002880050370) | .csv | ☑ |
+| L3 | Collider | [Phys.Lett.B 295 (1992) 371-382](https://doi.org/10.1016/0370-2693(92)91579-X) | .csv | ☑ |
+| L3 (high mass)| Collider | [hep-ex/0107014](https://arxiv.org/abs/hep-ex/0107014) | .csv | ☑ |
+| Global non-unitarity fit | Unitarity | [2306.01040](https://arxiv.org/abs/2306.01040) | .csv | ☑ |
+| SNe cooling | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv | ☑ |
+| SNe explosion | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv | ☑ |
+| SNe 511 keV | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv | ☑ |
+| SNe $\gamma$-ray | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv | ☑ |
+| SNe diffuse $\gamma$ | Astrophysics | [2311.00033](https://arxiv.org/abs/2311.00033) | .csv | ☑ |
+| X-ray bounds | Astrophysics | Go to [DM page](../docs/DM.md)| - | ☑ |
+| Cosmological bounds | Cosmology | Go to [DM page](../docs/DM.md) | - | ☑ |
 
 </div>
 

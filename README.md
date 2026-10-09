@@ -4,7 +4,7 @@ This repository lists the current terrestrial, astrophysical and cosmological co
 
 $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N + \ldots,$$
 
-where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** (HNL) for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. In ``data``, Limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 10~\text{PeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino/HNL parameter space, see [[2](#ref-2)-[12](#ref-12)].
+where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** (HNL) for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. In ``data``, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 100~\text{TeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino parameter space, see [[2](#ref-2)-[12](#ref-12)].
 
 For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``docs`` and ``refs``.
 
@@ -24,15 +24,15 @@ We make the additional clarifications:
 
 ### Confidence levels
 
-For the limits and sensitivities presented here, we have taken the bounds from an extremely wide array of experimental and theory papers, often using slightly different model assumptions, statistical methods, and confidence levels (CLs). We make no attempt to standardise the limits, and simply show the bound presented in each paper.
+For the limits and sensitivities presented here, we have taken the bounds from an extremely wide array of experimental and theory papers, often using slightly different statistical methods and confidence levels (CLs). We make no attempt to standardise the limits, and simply show the bound presented in each paper.
 
 ### Active-sterile neutrino oscillations
 
-Bounds from active-sterile oscillation searches are often given in terms of $\Delta m_{41}^2 = m_4^2 - m_1^2$ and $\sin^2 2\theta_{i4}$, for $i = 1,2,3$. To show these bounds, we assume the normal ordering of neutrino masses ($m_1 < m_2 < m_3$) and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined by
+Bounds from active-sterile oscillation searches are often given in terms of $\Delta m_{41}^2 = m_4^2 - m_1^2$ and $\sin^2 2\theta_{i4}$ for $i = 1,2,3$. To show these bounds, we assume the normal ordering of neutrino masses ($m_1 < m_2 < m_3$) and take the lightest neutrino to be massless, $m_1 = 0$. Thus, the sterile neutrino mass and active-sterile mixing are determined by
 
-$$m_N = \sqrt{\Delta m_{41}^2} , \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}} \approx \frac{\sin^22\theta_{\alpha 4}}{4} ,$$
+$$m_N = \sqrt{\Delta m_{41}^2} , \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4} = \frac{1}{2}- \frac{1}{2}\sqrt{1-\sin^22\theta_{\alpha 4}},$$
 
-respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$. Note that $m_N > m_{2,3}$ is not strictly required in the model, and we consider $m_N < m_{2,3}$ in the plots below.
+respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$. Note that the above relation between $\sin^2\theta_{\alpha 4}$ and $\sin^2 2\theta_{\alpha 4}$ is only valid for $\theta_{\alpha 4}\leq \pi/4$, and thus we only show these bounds for $|U_{\alpha N}|^2 \leq 1/2$. The scenario $m_N > m_{2,3}$ is not strictly required in the model, and we also consider $m_N < m_{2,3}$ in the plots below.
 
 ### Seesaw line
 
@@ -69,11 +69,11 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 [<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/electron.md)
 [<img align="right" width="400" src="plots/UeNsq_future.png">](docs/electron.md)
 
-### [<span style="color:lightblue">Electron mixing</span>](docs/electron.md)  - $|U_{eN}|^2$
+### [Electron mixing](docs/electron.md)  - $|U_{eN}|^2$
 
-[<span style="color:lightblue">Data files</span>](docs/electron.md)\
-Current limits ([<span style="color:lightblue">pdf</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [<span style="color:lightblue">png</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
-Future sensitivities ([<span style="color:lightblue">pdf</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [<span style="color:lightblue">png</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
+[Data files](docs/electron.md)\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -82,11 +82,11 @@ Future sensitivities ([<span style="color:lightblue">pdf</span>](https://raw.git
 [<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/muon.md)
 [<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/muon.md)
 
-### [<span style="color:palegoldenrod">Muon mixing</span>](docs/muon.md) - $|U_{\mu N}|^2$
+### [Muon mixing](docs/muon.md) - $|U_{\mu N}|^2$
 
-[<span style="color:palegoldenrod">Data files</span>](docs/muon.md)\
-Current limits ([<span style="color:palegoldenrod">pdf</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [<span style="color:palegoldenrod">png</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
-Future sensitivities ([<span style="color:palegoldenrod">pdf</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [<span style="color:palegoldenrod">png</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
+[Data files](docs/muon.md)\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UmuNsq_future.png))
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -95,11 +95,11 @@ Future sensitivities ([<span style="color:palegoldenrod">pdf</span>](https://raw
 [<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/tau.md)
 [<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/tau.md)
 
-### [<span style="color:mediumaquamarine">Tau mixing</span>](docs/tau.md) - $|U_{\tau N}|^2$
+### [Tau mixing](docs/tau.md) - $|U_{\tau N}|^2$
 
-[<span style="color:mediumaquamarine">Data files</span>](docs/tau.md)\
-Current limits ([<span style="color:mediumaquamarine">pdf</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [<span style="color:mediumaquamarine">png</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
-Future sensitivities ([<span style="color:mediumaquamarine">pdf</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [<span style="color:mediumaquamarine">png</span>](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
+[Data files](docs/tau.md)\
+Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_constraints.png))\
+Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UtauNsq_future.png))
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
