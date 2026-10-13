@@ -8,7 +8,7 @@
 
 | Experiment/Analysis | Type | Reference | Data | Shown |
 |:-:|:-:|:-:|:-:|:-:|
-| SNO + Super-K + SAGE/Gallex/GNO + Homestake + KamLAND | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | |
+| SNO + Super-K + SAGE/Gallex/GNO + Homestake + KamLAND | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/current/Solar_Cirelli.csv) | |
 | pp (Borexino) | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
 | $^7\text{Be}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
 | $^8\text{B}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |

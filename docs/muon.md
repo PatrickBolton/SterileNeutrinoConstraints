@@ -8,7 +8,7 @@
 
 | Experiment/Analysis | Type | Reference | Data | Shown |
 |:-:|:-:|:-:|:-:|:-:|
-| SNO + Super-K + SAGE/Gallex/GNO + Homestake + KamLAND | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | ☑ |
+| SNO + Super-K + SAGE/Gallex/GNO + Homestake + KamLAND | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | |
 | pp (Borexino) | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
 | $^7\text{Be}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
 | $^8\text{B}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
@@ -27,7 +27,7 @@
 | PIENU | Lepton/meson decays | [1904.03269](https://arxiv.org/abs/1904.03269) | .csv | ☑ |
 | NA62 (kaon decay) | Lepton/meson decays | [2101.12304](https://arxiv.org/abs/2101.12304) | .csv | ☑ |
 | Super-K (Coloma) | Decay in flight | [1911.09129](https://arxiv.org/abs/1911.09129) | .csv | ☑ |
-| PS191 (Collab.) | Fixed target | [Phys.Lett.B 203 (1988) 332-334](https://doi.org/10.1016/0370-2693(88)90563-1) | .csv | ☑ |
+| PS191 (Collab.) | Fixed target | [Phys.Lett.B 203 (1988) 332-334](https://doi.org/10.1016/0370-2693(88)90563-1) | .csv | |
 | PS191 (Gorbunov) | Fixed target | [2112.06800](https://arxiv.org/abs/2112.06800) | .csv | ☑ |
 | E949 | Fixed target | [1411.3963](https://arxiv.org/abs/1411.3963) | .csv | ☑ |
 | T2K | Fixed target | [1902.07598](https://arxiv.org/abs/1902.07598) | .csv | ☑ |
