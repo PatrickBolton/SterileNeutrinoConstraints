@@ -125,10 +125,10 @@
 | DUNE (Ballett) | Fixed target | [1905.00284](https://arxiv.org/abs/1905.00284) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/DUNE_Ballett.csv) | ☑ |
 | NA62 | Fixed target | [1801.04207](https://arxiv.org/abs/1801.04207) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/NA62.csv) | ☑ |
 | SHiP | Fixed target | [1811.00930](https://arxiv.org/abs/1811.00930) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/SHiP.csv) | ☑ |
-| FASER | Fixed target | [1801.08947](https://arxiv.org/abs/1801.08947) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/FASER_disp.csv) | ☑ |
-| AL3X | Fixed target | [1811.01995](https://arxiv.org/abs/1811.01995) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/AL3X_disp.csv) | ☑ |
-| MATHUSLA | Fixed target | [1806.07396](https://arxiv.org/abs/1806.07396) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/MATHUSLA_disp.csv) | ☑ |
-| ANUBIS | Fixed target | [2001.04750](https://arxiv.org/abs/2001.04750) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/ANUBIS.csv) | ☑ |
+| FASER | Collider | [1801.08947](https://arxiv.org/abs/1801.08947) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/FASER_disp.csv) | ☑ |
+| AL3X | Collider | [1811.01995](https://arxiv.org/abs/1811.01995) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/AL3X_disp.csv) | ☑ |
+| MATHUSLA | Collider | [1806.07396](https://arxiv.org/abs/1806.07396) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/MATHUSLA_disp.csv) | ☑ |
+| ANUBIS | Collider | [2001.04750](https://arxiv.org/abs/2001.04750) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/ANUBIS.csv) | ☑ |
 | LHC displaced | Collider | [1904.01020](https://arxiv.org/abs/1904.01020) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/lept_disp.csv) | |
 | ATLAS displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/ATLAS_disp.csv) | ☑ |
 | CMS displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/CMS_disp.csv) | ☑ |

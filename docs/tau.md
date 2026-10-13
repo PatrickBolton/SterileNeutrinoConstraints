@@ -60,7 +60,7 @@
 | DUNE (Ballett) | Fixed target | [1905.00284](https://arxiv.org/abs/1905.00284) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/DUNE_Ballett_tau.csv) | ☑ |
 | NA62 | Fixed target | [1801.04207](https://arxiv.org/abs/1801.04207) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/NA62_tau.csv) | ☑ |
 | SHiP | Fixed target | [1811.00930](https://arxiv.org/abs/1811.00930) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/SHiP_tau.csv) | ☑ |
-| MATHUSLA | Fixed target | [1806.07396](https://arxiv.org/abs/1806.07396) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/MATHUSLA_disp_tau.csv) | ☑ |
+| MATHUSLA | Collider | [1806.07396](https://arxiv.org/abs/1806.07396) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/MATHUSLA_disp_tau.csv) | ☑ |
 | ATLAS displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/ATLAS_disp_tau.csv) | ☑ |
 | CMS displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/CMS_disp_tau.csv) | ☑ |
 | LHCb displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UtauNsq/current/LHCb_disp_tau.csv) | ☑ |
