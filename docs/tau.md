@@ -17,7 +17,7 @@
 | Super-K + MACRO | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | ☑ |
 | KM3NeT/ORCA | Oscillations | [2510.07360](https://arxiv.org/abs/2510.07360) | .csv | ☑ |
 | IceCube DeepCore | Oscillations | [2407.01314](https://arxiv.org/abs/2407.01314) | .csv | ☑ |
-| $\tau$ universality | Decays | [1702.04335](https://arxiv.org/abs/1702.04335) | .csv | ☑ |
+| $\tau$ universality | Lepton/meson decays | [1702.04335](https://arxiv.org/abs/1702.04335) | .csv | ☑ |
 | Borexino | Decay in flight | [2010.09523](https://arxiv.org/abs/2010.09523) | .csv | ☑ |
 | SOHO | Decay in flight | [2608.19319](https://arxiv.org/abs/2608.19319) | .csv | ☑ |
 | NOMAD | Fixed target | [hep-ex/0101041](https://arxiv.org/abs/hep-ex/0101041) | .csv | ☑ |

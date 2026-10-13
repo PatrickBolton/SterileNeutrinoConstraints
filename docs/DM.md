@@ -25,10 +25,18 @@
 | Lyman-$\alpha$ | Astrophysics | [1706.03118](https://arxiv.org/abs/1706.03118) | .csv | ☑ |
 | Dwarf Spheroidal Galaxies (phase space) | Astrophysics | [2010.03572](ttps://arxiv.org/abs/2010.03572) | .csv | ☑ |s  ☑ |
 | Pauli Exclusion | Astrophysics | [2010.03572](https://arxiv.org/abs/2010.03572) | .csv | ☑ |
+| $N_{\mathrm{eff}} + \sum m_\nu$ (Mirizzi)  | Cosmology | [1303.5368](https://arxiv.org/abs/1303.5368) | .csv ($e$), .csv ($\mu$), .csv ($\tau$) | ☑ |
+| $N_{\mathrm{eff}} + \sum m_\nu$ (Bridle)  | Cosmology | [1607.00032](https://arxiv.org/abs/1607.00032) | .csv ($\mu$)| ☑ |
+| Background Cosmology (CMB + BAO + $H_0$) | Cosmology | [1408.1956](https://arxiv.org/abs/1408.1956) | .csv | ☑ |
+| Reionization | Cosmology | [1308.2578](https://arxiv.org/abs/1308.2578), [1408.1956](https://arxiv.org/pdf/1408.1956) | .csv ($e$), .csv ($\mu,\tau$) | ☑ |
+| CMB energy injection | Cosmology | [1610.06933](https://arxiv.org/abs/1610.06933), [2410.07343](https://arxiv.org/abs/2410.07343) | .csv ($e$), .csv ($\mu$), .csv ($\tau$) | ☑ |
+| BBN | Cosmology | [2410.07343](https://arxiv.org/abs/2410.07343) | .csv ($e$), .csv ($\mu$), .csv ($\tau$) | ☑ |
 
 </div>
 
 ## Future sensitivities
+
+<p align="center"><img src="../plots/DM_future.png" width="700"></p>
 
 <div align="center">
 

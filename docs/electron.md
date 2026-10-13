@@ -44,13 +44,13 @@
 | Superallowed, $0^+ \to 0^+$ (Deutsch) | $\beta$ decay | [Nucl.Phys.A 518 (1990) 149-155](https://doi.org/10.1016/0375-9474(90)90541-S) | .csv | ☑ |
 | Superallowed, $0^+ \to 0^+$ (Bryman) | $\beta$ decay | [1904.06787](https://arxiv.org/abs/1904.06787), [1909.11198](https://arxiv.org/abs/1909.11198) | .csv | ☑ |
 | KamLAND-Zen | $0\nu\beta\beta$ decay | [2406.11438](https://arxiv.org/abs/2406.11438) | - | ☑ |
-| TRIUMF | Meson decay | [Phys.Rev.D 46 (1992) R885-R887](https://doi.org/10.1103/PhysRevD.46.R885) | .csv | ☑ |
-| PIENU | Meson decay | [1712.03275](https://arxiv.org/abs/1712.03275) | .csv | ☑ |
-| NA62 (pion decay) | Meson decay | [2507.07345](https://arxiv.org/abs/2507.07345) | .csv | ☑ |
-| Pion universality (Bryman) | Meson decay | [1904.06787](https://arxiv.org/abs/1904.06787), [1909.11198](https://arxiv.org/abs/1909.11198) | .csv | ☑ |
-| NA62 (kaon decay) | Meson decay | [2005.09575](https://arxiv.org/abs/2005.09575) | .csv | ☑ |
-| Kaon universality (Bryman) | Meson decay | [1904.06787](https://arxiv.org/abs/1904.06787), [1909.11198](https://arxiv.org/abs/1909.11198) | .csv | ☑ |
-| LNV decays (Abada) | Meson decay | [1712.03984](https://arxiv.org/abs/1712.03984) | .csv | ☑ |
+| TRIUMF | Lepton/meson decays | [Phys.Rev.D 46 (1992) R885-R887](https://doi.org/10.1103/PhysRevD.46.R885) | .csv | ☑ |
+| PIENU | Lepton/meson decays | [1712.03275](https://arxiv.org/abs/1712.03275) | .csv | ☑ |
+| NA62 (pion decay) | Lepton/meson decays | [2507.07345](https://arxiv.org/abs/2507.07345) | .csv | ☑ |
+| Pion universality (Bryman) | Lepton/meson decays | [1904.06787](https://arxiv.org/abs/1904.06787), [1909.11198](https://arxiv.org/abs/1909.11198) | .csv | ☑ |
+| NA62 (kaon decay) | Lepton/meson decays | [2005.09575](https://arxiv.org/abs/2005.09575) | .csv | ☑ |
+| Kaon universality (Bryman) | Lepton/meson decays | [1904.06787](https://arxiv.org/abs/1904.06787), [1909.11198](https://arxiv.org/abs/1909.11198) | .csv | ☑ |
+| LNV decays (Abada) | Lepton/meson decays | [1712.03984](https://arxiv.org/abs/1712.03984) | .csv | ☑ |
 | Rovno (Derbin) | Decay in flight | [JETP Lett. 57 (1993) 768-772](http://jetpletters.ru/ps/1202/article_18156.shtml) | .csv | ☑ |
 | Rovno (Kopeikin) | Decay in flight | [JETP Lett. 51 (1990) 86-89](http://jetpletters.ru/ps/1136/article_17190.shtml) | .csv | ☑ |
 | Gösgen (Vogel) | Decay in flight | [Phys.Rev.D 30 (1984) 1505](https://doi.org/10.1103/PhysRevD.30.1505) | .csv | ☑ |
@@ -117,7 +117,7 @@
 | $^{7}\text{Be}$ (BeEST Phase-IV) | $\beta$ decay | [Talk at Lake Louise Winter Institute 2023](https://indico.global/event/481/contributions/13493/)  | .csv | ☑ |
 | HUNTER | $\beta$ decay | [Quantum Sci.Technol. 6 (2021) 2, 024008](https://doi.org/10.1088/2058-9565/abdb9b) | .csv | ☑ |
 | LiquidO | Decay in flight | [2506.04099](https://arxiv.org/abs/2506.04099) | .csv | ☑ |
-| PIONEER | Meson decay | [2203.01981](https://arxiv.org/abs/2203.01981) | .csv | ☑ |
+| PIONEER | Lepton/meson decays | [2203.01981](https://arxiv.org/abs/2203.01981) | .csv | ☑ |
 | DUNE (Krasnov) | Fixed target | [1902.06099](https://arxiv.org/abs/1902.06099) | .csv | ☑ |
 | DUNE (Ballett) | Fixed target | [1905.00284](https://arxiv.org/abs/1905.00284) | .csv | ☑ |
 | NA62 | Fixed target | [1801.04207](https://arxiv.org/abs/1801.04207) | .csv | ☑ |

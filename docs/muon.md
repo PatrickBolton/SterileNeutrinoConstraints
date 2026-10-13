@@ -22,9 +22,10 @@
 | KM3NeT/ORCA | Oscillations |  [2510.07360](https://arxiv.org/abs/2510.07360) |  | ☑ |
 | IceCube/DeepCore | Oscillations |  [2405.08070](https://arxiv.org/abs/2405.08070) |  | ☑ |
 | Super-K | Oscillations |  [1410.2008](https://arxiv.org/abs/1410.2008) |  | ☑ |
-| PSI | Meson decay |  [Phys.Rev.D 36 (1987) 2624](https://doi.org/10.1103/PhysRevD.36.2624) |  | ☑ |
-| PIENU | Meson decay | [1904.03269](https://arxiv.org/abs/1904.03269) | .csv | ☑ |
-| NA62 (kaon decay) | Meson decay | [2101.12304](https://arxiv.org/abs/2101.12304) | .csv | ☑ |
+| $\mu$ spectrum | Lepton/meson decays |  [Phys.Rev.D 24 (1981) 1275](https://doi.org/10.1103/PhysRevD.24.1275) |  | ☑ |
+| PSI | Lepton/meson decays |  [Phys.Rev.D 36 (1987) 2624](https://doi.org/10.1103/PhysRevD.36.2624) |  | ☑ |
+| PIENU | Lepton/meson decays | [1904.03269](https://arxiv.org/abs/1904.03269) | .csv | ☑ |
+| NA62 (kaon decay) | Lepton/meson decays | [2101.12304](https://arxiv.org/abs/2101.12304) | .csv | ☑ |
 | Super-K (Coloma) | Decay in flight | [1911.09129](https://arxiv.org/abs/1911.09129) | .csv | ☑ |
 | PS191 (Collab.) | Fixed target | [Phys.Lett.B 203 (1988) 332-334](https://doi.org/10.1016/0370-2693(88)90563-1) | .csv | ☑ |
 | PS191 (Gorbunov) | Fixed target | [2112.06800](https://arxiv.org/abs/2112.06800) | .csv | ☑ |
