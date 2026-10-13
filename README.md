@@ -56,7 +56,8 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 
 ---
 
-[<img align="right" width="400" src="plots/DM_constraints.png">](docs/DM.md)
+[<img align="right" width="500" src="plots/DM_constraints.png">](docs/DM.md)
+[<img align="right" width="500" src="plots/DM_future.png">](docs/DM.md)
 
 ### [Sterile Neutrino Dark Matter](docs/DM.md)
 
@@ -68,8 +69,8 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UeNsq_constraints.png">](docs/electron.md)
-[<img align="right" width="400" src="plots/UeNsq_future.png">](docs/electron.md)
+[<img align="right" width="500" src="plots/UeNsq_constraints.png">](docs/electron.md)
+[<img align="right" width="500" src="plots/UeNsq_future.png">](docs/electron.md)
 
 ### [Electron mixing](docs/electron.md)  - $|U_{eN}|^2$
 
@@ -81,8 +82,8 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UmuNsq_constraints.png">](docs/muon.md)
-[<img align="right" width="400" src="plots/UmuNsq_future.png">](docs/muon.md)
+[<img align="right" width="500" src="plots/UmuNsq_constraints.png">](docs/muon.md)
+[<img align="right" width="500" src="plots/UmuNsq_future.png">](docs/muon.md)
 
 ### [Muon mixing](docs/muon.md) - $|U_{\mu N}|^2$
 
@@ -94,8 +95,8 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 
 ---
 
-[<img align="right" width="400" src="plots/UtauNsq_constraints.png">](docs/tau.md)
-[<img align="right" width="400" src="plots/UtauNsq_future.png">](docs/tau.md)
+[<img align="right" width="500" src="plots/UtauNsq_constraints.png">](docs/tau.md)
+[<img align="right" width="500" src="plots/UtauNsq_future.png">](docs/tau.md)
 
 ### [Tau mixing](docs/tau.md) - $|U_{\tau N}|^2$
 

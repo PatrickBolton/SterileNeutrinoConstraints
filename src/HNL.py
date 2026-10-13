@@ -401,7 +401,7 @@ def N_0vbb_bound(mN, Thalf):
 
     return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0)) * np.sqrt(G01 * Thalf)))
     
-def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_ticks = 100,
+def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_ticks = 100, plot_type = 'wide',
          lim_type = 'current', seesaw = True, v_masses = True, DM_window = True, DM_lifetime = False, svfg = True,
          current_constraints = {}, 
          current_xray_constraints = {}, 
@@ -590,16 +590,20 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
         xr = con['xr']
         yr = con['yr']
         xy = con['xy']
+
+        if con["data"] == False:
+            data = np.array([[0,0],[0,0]])
             
-        df = pd.read_csv(con["data"], sep=",", names = ["X", "Y"], comment = "#")
-        data = np.zeros((len(df),2))
-        for i in range(len(df.index)):
-            if xy == True:
-                data[i,0] = transform(df.iloc[i]['X'], xr)
-                data[i,1] = transform(df.iloc[i]['Y'], yr)
-            else:
-                data[i,0] = transform(df.iloc[i]['Y'], xr)
-                data[i,1] = transform(df.iloc[i]['X'], yr)
+        else:
+            df = pd.read_csv(con["data"], sep=",", names = ["X", "Y"], comment = "#")
+            data = np.zeros((len(df),2))
+            for i in range(len(df.index)):
+                if xy == True:
+                    data[i,0] = transform(df.iloc[i]['X'], xr)
+                    data[i,1] = transform(df.iloc[i]['Y'], yr)
+                else:
+                    data[i,0] = transform(df.iloc[i]['Y'], xr)
+                    data[i,1] = transform(df.iloc[i]['X'], yr)
 
         if lim_type == 'future':
             ll(data[:,0], data[:,1], lw=lw, ls=ls, color=color)
@@ -642,8 +646,16 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
 
     x0,x1 = np.log10(ax.get_xlim())
     y0,y1 = np.log10(ax.get_ylim())
-    ax.set_aspect(2*(x1-x0)/(1+np.sqrt(5))/(y1-y0))
-    fig.set_size_inches(15,15)
+
+    if plot_type == 'wide':
+        ratio = (1 + np.sqrt(5))/2
+        ax.set_aspect(((x1-x0)/(y1-y0))/ratio)
+        fig.set_size_inches(15,15)
+
+    if plot_type == 'tall':
+        ratio = 2/(1 + np.sqrt(5))
+        ax.set_aspect(((x1-x0)/(y1-y0))/ratio)
+        fig.set_size_inches(10,10)
 
     if svfg == True:
         if lim_type == 'current':

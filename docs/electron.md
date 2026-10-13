@@ -90,7 +90,7 @@
 | SNe (Shi) | Astrophysics | [hep-ph/9312247](https://arxiv.org/abs/hep-ph/9312247) | .csv | ☑ |
 | SNe (Abazajian) | Astrophysics | [astro-ph/0101524](https://arxiv.org/abs/astro-ph/0101524) | .csv | ☑ |
 | SNe (Nunokawa) | Astrophysics | [hep-ph/9702372](https://arxiv.org/abs/hep-ph/9702372) | .csv | ☑ |
-| SNe (Zhou) | Astrophysics | [1504.02729](https://arxiv.org/pdf/1504.02729) | .csv | ☑ |
+| SNe (Zhou) | Astrophysics | [1504.02729](https://arxiv.org/abs/1504.02729) | .csv | ☑ |
 | X-ray bounds | Astrophysics | Go to [DM page](../docs/DM.md)| - | ☑ |
 | Cosmological bounds | Cosmology | Go to [DM page](../docs/DM.md) | - | ☑ |
 
@@ -107,8 +107,8 @@
 |:-:|:-:|:-:|:-:|:-:|
 | DUNE (Berryman) | Oscillations | [1507.03986](https://arxiv.org/abs/1507.03986) | .csv | ☑ |
 | DUNE (Penedo) | Oscillations | [2207.02331](https://arxiv.org/abs/2207.02331) | .csv | ☑ |
-| DUNE (Parveen) | Oscillations | [2409.17878](https://arxiv.org/pdf/2409.17878) | .csv | ☑ |
-| DUNE (Hernández-García) | Oscillations | [2604.20951](https://arxiv.org/pdf/2604.20951) | .csv | ☑ |
+| DUNE (Parveen) | Oscillations | [2409.17878](https://arxiv.org/abs/2409.17878) | .csv | ☑ |
+| DUNE (Hernández-García) | Oscillations | [2604.20951](https://arxiv.org/abs/2604.20951) | .csv | ☑ |
 | $\nu$ STORM | Oscillations | [2509.08882](https://arxiv.org/abs/2509.08882) | .csv | ☑ |
 | JUNO | Oscillations |  | .csv | ☑ |
 | $^{3}\text{H}$ (KATRIN) | $\beta$ decay | [1810.06711](https://arxiv.org/abs/1810.06711) | .csv | ☑ |
@@ -125,7 +125,7 @@
 | FASER | Fixed target | [1801.08947](https://arxiv.org/abs/1801.08947) | .csv | ☑ |
 | AL3X | Fixed target | [1811.01995](https://arxiv.org/abs/1811.01995) | .csv | ☑ |
 | MATHUSLA | Fixed target | [1806.07396](https://arxiv.org/abs/1806.07396) | .csv | ☑ |
-| ANUBIS | Fixed target | [2001.04750](https://arxiv.org/pdf/2001.04750) | .csv | ☑ |
+| ANUBIS | Fixed target | [2001.04750](https://arxiv.org/abs/2001.04750) | .csv | ☑ |
 | ATLAS displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | .csv | ☑ |
 | CMS displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | .csv | ☑ |
 | LHCb displaced | Collider | [1903.06100](https://arxiv.org/abs/1903.06100) | .csv | ☑ |

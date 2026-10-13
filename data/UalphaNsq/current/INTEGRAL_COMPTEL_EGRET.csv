@@ -1,3 +1,7 @@
+# INTEGRAL + COMPTEL + EGRET gamma-ray bound
+# Fig. 3 in https://arxiv.org/pdf/1303.4685
+# Adapted from https://arxiv.org/pdf/0711.2906
+# log10(mN/GeV), log10(|UalphaN|^2)
 -4.696875763498321,-11.405974414782715
 -4.571221313236541,-11.97915867833339
 -4.361797229466908,-12.952828446837254

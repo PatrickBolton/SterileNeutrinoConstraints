@@ -21,6 +21,7 @@
 | COMPTEL Essig | Astrophysics | [1309.4091](https://arxiv.org/abs/1309.4091) | .csv | ☑ |
 | INTEGRAL Calore | Astrophysics | [2209.06299](https://arxiv.org/abs/2209.06299) | .csv | ☑ |
 | INTEGRAL Fischer | Astrophysics | [2211.06200](https://arxiv.org/abs/2211.06200) | .csv | ☑ |
+| INTEGRAL + COMPTEL + EGRET | Astrophysics | [0711.2906](https://arxiv.org/abs/0711.2906) | .csv | ☑ |
 | Lyman-$\alpha$ | Astrophysics | [1706.03118](https://arxiv.org/abs/1706.03118) | .csv | ☑ |
 | Dwarf Spheroidal Galaxies (phase space) | Astrophysics | [2010.03572](ttps://arxiv.org/abs/2010.03572) | .csv | ☑ |s  ☑ |
 | Pauli Exclusion | Astrophysics | [2010.03572](https://arxiv.org/abs/2010.03572) | .csv | ☑ |
@@ -33,9 +34,9 @@
 
 | Experiment/Analysis | Type | Reference | Data | Shown |
 |:-:|:-:|:-:|:-:|:-:|
-| ATHENA | X-ray | | .csv | ☑ |
-| eROSITA | X-ray | | .csv | ☑ |
-| eXTP | X-ray | | .csv | ☑ |
-| XRISM | X-ray | | .csv | ☑ |
+| ATHENA | X-ray | [1509.02758](https://arxiv.org/abs/1509.02758) | .csv | ☑ |
+| eROSITA | X-ray | [2103.13241](https://arxiv.org/abs/2103.13241) | .csv | ☑ |
+| eXTP | X-ray | [2001.07014](https://arxiv.org/abs/2001.07014) | .csv | ☑ |
+| XRISM | X-ray | [2305.17160](https://arxiv.org/abs/2305.17160) | .csv | ☑ |
 
 </div>
