@@ -9,21 +9,21 @@
 | Experiment/Analysis | Type | Reference | Data | Shown |
 |:-:|:-:|:-:|:-:|:-:|
 | SNO + Super-K + SAGE/Gallex/GNO + Homestake + KamLAND | Oscillations |  [hep-ph/0403158](https://arxiv.org/abs/hep-ph/0403158) | .csv | ☑ |
-| pp (Borexino) | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) |  | ☑ |
-| $^7\text{Be}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) |  | ☑ |
-| $^8\text{B}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) |  | ☑ |
-| pep + CNO (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) |  | ☑ |
-| KamLAND | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) |  | ☑ |
-| MINOS(+) | Oscillations |  [1710.06488](https://arxiv.org/abs/1710.06488) |  | ☑ |
-| IceCube | Oscillations |  [2405.08070](https://arxiv.org/abs/2405.08070) |  | ☑ |
-| CDHS | Oscillations |  [Phys.Lett.B 134 (1984) 281](https://doi.org/10.1016/0370-2693(84)90688-9) |  | ☑ |
-| CCFR | Oscillations |  [Phys.Rev.Lett. 52 (1984) 1384](https://doi.org/10.1103/PhysRevLett.52.1384) |  | ☑ |
-| MiniBooNE + SciBooNE | Oscillations |  [1106.5685](https://arxiv.org/abs/1106.5685) |  | ☑ |
-| KM3NeT/ORCA | Oscillations |  [2510.07360](https://arxiv.org/abs/2510.07360) |  | ☑ |
-| IceCube/DeepCore | Oscillations |  [2405.08070](https://arxiv.org/abs/2405.08070) |  | ☑ |
-| Super-K | Oscillations |  [1410.2008](https://arxiv.org/abs/1410.2008) |  | ☑ |
-| $\mu$ spectrum | Lepton/meson decays |  [Phys.Rev.D 24 (1981) 1275](https://doi.org/10.1103/PhysRevD.24.1275) |  | ☑ |
-| PSI | Lepton/meson decays |  [Phys.Rev.D 36 (1987) 2624](https://doi.org/10.1103/PhysRevD.36.2624) |  | ☑ |
+| pp (Borexino) | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
+| $^7\text{Be}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
+| $^8\text{B}$ (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
+| pep + CNO (Borexino)  | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
+| KamLAND | Oscillations |  [2205.07574](https://arxiv.org/abs/2205.07574) | .csv | ☑ |
+| MINOS(+) | Oscillations |  [1710.06488](https://arxiv.org/abs/1710.06488) | .csv | ☑ |
+| IceCube | Oscillations |  [2405.08070](https://arxiv.org/abs/2405.08070) | .csv | ☑ |
+| CDHS | Oscillations |  [Phys.Lett.B 134 (1984) 281](https://doi.org/10.1016/0370-2693(84)90688-9) |.csv | ☑ |
+| CCFR | Oscillations |  [Phys.Rev.Lett. 52 (1984) 1384](https://doi.org/10.1103/PhysRevLett.52.1384) | .csv | ☑ |
+| MiniBooNE + SciBooNE | Oscillations |  [1106.5685](https://arxiv.org/abs/1106.5685) | .csv | ☑ |
+| KM3NeT/ORCA | Oscillations |  [2510.07360](https://arxiv.org/abs/2510.07360) | .csv | ☑ |
+| IceCube/DeepCore | Oscillations |  [2405.08070](https://arxiv.org/abs/2405.08070) | .csv | ☑ |
+| Super-K | Oscillations |  [1410.2008](https://arxiv.org/abs/1410.2008) | .csv | ☑ |
+| $\mu$ spectrum | Lepton/meson decays |  [Phys.Rev.D 24 (1981) 1275](https://doi.org/10.1103/PhysRevD.24.1275) | .csv | ☑ |
+| PSI | Lepton/meson decays |  [Phys.Rev.D 36 (1987) 2624](https://doi.org/10.1103/PhysRevD.36.2624) | .csv | ☑ |
 | PIENU | Lepton/meson decays | [1904.03269](https://arxiv.org/abs/1904.03269) | .csv | ☑ |
 | NA62 (kaon decay) | Lepton/meson decays | [2101.12304](https://arxiv.org/abs/2101.12304) | .csv | ☑ |
 | Super-K (Coloma) | Decay in flight | [1911.09129](https://arxiv.org/abs/1911.09129) | .csv | ☑ |
