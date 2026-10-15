@@ -36,23 +36,23 @@ $$m_N = \sqrt{\Delta m_{41}^2} , \quad |U_{\alpha N}|^2 = \sin^2\theta_{\alpha 4
 
 respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$ and $\theta_{\tau 4} = \theta_{34}$. Note that the above relation for $\sin^2\theta_{\alpha 4}$ is only valid for $\theta_{\alpha 4}\leq \pi/4$, and thus we only show these bounds for $|U_{\alpha N}|^2 \leq 1/2$. The scenario $m_N > m_{2,3}$ is not strictly required in the model, and we also consider $m_N < m_{2,3}$ in the plots below.
 
-### Seesaw line
+### Seesaw prediction
 
-We show the active-sterile mixing which generates the correct mass for one of the light neutrinos, $\nu_3$. From the relation Eq. (1), we have $U_{\alpha 3}^2 m_3 + U_{\alpha N}^2 m_N = 0$, and thus
+We show values of the active-sterile mixing which generate the correct order-of-magnitude mass for one of the light neutrinos, which we call $\nu$. From the relation Eq. (1), we have
 
-$$|U_{\alpha N}|^2 = \frac{m_3}{m_3 + m_N}.$$
+$$|U_{\alpha N}|^2 = \frac{m_\nu}{m_\nu + m_N}.$$
 
-In the plots below, we show this relation for $m_3 = 0.05~\text{eV}$ as a dashed black line.
+In the plots below we show this relation as a grey band, with the lower edge corresponding to $m_\nu = \sqrt{\Delta m_{21}^2} = 8.7\times 10^{-3}~\text{eV}$ and the upper edge to $m_\nu = 0.1~\text{eV}$.
 
 ### Neutrinoless double beta decay
 
-We show the bound from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ at the KamLAND-Zen experiment, setting the lower bound $T_{1/2}^{0\nu} > 3.8 \times 10^{26}~\text{yr}$ at 90\% CL [[15](#ref-15)]. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
+We show the bounds from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ and $^{76}\text{Ge}$ at the KamLAND-Zen and LEGEND experiments, respectively, setting the lower bounds $T_{1/2}^{0\nu} > 3.8 \times 10^{26}~\text{yr}$ and $T_{1/2}^{0\nu} > 1.9 \times 10^{26}~\text{yr}$ at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu} \gtrsim 10^{28}~\text{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
 
 $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu + U_{eN}^2 m_N A_N(m_N)\Big|^2 ,$$
 
-where $G_{01} = 1.4\times 10^{-11}~\text{yr}^{-1}$, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[16](#ref-16)]. 
+where $G_{01}$ is an isotope-dependent phase-space factor, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements (NMEs) and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[18](#ref-18)] and the NMEs from [[19](#ref-19)].
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the KamLAND-Zen bound not yet reaching the half-life range predicted for light neutrinos only; assuming normal ordering and $m_1 = 0$, we obtain $3.9 \times 10^{28} < T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can also impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bound on $|U_{eN}|^2$ is shown as a medium blue solid line.
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the bounds not yet reaching the half-life range predicted for normally-ordered light neutrinos. For example, assuming normal ordering and $m_1 = 0$, the half-life range $3.9 \times 10^{28} < T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$ is expected for $^{136}\text{Xe}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can also impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bounds on $|U_{eN}|^2$ are shown as medium blue solid/dashed lines.
 
 ---
 
@@ -111,48 +111,48 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 1. <a id="ref-1"></a>P. D. Bolton, F. F. Deppisch and P. S. Bhupal Dev,
 "Neutrinoless double beta decay versus other probes of heavy sterile neutrinos,"
 JHEP **03** (2020), 170
-[doi:10.1007/JHEP03(2020)170](https://doi.org/10.1007/JHEP03(2020)170);
-[arXiv:1912.03058 [hep-ph]](https://arxiv.org/abs/1912.03058).
+[doi:10.1007/JHEP03(2020)170](https://doi.org/10.1007/JHEP03(2020)170)
+[[arXiv:1912.03058 [hep-ph]]](https://arxiv.org/abs/1912.03058).
 2. <a id="ref-2"></a>A. Y. Smirnov and R. Zukanovich Funchal,
 "Sterile neutrinos: Direct mixing effects versus induced mass matrix of active neutrinos,"
 Phys. Rev. D **74** (2006), 013001
-[doi:10.1103/PhysRevD.74.013001](https://doi.org/10.1103/PhysRevD.74.013001);
-[arXiv:hep-ph/0603009 [hep-ph]](https://arxiv.org/abs/hep-ph/0603009).
+[doi:10.1103/PhysRevD.74.013001](https://doi.org/10.1103/PhysRevD.74.013001)
+[[arXiv:hep-ph/0603009 [hep-ph]]](https://arxiv.org/abs/hep-ph/0603009).
 3. <a id="ref-3"></a>A. Atre, T. Han, S. Pascoli and B. Zhang,
 "The Search for Heavy Majorana Neutrinos,"
 JHEP **05** (2009), 030
-[doi:10.1088/1126-6708/2009/05/030](https://doi.org/10.1088/1126-6708/2009/05/030);
-[arXiv:0901.3589 [hep-ph]](https://arxiv.org/abs/0901.3589).
+[doi:10.1088/1126-6708/2009/05/030](https://doi.org/10.1088/1126-6708/2009/05/030)
+[[arXiv:0901.3589 [hep-ph]]](https://arxiv.org/abs/0901.3589).
 4. <a id="ref-4"></a>F. F. Deppisch, P. S. Bhupal Dev and A. Pilaftsis,
 "Neutrinos and Collider Physics,"
 New J. Phys. **17** (2015) no.7, 075019
-[doi:10.1088/1367-2630/17/7/075019](https://doi.org/10.1088/1367-2630/17/7/075019);
-[arXiv:1502.06541 [hep-ph]](https://arxiv.org/abs/1502.06541).
+[doi:10.1088/1367-2630/17/7/075019](https://doi.org/10.1088/1367-2630/17/7/075019)
+[[arXiv:1502.06541 [hep-ph]]](https://arxiv.org/abs/1502.06541).
 5. <a id="ref-5"></a>A. de Gouvêa and A. Kobach,
 "Global Constraints on a Heavy Neutrino,"
 Phys. Rev. D **93** (2016) no.3, 033005
-[doi:10.1103/PhysRevD.93.033005](https://doi.org/10.1103/PhysRevD.93.033005);
-[arXiv:1511.00683 [hep-ph]](https://arxiv.org/abs/1511.00683).
+[doi:10.1103/PhysRevD.93.033005](https://doi.org/10.1103/PhysRevD.93.033005)
+[[arXiv:1511.00683 [hep-ph]]](https://arxiv.org/abs/1511.00683).
 6. <a id="ref-6"></a>D. A. Bryman and R. Shrock,
 "Constraints on Sterile Neutrinos in the MeV to GeV Mass Range,"
 Phys. Rev. D **100** (2019), 073011
-[doi:10.1103/PhysRevD.100.073011](https://doi.org/10.1103/PhysRevD.100.073011);
-[arXiv:1909.11198 [hep-ph]](https://arxiv.org/abs/1909.11198).
+[doi:10.1103/PhysRevD.100.073011](https://doi.org/10.1103/PhysRevD.100.073011)
+[[arXiv:1909.11198 [hep-ph]]](https://arxiv.org/abs/1909.11198).
 7. <a id="ref-7"></a>M. Chrzaszcz, M. Drewes, T. E. Gonzalo, J. Harz, S. Krishnamurthy and C. Weniger,
 "A frequentist analysis of three right-handed neutrinos with GAMBIT,"
 Eur. Phys. J. C **80** (2020) no.6, 569
-[doi:10.1140/epjc/s10052-020-8073-9](https://doi.org/10.1140/epjc/s10052-020-8073-9);
-[arXiv:1908.02302 [hep-ph]](https://arxiv.org/abs/1908.02302).
+[doi:10.1140/epjc/s10052-020-8073-9](https://doi.org/10.1140/epjc/s10052-020-8073-9)
+[[arXiv:1908.02302 [hep-ph]]](https://arxiv.org/abs/1908.02302).
 8. <a id="ref-8"></a>A. M. Abdullahi, P. B. Alzas, B. Batell, J. Beacham, A. Boyarsky, S. Carbajal, A. Chatterjee, J. I. Crespo-Anadon, F. F. Deppisch and A. De Roeck, *et al.*,
 "The present and future status of heavy neutral leptons,"
 J. Phys. G **50** (2023) no.2, 020501
-[doi:10.1088/1361-6471/ac98f9](https://doi.org/10.1088/1361-6471/ac98f9);
-[arXiv:2203.08039 [hep-ph]](https://arxiv.org/abs/2203.08039).
+[doi:10.1088/1361-6471/ac98f9](https://doi.org/10.1088/1361-6471/ac98f9)
+[[arXiv:2203.08039 [hep-ph]]](https://arxiv.org/abs/2203.08039).
 9. <a id="ref-9"></a>E. Fernández-Martínez, M. González-López, J. Hernández-García, M. Hostert and J. López-Pavón,
 "Effective portals to heavy neutral leptons,"
 JHEP **09** (2023), 001
-[doi:10.1007/JHEP09(2023)001](https://doi.org/10.1007/JHEP09(2023)001);
-[arXiv:2304.06772 [hep-ph]](https://arxiv.org/abs/2304.06772).
+[doi:10.1007/JHEP09(2023)001](https://doi.org/10.1007/JHEP09(2023)001)
+[[arXiv:2304.06772 [hep-ph]]](https://arxiv.org/abs/2304.06772).
 10. <a id="ref-10"></a>ATLAS Collaboration, "Summary plots for Heavy Neutral Leptons,"
 [ATL-PHYS-PUB-2025-038](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2025-038/).
 11. <a id="ref-11"></a>CMS Collaboration, "Heavy Neutral Lepton summary plots,"
@@ -160,25 +160,40 @@ JHEP **09** (2023), 001
 12. <a id="ref-12"></a>A. Kusenko,
 "Sterile neutrinos: The Dark side of the light fermions,"
 Phys. Rept. **481** (2009), 1-28
-[doi:10.1016/j.physrep.2009.07.004](https://doi.org/10.1016/j.physrep.2009.07.004);
-[arXiv:0906.2968 [hep-ph]](https://arxiv.org/abs/0906.2968).
+[doi:10.1016/j.physrep.2009.07.004](https://doi.org/10.1016/j.physrep.2009.07.004)
+[[arXiv:0906.2968 [hep-ph]]](https://arxiv.org/abs/0906.2968).
 13. <a id="ref-13"></a>M. Drewes, T. Lasserre, A. Merle, S. Mertens, R. Adhikari, M. Agostini, N. A. Ky, T. Araki, M. Archidiacono and M. Bahr, *et al.*,
 "A White Paper on keV Sterile Neutrino Dark Matter,"
 JCAP **01** (2017), 025
-[doi:10.1088/1475-7516/2017/01/025](https://doi.org/10.1088/1475-7516/2017/01/025);
-[arXiv:1602.04816 [hep-ph]](https://arxiv.org/abs/1602.04816).
+[doi:10.1088/1475-7516/2017/01/025](https://doi.org/10.1088/1475-7516/2017/01/025)
+[[arXiv:1602.04816 [hep-ph]]](https://arxiv.org/abs/1602.04816).
 14. <a id="ref-14"></a>A. Boyarsky, M. Drewes, T. Lasserre, S. Mertens and O. Ruchayskiy,
 "Sterile neutrino Dark Matter,"
 Prog. Part. Nucl. Phys. **104** (2019), 1-45
-[doi:10.1016/j.ppnp.2018.07.004](https://doi.org/10.1016/j.ppnp.2018.07.004);
-[arXiv:1807.07938 [hep-ph]](https://arxiv.org/abs/1807.07938).
+[doi:10.1016/j.ppnp.2018.07.004](https://doi.org/10.1016/j.ppnp.2018.07.004)
+[[arXiv:1807.07938 [hep-ph]]](https://arxiv.org/abs/1807.07938).
 15. <a id="ref-15"></a>S. Abe *et al.* [KamLAND-Zen],
 "Search for Majorana Neutrinos with the Complete KamLAND-Zen Dataset,"
 Phys. Rev. Lett. **135** (2025) no.26, 262501
-[doi:10.1103/jkf6-48j8](https://doi.org/10.1103/jkf6-48j8);
-[arXiv:2406.11438 [hep-ex]](https://arxiv.org/abs/2406.11438).
-16. <a id="ref-16"></a>W. Dekens, J. de Vries, E. Mereghetti, J. Menéndez, P. Soriano and G. Zhou,
+[doi:10.1103/jkf6-48j8](https://doi.org/10.1103/jkf6-48j8)
+[[arXiv:2406.11438 [hep-ex]]](https://arxiv.org/abs/2406.11438).
+16. <a id="ref-16"></a>H. Acharya *et al.* [LEGEND],
+"First Results on the Search for Lepton Number Violating Neutrinoless Double-{\ensuremath{\beta}} Decay with the LEGEND-200 Experiment,"
+Phys. Rev. Lett. **136** (2026) no.2, 022701
+[doi:10.1103/25tk-nctn](https://doi.org/doi:10.1103/25tk-nctn)
+[[arXiv:2505.10440 [hep-ex]]](https://arxiv.org/abs/2505.10440).
+17. <a id="ref-16"></a>G. Adhikari *et al.* [nEXO],
+"nEXO: neutrinoless double beta decay search beyond 10$^{28}$ year half-life sensitivity,"
+J. Phys. G **49** (2022) no.1, 015104,
+[doi:10.1088/1361-6471/ac3631](https://doi.org/doi:10.1088/1361-6471/ac3631)
+[[arXiv:2106.16243 [nucl-ex]]](https://arxiv.org/abs/2106.16243).
+18. <a id="ref-18"></a>W. Dekens, J. de Vries, E. Mereghetti, J. Menéndez, P. Soriano and G. Zhou,
 "Neutrinoless double-$\beta$ decay in the neutrino-extended standard model,"
 Phys. Rev. C **108** (2023) no.4, 045501
-[doi:10.1103/PhysRevC.108.045501](https://doi.org/10.1103/PhysRevC.108.045501);
-[arXiv:2303.04168 [hep-ph]](https://arxiv.org/abs/2303.04168).
+[doi:10.1103/PhysRevC.108.045501](https://doi.org/10.1103/PhysRevC.108.045501)
+[[arXiv:2303.04168 [hep-ph]]](https://arxiv.org/abs/2303.04168).
+19. <a id="ref-19"></a>J. Menéndez,
+"Neutrinoless $\beta\beta$ decay mediated by the exchange of light and heavy neutrinos: The role of nuclear structure correlations,"
+J. Phys. G **45** (2018) no.1, 014003
+[doi:10.1088/1361-6471/aa9bd4](https://doi.org/doi:10.1088/1361-6471/aa9bd4)
+[[arXiv:1804.02105 [nucl-th]]](https://arxiv.org/abs/1804.02105).
