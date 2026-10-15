@@ -42,11 +42,16 @@ We show values of the active-sterile mixing which generate the correct order-of-
 
 $$|U_{\alpha N}|^2 = \frac{m_\nu}{m_\nu + m_N}.$$
 
-In the plots below we show this relation as a grey band, with the lower edge corresponding to $m_\nu = \sqrt{\Delta m_{21}^2} = 8.7\times 10^{-3}~\text{eV}$ and the upper edge to $m_\nu = 0.1~\text{eV}$.
+In the plots below we show this relation as a grey band, with the lower edge corresponding to the light neutrino mass $m_\nu = \sqrt{\Delta m_{21}^2} = 8.7\times 10^{-3}~\text{eV}$ and the upper edge to $m_\nu = 0.1~\text{eV}$.
 
 ### Neutrinoless double beta decay
 
-We show the bounds from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ and $^{76}\text{Ge}$ at the KamLAND-Zen and LEGEND experiments, respectively, setting the lower bounds $T_{1/2}^{0\nu} > 3.8 \times 10^{26}~\text{yr}$ and $T_{1/2}^{0\nu} > 1.9 \times 10^{26}~\text{yr}$ at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu} \gtrsim 10^{28}~\text{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
+We show the bounds from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ and $^{76}\text{Ge}$ at the KamLAND-Zen and LEGEND experiments, respectively, setting the lower bounds
+
+$$ T_{1/2}^{0\nu}(^{136}\text{Xe}) > 3.8 \times 10^{26}~\text{yr} ,$$
+$$ T_{1/2}^{0\nu}(^{76}\text{Ge}) > 1.9 \times 10^{26}~\text{yr} ,$$
+
+at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu} \gtrsim 10^{28}~\text{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
 
 $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu + U_{eN}^2 m_N A_N(m_N)\Big|^2 ,$$
 
