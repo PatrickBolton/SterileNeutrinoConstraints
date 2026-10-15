@@ -6,7 +6,7 @@ $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N + \ldots,$$
 
 where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** (HNL) for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. In ``data``, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 100~\text{TeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino parameter space, see [[2](#ref-2)-[14](#ref-14)].
 
-For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``docs`` and ``refs``.
+For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``docs``.
 
 ## Mixing landscape
 

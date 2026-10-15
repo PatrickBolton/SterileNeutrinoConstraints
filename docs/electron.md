@@ -44,6 +44,7 @@
 | Superallowed, $0^+ \to 0^+$ (Hardy) | $\beta$ decay | [Nucl.Phys.A 518 (1990) 149-155](https://doi.org/10.1016/0375-9474(90)90541-S) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/current/Hardy_SuperAllowed.csv) | ☑ |
 | Superallowed, $0^+ \to 0^+$ (Deutsch) | $\beta$ decay | [Nucl.Phys.A 518 (1990) 149-155](https://doi.org/10.1016/0375-9474(90)90541-S) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/current/Fermi2.csv) | ☑ |
 | Superallowed, $0^+ \to 0^+$ (Bryman) | $\beta$ decay | [1904.06787](https://arxiv.org/abs/1904.06787), [1909.11198](https://arxiv.org/abs/1909.11198) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/current/SuperAllowed.csv) | ☑ |
+| LEGEND | $0\nu\beta\beta$ decay | [2505.10440](https://arxiv.org/abs/2505.10440) | - | ☑ |
 | KamLAND-Zen | $0\nu\beta\beta$ decay | [2406.11438](https://arxiv.org/abs/2406.11438) | - | ☑ |
 | TRIUMF | Lepton/meson decays | [Phys.Rev.D 46 (1992) R885-R887](https://doi.org/10.1103/PhysRevD.46.R885) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/current/TRIUMF.csv) | ☑ |
 | PIENU | Lepton/meson decays | [1712.03275](https://arxiv.org/abs/1712.03275) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/current/PIENU.csv) | ☑ |
@@ -119,6 +120,7 @@
 | HUNTER Phase I | $\beta$ decay | [Quantum Sci.Technol. 6 (2021) 2, 024008](https://doi.org/10.1088/2058-9565/abdb9b) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/HUNTER_1.csv) | ☑ |
 | HUNTER Phase II | $\beta$ decay | [Quantum Sci.Technol. 6 (2021) 2, 024008](https://doi.org/10.1088/2058-9565/abdb9b) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/HUNTER_2.csv) | ☑ |
 | HUNTER Phase III | $\beta$ decay | [Quantum Sci.Technol. 6 (2021) 2, 024008](https://doi.org/10.1088/2058-9565/abdb9b) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/HUNTER_3.csv) | ☑ |
+| nEXO | $0\nu\beta\beta$ decay | [2106.16243](https://arxiv.org/abs/2106.16243) | - | ☑ |
 | LiquidO | Decay in flight | [2506.04099](https://arxiv.org/abs/2506.04099) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/LiquidO.csv) | ☑ |
 | PIONEER | Lepton/meson decays | [2203.01981](https://arxiv.org/abs/2203.01981) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/PIONEER.csv) | ☑ |
 | DUNE (Krasnov) | Fixed target | [1902.06099](https://arxiv.org/abs/1902.06099) | [.csv](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/data/UeNsq/future/DUNE_Krasnov.csv) | |

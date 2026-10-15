@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
+import matplotlib.cm as cm
 import matplotlib.ticker as ticker
 from scipy.interpolate import interp1d
 from scipy.integrate import fixed_quad
@@ -312,43 +313,70 @@ def N_DarkMatter_lifetime(mN, UeN, UmuN, UtauN, time):
     Ga_tot = N_lifetime(mN, UeN, UmuN, UtauN)
     return 1/(Ga_tot * GeVtoinvsec) * 1/time
 
-def N_0vbb_bound(mN, Thalf):
+def N_0vbb_bound(mN, Thalf, iso):
     fmtoinvGeV = 5.0677
-    G01 = 1.4e-14 #yrs^-1
     Vud = 0.97
-    Q = 2.5e-3 #GeV
     me = 0.511e-3 #GeV
     mpi = 0.1349768 #GeV
     gA = 1.27
     gvNN0 = - 1.01 * fmtoinvGeV**2
     g1pipi = 0.36
     g1piN = 1
-    g1NN = (1 + 3 * gA**2)/4
-    M0 = 2.7
-    MFsd = -1.94
-    MGTPPsd = 0.25
-    MGTAPsd = -0.79
-    MTPPsd = -0.01
-    MTAPsd = 0.01
-    RA = 1.2 * (136)**(1/3) * fmtoinvGeV
+    g1NN = (1 + 3*gA**2)/4
+    
+    if iso == '136Xe':
+        Q = 2.458e-3 #GeV
+        G01 = 1.449e-14 #yrs^-1
+        MF = -0.54
+        MGTAA = 2.45
+        MGTAP = -0.79
+        MGTPP = 0.25
+        MGTMM = 0.19
+        MTAP = 0.01
+        MTPP = -0.01
+        MTMM = 0.0
+        M0 = -MF/gA**2 + (MGTAA + MGTAP + MGTPP + MGTMM) + (MTAP + MTPP + MTMM)
+        MFsd = -1.94
+        MGTAPsd = -1.99
+        MGTPPsd = 0.74
+        MTAPsd = 0.05
+        MTPPsd = -0.02
+        RA = 1.2 * (136)**(1/3) * fmtoinvGeV
+    elif iso == '76Ge':
+        Q = 2.039e-3 #GeV
+        G01 = 0.228e-14 #yrs^-1
+        MF = -0.59
+        MGTAA = 3.15
+        MGTAP = -0.94
+        MGTPP = 0.30
+        MGTMM = 0.22
+        MTAP = -0.01
+        MTPP = 0.0
+        MTMM = 0.0
+        M0 = -MF/gA**2 + (MGTAA + MGTAP + MGTPP + MGTMM) + (MTAP + MTPP + MTMM)
+        MFsd = -2.4 #-1.46
+        MGTAPsd = -2.26
+        MGTPPsd = 0.82
+        MTAPsd = -0.05
+        MTPPsd = 0.02
+        RA = 1.2 * (76)**(1/3) * fmtoinvGeV
+    
+    else:
+        print("Please input one of the supported isotopes (136Xe and 76Ge)")
 
-    def M(mN):
-        ma = 0.157
-        mb = 0.221
-        return M0 * 1/(1 + mN/ma + (mN/mb)**2)
+    ma = 0.157
+    mb = 0.221
+    mc = 1.0
+    md = 0.146
 
+    def M(mN, linear):
+        return M0 * 1/(1 + linear * mN/ma + (mN/mb)**2)
     def dMdmN(mN):
-        ma = 0.157
-        mb = 0.221
-        return - M0 * (1/ma + 2*mN/mb**2)/(1 + mN/ma + (mN/mb)**2)**2
-
+        return - M0 * (2*mN/mb**2)/(1 + (mN/mb)**2)**2
     def gvNN(mN):
-        mc = 1.0
-        md = 0.146
         return gvNN0 * (1 + (mN/mc)**2)/(1 + (mN/mc)**2 * (mN/md)**2)
-
-    def Avfunc(mN):
-        return - M(mN) - 2 * gvNN(mN) * mpi**2 * MFsd/gA**2
+    def Avfunc(mN, linear):
+        return - M(mN, linear) - 2 * gvNN(mN) * mpi**2 * MFsd/gA**2
 
     def Avsoft(mN):
         def f(m, E):
@@ -391,15 +419,15 @@ def N_0vbb_bound(mN, Thalf):
         return (- RA/(2 * np.pi) * sum(list))
 
     if mN < 0.1:
-        Av = Avfunc(mN) + mN * dMdmN(mN) + Avsoft(mN)
+        Av = Avfunc(mN, 0.) + mN * dMdmN(mN) + Avsoft(mN)
     elif mN >= 0.1 and mN < 2:
-        Av = Avfunc(mN)
+        Av = Avfunc(mN, 1.)
     elif mN >= 2:
-        Av = - 2 * (mpi/mN)**2 * (5/6 * g1pipi * (MGTPPsd + MTPPsd)
-                                  + 1/2 * g1piN * (MGTAPsd + MTAPsd) 
-                                  - 2 * g1NN/gA**2 * MFsd)
+        Av = - 2 * 1.23 * (mpi/mN)**2 * (5/6 * g1pipi * (MGTPPsd + MTPPsd)
+                                         + 1/2 * g1piN * (MGTAPsd + MTAPsd) 
+                                         - 2 * g1NN/gA**2 * MFsd)
 
-    return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0)) * np.sqrt(G01 * Thalf)))
+    return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0, 1)) * np.sqrt(G01 * Thalf)))
     
 def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_ticks = 100, plot_type = 'wide',
          lim_type = 'current', seesaw = True, v_masses = True, DM_window = True, DM_lifetime = False, svfg = True,
@@ -430,18 +458,29 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
                 ax = plt.gca()
                 return ax.fill_between(x, y1, y2, **kwargs)
 
+    m1NO = 0
+    m2NO = np.sqrt(m1NO**2 + 7.537e-5) * 1e-9
+    m3NO = np.sqrt(m2NO**2 + 2.521e-3) * 1e-9
+
     if seesaw == True:
-        seesaw_bound = 0.05e-9/(0.05e-9 + 10**np.arange(-16, 10, 0.2))
-        ll(10**np.arange(-16, 10, 0.2), seesaw_bound, lw=1, ls='dotted', color='black') # Seesaw line
+        mN = np.logspace(-16,10,100)
+        seesaw_bound_d = m2NO/(m2NO + mN)
+        seesaw_bound_u = 0.1e-9/(0.1e-9 + mN)
+        ll(mN, seesaw_bound_d, lw=1, ls='dotted', color='black') # Seesaw line
+        ll(mN, seesaw_bound_u, lw=1, ls='dotted', color='black') # Seesaw line
+        nlevels = 30
+        cmap=cm.Greys
+        cols = cmap(np.linspace(0.1,0.45,nlevels))
+        levels = (np.linspace(1,np.sqrt(13),nlevels))**2
+        for i in range(nlevels-1):
+            ff(mN,np.maximum(seesaw_bound_u/levels[i],seesaw_bound_d),np.minimum(seesaw_bound_d*levels[i],seesaw_bound_u),alpha=0.025,color=cols[i,:],zorder=-1000,lw=0)
+        
         if xy_flip == True:
-            plt.text(10**(-14.), 10**(4.), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
+            plt.text(10**(-13.6), 10**(4.), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
         else:
-            plt.text(10**(3.5), 10**(-13.5), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
+            plt.text(10**(3.5), 10**(-13.2), r'$\mathrm{Seesaw}$',fontsize=16,rotation=0,color='black')
 
     if v_masses == True:
-        m1NO = 0
-        m2NO = np.sqrt(m1NO**2 + 7.537e-5) * 1e-9
-        m3NO = np.sqrt(m2NO**2 + 2.521e-3) * 1e-9
         ll([m2NO,m2NO], [1e-40,10], lw=1, ls='--', color='grey')
         ll([m3NO,m3NO], [1e-40,10], lw=1, ls='--', color='grey')
         if xy_flip == True:
@@ -519,9 +558,9 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
         yr = con['yr']
         xy = con['xy']
 
-        if name == '0vbb':
+        if name.startswith('0vbb'):
             mvals = np.logspace(-15.1,10.1,1000)
-            Uvals = [N_0vbb_bound(m, 3.8e26) for m in mvals]
+            Uvals = [N_0vbb_bound(m, con["data"][0], con["data"][1]) for m in mvals]
             data = np.zeros((len(mvals),2))
             data[:,0] = mvals
             data[:,1] = Uvals
@@ -591,19 +630,27 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
         yr = con['yr']
         xy = con['xy']
 
-        if con["data"] == False:
-            data = np.array([[0,0],[0,0]])
-            
+        if name.startswith('0vbb'):
+            mvals = np.logspace(-15.1,10.1,1000)
+            Uvals = [N_0vbb_bound(m, con["data"][0], con["data"][1]) for m in mvals]
+            data = np.zeros((len(mvals),2))
+            data[:,0] = mvals
+            data[:,1] = Uvals
+
         else:
-            df = pd.read_csv(con["data"], sep=",", names = ["X", "Y"], comment = "#")
-            data = np.zeros((len(df),2))
-            for i in range(len(df.index)):
-                if xy == True:
-                    data[i,0] = transform(df.iloc[i]['X'], xr)
-                    data[i,1] = transform(df.iloc[i]['Y'], yr)
-                else:
-                    data[i,0] = transform(df.iloc[i]['Y'], xr)
-                    data[i,1] = transform(df.iloc[i]['X'], yr)
+            if con["data"] == False:
+                data = np.array([[0,0],[0,0]])
+            
+            else:
+                df = pd.read_csv(con["data"], sep=",", names = ["X", "Y"], comment = "#")
+                data = np.zeros((len(df),2))
+                for i in range(len(df.index)):
+                    if xy == True:
+                        data[i,0] = transform(df.iloc[i]['X'], xr)
+                        data[i,1] = transform(df.iloc[i]['Y'], yr)
+                    else:
+                        data[i,0] = transform(df.iloc[i]['Y'], xr)
+                        data[i,1] = transform(df.iloc[i]['X'], yr)
 
         if lim_type == 'future':
             ll(data[:,0], data[:,1], lw=lw, ls=ls, color=color)
