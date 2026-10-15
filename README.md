@@ -4,7 +4,7 @@ This repository lists the current terrestrial, astrophysical and cosmological co
 
 $$ \nu_\alpha = \sum_i^3 U_{\alpha i} \nu_i + U_{\alpha N} N + \ldots,$$
 
-where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** (HNL) for $m_N \gtrsim 1~\text{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. In ``data``, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \text{eV} < m_N < 100~\text{TeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino parameter space, see [[2](#ref-2)-[14](#ref-14)].
+where $\alpha = e,\mu,\tau$. The state $N$ is often called a **sterile neutrino** (despite having a small active component) or **heavy neutral lepton** (HNL) for $m_N \gtrsim 1~\mathrm{MeV}$. The ellipses denote that additional massive states could be present, but are not considered explicitly here. In ``data``, limits on $|U_{eN}|^2$, $|U_{\mu N}|^2$ and $|U_{\tau N}|^2$ are given as a function of the sterile neutrino mass in the range $10~\mu \mathrm{eV} < m_N < 100~\mathrm{TeV}$. These constraints were originally collected for the paper [[1](#ref-1)] and hosted at this [webpage](https://www.hep.ucl.ac.uk/~pbolton/). This repository is an updated database and corrects previous errors. For other reviews on the sterile neutrino parameter space, see [[2](#ref-2)-[14](#ref-14)].
 
 For any queries, comments or additional constraints that you think should be included here, contact me at patrick.d.bolton@gmail.com. If you use any of the bounds here, please cite the original work, with the reference provided in ``docs``.
 
@@ -42,22 +42,22 @@ We show values of the active-sterile mixing which generate the correct order-of-
 
 $$|U_{\alpha N}|^2 = \frac{m_\nu}{m_\nu + m_N}.$$
 
-In the plots below we show this relation as a grey band, with the lower edge corresponding to the light neutrino mass $m_\nu = \sqrt{\Delta m_{21}^2} = 8.7\times 10^{-3}~\text{eV}$ and the upper edge to $m_\nu = 0.1~\text{eV}$.
+In the plots below we show this relation as a grey band, with the lower edge corresponding to the light neutrino mass $m_\nu = \sqrt{\Delta m_{21}^2} = 8.7\times 10^{-3}~\mathrm{eV}$ and the upper edge to $m_\nu = 0.1~\mathrm{eV}$.
 
 ### Neutrinoless double beta decay
 
-We show the bounds from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\text{Xe}$ and $^{76}\text{Ge}$ at the KamLAND-Zen and LEGEND experiments, respectively, setting the lower bounds
+We show the bounds from the non-observation of neutrinoless double beta ($0\nu\beta\beta$) decay in $^{136}\mathrm{Xe}$ and $^{76}\mathrm{Ge}$ at the KamLAND-Zen and LEGEND experiments, respectively, setting the lower bounds
 
-$$ T_{1/2}^{0\nu}(^{136}\text{Xe}) > 3.8 \times 10^{26}~\text{yr} ,$$
-$$ T_{1/2}^{0\nu}(^{76}\text{Ge}) > 1.9 \times 10^{26}~\text{yr} ,$$
+$$ T_{1/2}^{0\nu}(^{136}\mathrm{Xe}) > 3.8 \times 10^{26}~\mathrm{yr} ,$$
+$$ T_{1/2}^{0\nu}(^{76}\mathrm{Ge}) > 1.9 \times 10^{26}~\mathrm{yr} ,$$
 
-at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu} \gtrsim 10^{28}~\text{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
+at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu} \gtrsim 10^{28}~\mathrm{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
 
 $$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu + U_{eN}^2 m_N A_N(m_N)\Big|^2 ,$$
 
 where $G_{01}$ is an isotope-dependent phase-space factor, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements (NMEs) and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[18](#ref-18)] and the NMEs from [[19](#ref-19)].
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the bounds not yet reaching the half-life range predicted for normally-ordered light neutrinos. For example, assuming normal ordering and $m_1 = 0$, the half-life range $3.9 \times 10^{28} < T_{1/2}^{0\nu}/\text{yr} < 2.5 \times 10^{29}$ is expected for $^{136}\text{Xe}$. For $m_N \lesssim 0.1~\text{GeV}$, an additional effect can also impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bounds on $|U_{eN}|^2$ are shown as medium blue solid/dashed lines.
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the bounds not yet reaching the half-life range predicted for normally-ordered light neutrinos. For example, assuming normal ordering and $m_1 = 0$, the half-life range $3.9 \times 10^{28} \mathrm{yr} < T_{1/2}^{0\nu} < 2.5 \times 10^{29} \mathrm{yr}$ is expected for $^{136}\mathrm{Xe}$. For $m_N \lesssim 0.1~\mathrm{GeV}$, an additional effect can also impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bounds on $|U_{eN}|^2$ are shown as medium blue solid/dashed lines.
 
 ---
 
