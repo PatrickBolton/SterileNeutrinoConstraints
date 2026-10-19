@@ -62,7 +62,6 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 ---
 
 [<img align="right" width="500" src="plots/UeNsq_constraints.png">](docs/electron.md)
-[<img align="right" width="150" src="plots/UeNsq_osc_constraints.png">](docs/electron.md)
 [<img align="right" width="500" src="plots/UeNsq_future.png">](docs/electron.md)
 
 ### [Electron mixing](docs/electron.md)  - $|U_{eN}|^2$
@@ -71,7 +70,9 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+[<img align="right" width="200" src="plots/UeNsq_osc_constraints.png">](docs/electron.md)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
