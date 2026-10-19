@@ -38,11 +38,11 @@ respectively, where $\theta_{e 4} = \theta_{14}$, $\theta_{\mu 4} = \theta_{24}$
 
 ### Seesaw prediction
 
-We show values of the active-sterile mixing which generate the correct order-of-magnitude mass for one of the light neutrinos, which we call $\nu$. From the relation Eq. (1), we have
+We show values of the active-sterile mixing which generate the correct order-of-magnitude mass for one of the light neutrinos ($\nu$). From the relation Eq. (1), we have
 
 $$|U_{\alpha N}|^2 = \frac{m_\nu}{m_\nu + m_N}.$$
 
-In the plots below we show this relation as a grey band, with the lower edge corresponding to the light neutrino mass $m_\nu = \sqrt{\Delta m_{21}^2} = 8.7\times 10^{-3} \ \text{eV}$ and the upper edge to $m_\nu = 0.1 \ \text{eV}$.
+In the plots below we show this relation as a grey band, with the lower edge corresponding to the light neutrino mass $m_\nu = \sqrt{\Delta m_{\odot}^2} = 8.7\times 10^{-3} \ \text{eV}$ and the upper edge to $m_\nu = 0.1 \ \text{eV}$.
 
 ### Neutrinoless double beta decay
 
@@ -51,17 +51,18 @@ We show the bounds from the non-observation of neutrinoless double beta ($0\nu\b
 $$ T_{1/2}^{0\nu}(^{136}\text{Xe}) > 3.8 \times 10^{26} \ \text{yr} ,$$
 $$ T_{1/2}^{0\nu}(^{76}\text{Ge}) > 1.9 \times 10^{26} \ \text{yr} ,$$
 
-at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu} \gtrsim 10^{28} \ \text{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
+at 90\% CL [[15](#ref-15), [16](#ref-16)]. We also consider the future sensitivity of the nEXO experiment [[17](#ref-17)], $T_{1/2}^{0\nu}(^{136}\text{Xe}) \gtrsim 10^{28} \ \text{yr}$. In the presence of a single heavy Majorana neutrino, the $0\nu\beta\beta$ decay half-life is given by
 
-$$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu + U_{eN}^2 m_N A_N(m_N)\Big|^2 ,$$
+$$(T_{1/2}^{0\nu})^{-1} = \frac{G_{01} |V_{ud}|^4 g_A^4}{m_e^2} \Big|\sum_i^3 U_{ei}^2 m_i A_\nu(0) + U_{eN}^2 m_N A_\nu(m_N)\Big|^2 ,$$
 
-where $G_{01}$ is an isotope-dependent phase-space factor, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu$ and $A_N(m_N)$ include the dependence on the nuclear matrix elements (NMEs) and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_N(m_N)$ from [[18](#ref-18)] and the NMEs from [[19](#ref-19)].
+where $G_{01}$ is an isotope-dependent phase-space factor, $V_{ud} = 0.97$ and $g_A = 1.27$. Here, $A_\nu(m_N)$ includes the dependence on the nuclear matrix elements (NMEs) and low-energy constants associated with hard neutrino exchange. We take the parametrisation for $A_\nu(m_N)$ from [[18](#ref-18)] and the NMEs from [[19](#ref-19)].
 
-We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the bounds not yet reaching the half-life range predicted for normally-ordered light neutrinos. For example, assuming normal ordering and $m_1 = 0$, the half-life range $3.9 \times 10^{28} \ \text{yr} < T_{1/2}^{0\nu} < 2.5 \times 10^{29} \ \text{yr}$ is expected for $^{136}\text{Xe}$. For $m_N \lesssim 0.1 \ \text{GeV}$, an additional effect can also impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bounds on $|U_{eN}|^2$ are shown as medium blue solid/dashed lines.
+We further assume that the contribution of $N$ dominates over the light neutrinos. This is justified by the bounds not yet reaching the half-life range expected for normally-ordered light neutrinos. For example, assuming normal ordering and $m_1 = 0$, the half-life range $3.9 \times 10^{28} \ \text{yr} < T_{1/2}^{0\nu} < 2.5 \times 10^{29} \ \text{yr}$ is predicted for $^{136}\text{Xe}$. For $m_N \lesssim 0.1 \ \text{GeV}$, an additional effect can also impact the bound; if only $N$ is present, the relation Eq. (1) leads to a cancellation between light and heavy states and suppresses the $0\nu\beta\beta$ decay rate. We assume that this cancellation does not occur, and that $N$ still dominates the $0\nu\beta\beta$ decay half-life in this regime. The resulting bounds on $|U_{eN}|^2$ are shown as medium blue solid/dashed lines.
 
 ---
 
 [<img align="right" width="500" src="plots/UeNsq_constraints.png">](docs/electron.md)
+[<img align="right" width="150" src="plots/UeNsq_osc_constraints.png">](docs/electron.md)
 [<img align="right" width="500" src="plots/UeNsq_future.png">](docs/electron.md)
 
 ### [Electron mixing](docs/electron.md)  - $|U_{eN}|^2$
@@ -70,7 +71,7 @@ We further assume that the contribution of $N$ dominates over the light neutrino
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
@@ -183,20 +184,20 @@ Phys. Rev. Lett. **135** (2025) no.26, 262501
 [doi:10.1103/jkf6-48j8](https://doi.org/10.1103/jkf6-48j8)
 [[arXiv:2406.11438 [hep-ex]]](https://arxiv.org/abs/2406.11438).
 16. <a id="ref-16"></a>H. Acharya *et al.* [LEGEND],
-"First Results on the Search for Lepton Number Violating Neutrinoless Double-{\ensuremath{\beta}} Decay with the LEGEND-200 Experiment,"
+"First Results on the Search for Lepton Number Violating Neutrinoless Double-$\beta$ Decay with the LEGEND-200 Experiment,"
 Phys. Rev. Lett. **136** (2026) no.2, 022701
 [doi:10.1103/25tk-nctn](https://doi.org/doi:10.1103/25tk-nctn)
 [[arXiv:2505.10440 [hep-ex]]](https://arxiv.org/abs/2505.10440).
 17. <a id="ref-16"></a>G. Adhikari *et al.* [nEXO],
-"nEXO: neutrinoless double beta decay search beyond 10$^{28}$ year half-life sensitivity,"
+"nEXO: neutrinoless double beta decay search beyond $10^{28}$ year half-life sensitivity,"
 J. Phys. G **49** (2022) no.1, 015104,
 [doi:10.1088/1361-6471/ac3631](https://doi.org/doi:10.1088/1361-6471/ac3631)
 [[arXiv:2106.16243 [nucl-ex]]](https://arxiv.org/abs/2106.16243).
-18. <a id="ref-18"></a>W. Dekens, J. de Vries, E. Mereghetti, J. Menéndez, P. Soriano and G. Zhou,
-"Neutrinoless double-$\beta$ decay in the neutrino-extended standard model,"
-Phys. Rev. C **108** (2023) no.4, 045501
-[doi:10.1103/PhysRevC.108.045501](https://doi.org/10.1103/PhysRevC.108.045501)
-[[arXiv:2303.04168 [hep-ph]]](https://arxiv.org/abs/2303.04168).
+18. <a id="ref-18"></a>W. Dekens, J. de Vries, D. Castillo, J. Menéndez, E. Mereghetti, V. Plakkot, P. Soriano and G. Zhou,
+"Neutrinoless double beta decay rates in the presence of light sterile neutrinos,"
+JHEP **09** (2024), 201
+[doi:10.1007/JHEP09(2024)201](https://doi.org/doi:10.1007/JHEP09(2024)201)
+[[arXiv:2402.07993 [hep-ph]]](https://arxiv.org/abs/2402.07993).
 19. <a id="ref-19"></a>J. Menéndez,
 "Neutrinoless $\beta\beta$ decay mediated by the exchange of light and heavy neutrinos: The role of nuclear structure correlations,"
 J. Phys. G **45** (2018) no.1, 014003

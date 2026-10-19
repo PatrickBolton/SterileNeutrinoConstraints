@@ -57,10 +57,31 @@ def kin(a, b, c):
     return np.heaviside(1 - b/a - c/a, 0)
 
 alpha_dat = np.loadtxt('src/alpha_data.txt')
-ALPHA_s = interp1d(np.append(1e-7,alpha_dat[::,0]), np.append(alpha_dat[1,1],alpha_dat[::,1]), kind="cubic")
+ALPHA_s = interp1d(np.append(1e-7,alpha_dat[::,0]), np.append(alpha_dat[1,1],alpha_dat[::,1]), kind="linear")
+def ALPHA_s_f(mN):
+    if mN < 1e3:
+        a = ALPHA_s(mN * np.heaviside(mN, 0) + 1e-7)
+    if mN > 1e3:
+        a = 2*np.pi/((11 - 2/3 * 6) * np.log(mN/0.043))
+    return a
+
+def ALPHA_s_ff(mN):
+    mbottom = 4.1859
+    mtop = 172.76
+    if mN < mbottom:
+        b0 = 11 - 2/3 * 4
+        a = 2 * np.pi/(b0 * np.log(mN/0.119))
+    elif mN >= mbottom and mN < mtop:
+        b0 = 11 - 2/3 * 5
+        a = 2 * np.pi/(b0 * np.log(mN/0.087))
+    elif mN >= mtop:
+        b0 = 11 - 2/3 * 6
+        a = 2 * np.pi/(b0 * np.log(mN/0.043))
+    return a
+
 def R_QCD(mN):
     "Correction term for hadronic HNL decays."
-    a = ALPHA_s(mN * np.heaviside(mN, 0) + 1e-7)
+    a = ALPHA_s_f(mN)
     return 1 + a/np.pi + 5.2 * (a/np.pi)**2 + 26.4 * (a/np.pi)**3
 
 def R(a, b, c):
@@ -318,116 +339,136 @@ def N_0vbb_bound(mN, Thalf, iso):
     Vud = 0.97
     me = 0.511e-3 #GeV
     mpi = 0.1349768 #GeV
+    mbottom = 4.1859
+    mtop = 172.76
     gA = 1.27
     gvNN0 = - 1.01 * fmtoinvGeV**2
     g1pipi = 0.36
     g1piN = 1
     g1NN = (1 + 3*gA**2)/4
     
-    if iso == '136Xe':
+    if iso == '76Ge':
+        Q = 2.039e-3 #GeV
+        G01 = 0.228e-14 #yrs^-1
+        # NME (mN = 0)
+        M0 = 3.4
+        ma = 0.117
+        mb = 0.218
+        mc = 1.0
+        md = 0.168 #0.139
+        #Short distance NMEs
+        MFsd = -2.21
+        MGTAPsd = -2.26
+        MGTPPsd = 0.82
+        MTAPsd = -0.05
+        MTPPsd = 0.02
+        # E_n - E_i [MeV]
+        energies = [0.5, 0.7, 0.8, 0.8, 1.2, 1.3, 1.5, 1.8, 2.1, 2.3,
+                    2.8, 3.0, 3.3, 3.7, 4.0, 4.4, 4.9, 5.4, 5.9, 6.3,
+                    6.9, 7.4, 8.0, 8.6, 9.3, 9.9, 10.6, 11.3, 12.1, 12.9,
+                    13.6, 14.4, 15.2, 16.0, 16.9, 17.7, 18.6, 19.5, 20.4, 21.3,
+                    22.2, 23.1, 24.1, 25.1, 26.0, 27.0, 28.0, 29.0, 29.9, 31.0,
+                    32.0, 33.0, 34.0, 35.1, 36.1, 37.1, 38.2, 39.2, 40.3, 41.3,
+                    42.4, 43.4, 44.5, 45.5]
+        #<n| sigma tau+ |0_i^+>
+        me_initial = [-0.33, 0.67, -0.024, -0.5, 0.075, -0.14, 0.55, 0.18, -0.28, 0.35,
+                      0.65, 1.12, 0.9, 1.059, 1.005, 1.19, 1.29, 1.4, 1.45, 1.25,
+                      1.09, 0.92, 0.81, 0.71, 0.6, 0.52, 0.46, 0.41, 0.34, 0.32,
+                      0.28, 0.24, 0.2, 0.17, 0.15, 0.14, 0.12, 0.1, 0.086, 0.07,
+                      0.058, 0.049, 0.037, 0.031, 0.025, 0.022, 0.017, 0.014, 0.0099, 0.0073,
+                      0.0057, 0.0044, 0.0032, -0.0024, -0.0018, -0.0013, -0.00096, 0.00071, 0.00052, 0.00038,
+                      -0.00028, 0.00021, -0.00017, 0.00014]
+        #<0_f^+| sigma tau+ |n>
+        me_final = [-0.11, 0.29, -0.052, -0.14, 0.017, -0.22, 0.18, 0.016, -0.088, 0.019,
+                    0.11, 0.091, 0.098, 0.078, 0.075, 0.078, 0.055, 0.05, 0.023, 0.0065,
+                    -0.0026, -0.0089, -0.011, -0.0075, -0.0075, -0.0046, -0.0059, -0.0032, -0.0033, -0.000093,
+                    -0.0017, -0.0002, -0.0004, 0.00021, -0.00016, 0.00022, -0.00019, 0.00018, -0.00024, 0.00017,
+                    -0.0002, 0.00017, -0.00018, 0.00016, -0.00017, 0.00014, -0.00015, 0.00014, -0.00015, 0.00014,
+                    -0.00013, 0.000125, -0.00013, -0.00012, 0.00011, -0.00011, 0.00011, 0.000105, -0.0001, 0.0001,
+                    0.000097, 0.000094, 0.00009, 0.000088]
+        RA = 1.2 * (76)**(1/3) * fmtoinvGeV
+    elif iso == '136Xe':
         Q = 2.458e-3 #GeV
         G01 = 1.449e-14 #yrs^-1
-        MF = -0.54
-        MGTAA = 2.45
-        MGTAP = -0.79
-        MGTPP = 0.25
-        MGTMM = 0.19
-        MTAP = 0.01
-        MTPP = -0.01
-        MTMM = 0.0
-        M0 = -MF/gA**2 + (MGTAA + MGTAP + MGTPP + MGTMM) + (MTAP + MTPP + MTMM)
+        # NME (mN = 0)
+        M0 = 2.7
+        ma = 0.157
+        mb = 0.221
+        mc = 1.0
+        md = 0.173 #0.146
+        #Short distance NMEs
         MFsd = -1.94
         MGTAPsd = -1.99
         MGTPPsd = 0.74
         MTAPsd = 0.05
         MTPPsd = -0.02
+        # E_n - E_i [MeV]
+        energies = [0.17, 0.63, 0.89, 1.02, 1.05, 1.1, 1.2, 1.3, 1.4, 1.5,
+                    1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.6, 2.7, 2.9, 3.1,
+                    3.3, 3.6, 3.8, 4.0, 4.3, 4.6, 4.8, 5.1, 5.4, 5.7,
+                    6.1, 6.3, 6.7, 7.0, 7.3, 7.5, 7.7, 8.1, 8.4, 8.8,
+                    9.1, 9.4, 9.8, 10.1, 10.5, 10.9, 11.3, 11.7, 12.0, 12.4,
+                    12.8, 13.1, 13.5, 13.9, 14.2, 14.6, 15.1, 16.2, 17.3, 17.7]
+        #<n| sigma tau+ |0_i^+>
+        me_initial = [1.0, -0.19, -0.25, 0.30, 0.23, -0.13, 0.12, 0.16, -0.23, 0.20,
+                      -0.36, -0.24, 0.22, 0.34, 0.35, -0.49, 0.62, -0.91, 0.37, 0.30,
+                      0.39, 0.39, 0.45, -0.44, -0.35, -0.36, 0.44, 0.44, -0.55, 0.63,
+                      0.85, -1.2, -1.3, -1.9, 3.1, -4.0, 2.6, 1.4, -1.0, -0.93,
+                      0.80, 0.59, -0.50, 0.35, 0.26, -0.22, 0.17, -0.16, -0.16, 0.14,
+                      0.12, 0.092, -0.079, 0.071, -0.070, -0.035, -0.051, -0.039, -0.043, 0.11]
+        #<0_f^+| sigma tau+ |n>
+        me_final = [0.13, -0.0063, -0.016, 0.036, 0.025, -0.00076, -0.0052, -0.0028, -0.0098, -0.012,
+                    0.0084, 0.00058, 0.011, 0.0070, 0.0060, -0.0086, 0.021, -0.024, 0.0064, 0.0013,
+                    -0.0013, 0.0021, -0.013, -0.0032, -0.0038, -0.0067, 0.0083, 0.0066, -0.0093, 0.012,
+                    0.013, -0.016, -0.014, -0.016, 0.023, -0.028, 0.017, 0.0091, -0.0057, -0.0064,
+                    0.0038, 0.0014, 0.0027, -0.0027, -0.00053, -0.00021, -0.00037, -0.00054, -0.0010, 0.00092,
+                    -0.00014, -0.00040, -0.00019, -0.00026, 0.000031, 0.00021, -0.00015, 0.00011, -0.000091, -0.000029]
         RA = 1.2 * (136)**(1/3) * fmtoinvGeV
-    elif iso == '76Ge':
-        Q = 2.039e-3 #GeV
-        G01 = 0.228e-14 #yrs^-1
-        MF = -0.59
-        MGTAA = 3.15
-        MGTAP = -0.94
-        MGTPP = 0.30
-        MGTMM = 0.22
-        MTAP = -0.01
-        MTPP = 0.0
-        MTMM = 0.0
-        M0 = -MF/gA**2 + (MGTAA + MGTAP + MGTPP + MGTMM) + (MTAP + MTPP + MTMM)
-        MFsd = -2.4 #-1.46
-        MGTAPsd = -2.26
-        MGTPPsd = 0.82
-        MTAPsd = -0.05
-        MTPPsd = 0.02
-        RA = 1.2 * (76)**(1/3) * fmtoinvGeV
-    
     else:
-        print("Please input one of the supported isotopes (136Xe and 76Ge)")
+        print("Please input one of the supported isotopes (76Ge and 136Xe)")
 
-    ma = 0.157
-    mb = 0.221
-    mc = 1.0
-    md = 0.146
-
-    def M(mN, linear):
-        return M0 * 1/(1 + linear * mN/ma + (mN/mb)**2)
+    def M(mN):
+        return M0 * 1/(1 + mN/ma + (mN/mb)**2)
     def dMdmN(mN):
-        return - M0 * (2*mN/mb**2)/(1 + (mN/mb)**2)**2
+        return - M0 * (1/ma + 2*mN/mb**2)/(1 + mN/ma + (mN/mb)**2)**2
     def gvNN(mN):
         return gvNN0 * (1 + (mN/mc)**2)/(1 + (mN/mc)**2 * (mN/md)**2)
-    def Avfunc(mN, linear):
-        return - M(mN, linear) - 2 * gvNN(mN) * mpi**2 * MFsd/gA**2
-
+    
+    def eta(mu0, mN):
+        if mN <= mbottom:
+            return (ALPHA_s_ff(mN)/ALPHA_s_ff(mu0))**(6/25)
+        elif mN > mbottom and mN <= mtop:
+            return (ALPHA_s_ff(mbottom)/ALPHA_s_ff(mu0))**(6/25) * (ALPHA_s_ff(mN)/ALPHA_s_ff(mbottom))**(6/23)
+        elif mN > mtop:
+            return (ALPHA_s_ff(mbottom)/ALPHA_s_ff(mu0))**(6/25) * (ALPHA_s_ff(mtop)/ALPHA_s_ff(mbottom))**(6/23) * (ALPHA_s_ff(mN)/ALPHA_s_ff(mtop))**(2/7)
+    
     def Avsoft(mN):
         def f(m, E):
             if m >= E:
-                return (- 2 * (E * (1 + np.log(mpi/m)) 
-                            + np.sqrt(m**2 - E**2) * (np.pi/2 - np.arctan2(E, np.sqrt(m**2 - E**2)))))
+                return (- 2 * (E * (1 + np.log(mpi/m)) + np.sqrt(m**2 - E**2) * (np.pi/2 - np.arctan2(E, np.sqrt(m**2 - E**2)))))
             else:
-                return (- 2 * (E * (1 + np.log(mpi/m)) 
-                            - np.sqrt(E**2 - m**2) * np.log((E + np.sqrt(E**2 - m**2))/m)))
-
-        # E_n - E_i [MeV]
-        energies = [0.17, 0.63, 0.89, 1.02, 1.05, 1.1, 1.2, 1.3, 1.4, 1.5,
-        1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.6, 2.7, 2.9, 3.1,
-        3.3, 3.6, 3.8, 4.0, 4.3, 4.6, 4.8, 5.1, 5.4, 5.7,
-        6.1, 6.3, 6.7, 7.0, 7.3, 7.5, 7.7, 8.1, 8.4, 8.8,
-        9.1, 9.4, 9.8, 10.1, 10.5, 10.9, 11.3, 11.7, 12.0, 12.4,
-        12.8, 13.1, 13.5, 13.9, 14.2, 14.6, 15.1, 16.2, 17.3, 17.7]
-
-        #<n| sigma tau+ |0_i^+>
-        me_initial = [1.0, -0.19, -0.25, 0.30, 0.23, -0.13, 0.12, 0.16, -0.23, 0.20,
-        -0.36, -0.24, 0.22, 0.34, 0.35, -0.49, 0.62, -0.91, 0.37, 0.30,
-        0.39, 0.39, 0.45, -0.44, -0.35, -0.36, 0.44, 0.44, -0.55, 0.63,
-        0.85, -1.2, -1.3, -1.9, 3.1, -4.0, 2.6, 1.4, -1.0, -0.93,
-        0.80, 0.59, -0.50, 0.35, 0.26, -0.22, 0.17, -0.16, -0.16, 0.14,
-        0.12, 0.092, -0.079, 0.071, -0.070, -0.035, -0.051, -0.039, -0.043, 0.11]
-
-        #<0_f^+| sigma tau+ |n>
-        me_final = [0.13, -0.0063, -0.016, 0.036, 0.025, -0.00076, -0.0052, -0.0028, -0.0098, -0.012,
-        0.0084, 0.00058, 0.011, 0.0070, 0.0060, -0.0086, 0.021, -0.024, 0.0064, 0.0013,
-        -0.0013, 0.0021, -0.013, -0.0032, -0.0038, -0.0067, 0.0083, 0.0066, -0.0093, 0.012,
-        0.013, -0.016, -0.014, -0.016, 0.023, -0.028, 0.017, 0.0091, -0.0057, -0.0064,
-        0.0038, 0.0014, 0.0027, -0.0027, -0.00053, -0.00021, -0.00037, -0.00054, -0.0010, 0.00092,
-        -0.00014, -0.00040, -0.00019, -0.00026, 0.000031, 0.00021, -0.00015, 0.00011, -0.000091, -0.000029]
+                return (- 2 * (E * (1 + np.log(mpi/m)) - np.sqrt(E**2 - m**2) * np.log((E + np.sqrt(E**2 - m**2))/m)))
 
         list = []
         for i in range(len(energies)):
             DelE = Q/2 + me + energies[i] * 1e-3
             list.append(me_initial[i] * me_final[i] * 2 * f(mN, DelE))
 
-        return (- RA/(2 * np.pi) * sum(list))
+        return - RA/(2 * np.pi) * sum(list)
 
-    if mN < 0.1:
-        Av = Avfunc(mN, 0.) + mN * dMdmN(mN) + Avsoft(mN)
-    elif mN >= 0.1 and mN < 2:
-        Av = Avfunc(mN, 1.)
-    elif mN >= 2:
-        Av = - 2 * 1.23 * (mpi/mN)**2 * (5/6 * g1pipi * (MGTPPsd + MTPPsd)
-                                         + 1/2 * g1piN * (MGTAPsd + MTAPsd) 
-                                         - 2 * g1NN/gA**2 * MFsd)
-
-    return (me/(Vud**2 * gA**2 * mN * np.abs(Av - 0*Avfunc(0, 1)) * np.sqrt(G01 * Thalf)))
+    def Avfunc(mN):
+        if mN < 0.1:
+            return (- (M(mN) - mN * dMdmN(0)) - 2 * gvNN(mN) * mpi**2 * MFsd/gA**2 + Avsoft(mN))
+        elif mN >= 0.1 and mN < 2:
+            return (- M(mN) - 2 * gvNN(mN) * mpi**2 * MFsd/gA**2) 
+        elif mN >=2:
+            return (- 2 * eta(2., mN) * (mpi/mN)**2 * (5/6 * g1pipi * (MGTPPsd + MTPPsd)
+                                                       + 1/2 * g1piN * (MGTAPsd + MTAPsd) 
+                                                       + 2 * g1NN/gA**2 * MFsd))
+    
+    return (me/(Vud**2 * gA**2 * mN * np.abs(Avfunc(mN)) * np.sqrt(G01 * Thalf)))
+    
+    
     
 def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_ticks = 100, plot_type = 'wide',
          lim_type = 'current', seesaw = True, v_masses = True, DM_window = True, DM_lifetime = False, svfg = True,
@@ -559,7 +600,7 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
         xy = con['xy']
 
         if name.startswith('0vbb'):
-            mvals = np.logspace(-15.1,10.1,1000)
+            mvals = np.logspace(-15.1,5.1,1000)
             Uvals = [N_0vbb_bound(m, con["data"][0], con["data"][1]) for m in mvals]
             data = np.zeros((len(mvals),2))
             data[:,0] = mvals
