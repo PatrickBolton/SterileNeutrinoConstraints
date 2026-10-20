@@ -4,6 +4,8 @@
 
 <p align="center"><img src="../plots/UeNsq_constraints.png" width="800"></p>
 
+<p align="center"><img src="../plots/UeNsq_osc_constraints.png" width="350"></p>
+
 <div align="center">
 
 | Experiment/Analysis | Type | Reference | Data | Shown |

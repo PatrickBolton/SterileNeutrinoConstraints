@@ -507,8 +507,6 @@ def plot(x_min=1e-14, x_max=1e5, y_min=1e-15, y_max=1, n_x_ticks = 100, n_y_tick
         mN = np.logspace(-16,10,100)
         seesaw_bound_d = m2NO/(m2NO + mN)
         seesaw_bound_u = 0.1e-9/(0.1e-9 + mN)
-        ll(mN, seesaw_bound_d, lw=1, ls='dotted', color='black') # Seesaw line
-        ll(mN, seesaw_bound_u, lw=1, ls='dotted', color='black') # Seesaw line
         nlevels = 30
         cmap=cm.Greys
         cols = cmap(np.linspace(0.1,0.45,nlevels))
