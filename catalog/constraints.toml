@@ -647,6 +647,8 @@ style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UeNsq/future/CODEX_b"]
 category = "collider"
+label = 'CODEX-b'
+style = { color = 'maroon', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UeNsq/future/DUNE_Ballett"]
 category = "fixed_target"
@@ -1159,6 +1161,8 @@ style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UmuNsq/future/CODEX_b_mu"]
 category = "collider"
+label = 'CODEX-b'
+style = { color = 'maroon', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UmuNsq/future/DUNE_Ballett_mu"]
 category = "fixed_target"
@@ -1457,6 +1461,8 @@ style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UtauNsq/future/CODEX_b_tau"]
 category = "collider"
+label = 'CODEX-b'
+style = { color = 'maroon', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UtauNsq/future/DUNE_Ballett_tau"]
 category = "fixed_target"
@@ -1470,6 +1476,8 @@ style = { color = 'c', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UtauNsq/future/HL_LHC_tau"]
 category = "collider"
+label = 'HL-LHC'
+style = { color = 'deeppink', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UtauNsq/future/IceCUBE_tau"]
 category = "low_energy"
