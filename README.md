@@ -146,12 +146,6 @@ git config filter.nbstripout.extrakeys "metadata.kernelspec metadata.language_in
 
 Which constraints each figure shows, label positions and axes are set in [``src/sterile_constraints/figures.py``](src/sterile_constraints/figures.py). In VS Code, select the ``.venv`` interpreter as the notebook kernel. The published plots are rendered with LaTeX, which needs ``latex`` and ``dvipng`` (e.g. from MacTeX or TeX Live). Without them, the plots fall back to matplotlib's mathtext with a warning; set ``STERILE_CONSTRAINTS_USETEX=1`` to require LaTeX or ``=0`` to always use mathtext.
 
-To check that a code change leaves the plots unchanged, save a baseline before the change and compare after:
-
-```bash
-uv run python scripts/compare_plots.py --save   # before: copy plots/*.png to tests/baseline/
-uv run python scripts/compare_plots.py          # after: pixel-compare against the baseline
-```
 ## References
 
 1. <a id="ref-1"></a>P. D. Bolton, F. F. Deppisch and P. S. Bhupal Dev,
