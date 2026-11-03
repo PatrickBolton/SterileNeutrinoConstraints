@@ -9,9 +9,11 @@ with files(__package__).joinpath("data", "alpha_data.txt").open() as _f:
     alpha_dat = np.loadtxt(_f)
 ALPHA_s = interp1d(np.append(1e-7,alpha_dat[::,0]), np.append(alpha_dat[1,1],alpha_dat[::,1]), kind="linear")
 def ALPHA_s_f(mN):
-    if mN < 1e3:
-        a = ALPHA_s(mN * np.heaviside(mN, 0) + 1e-7)
-    if mN > 1e3:
+    # Interpolated table up to its last point (1 TeV), one-loop running with 6 flavours above
+    mu = mN * np.heaviside(mN, 0) + 1e-7
+    if mu <= ALPHA_s.x[-1]:
+        a = ALPHA_s(mu)
+    else:
         a = 2*np.pi/((11 - 2/3 * 6) * np.log(mN/0.043))
     return a
 
