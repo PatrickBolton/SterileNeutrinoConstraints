@@ -27,15 +27,7 @@ REGISTRY_PATH = REPO_ROOT / "catalog" / "constraints.toml"
 FLAVOURS = {"UeNsq": "e", "UmuNsq": "mu", "UtauNsq": "tau", "UalphaNsq": "alpha"}
 
 # CSVs still waiting for a header (description, source, units line); skipped with a warning
-PENDING_HEADERS = frozenset({
-    "UtauNsq/future/MesonDecays_LNV_tau",
-    "UtauNsq/future/HL_LHC_tau",
-    "UtauNsq/future/CODEX_b_tau",
-    "UmuNsq/future/ATLAS_1_mu",
-    "UmuNsq/future/ATLAS_2_mu",
-    "UmuNsq/future/ATLAS_3_mu",
-    "UmuNsq/future/CODEX_b_mu",
-})
+PENDING_HEADERS = frozenset()
 
 
 class PendingHeaderError(ValueError):

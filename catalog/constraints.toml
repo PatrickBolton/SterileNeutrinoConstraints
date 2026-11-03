@@ -645,6 +645,9 @@ category = "collider"
 label = 'CMS'
 style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
 
+["UeNsq/future/CODEX_b"]
+category = "collider"
+
 ["UeNsq/future/DUNE_Ballett"]
 category = "fixed_target"
 label = 'DUNE'
@@ -1144,15 +1147,6 @@ category = "fixed_target"
 label = 'ANUBIS'
 style = { color = 'magenta', lw = 1.5, ls = '-', fill = 0.075 }
 
-["UmuNsq/future/ATLAS_1_mu"]
-category = "collider"
-
-["UmuNsq/future/ATLAS_2_mu"]
-category = "collider"
-
-["UmuNsq/future/ATLAS_3_mu"]
-category = "collider"
-
 ["UmuNsq/future/ATLAS_disp_mu"]
 category = "collider"
 label = 'ATLAS'
@@ -1491,9 +1485,6 @@ style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
 category = "fixed_target"
 label = 'MATHUSLA'
 style = { color = 'gold', lw = 1.5, ls = '-', fill = 0.075 }
-
-["UtauNsq/future/MesonDecays_LNV_tau"]
-category = "peak_search"
 
 ["UtauNsq/future/NA62_tau"]
 category = "fixed_target"
