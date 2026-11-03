@@ -224,12 +224,12 @@ def N_lifetime(mN, UeN, UmuN, UtauN):
                   + R(Mmu/mN, MD/mN, MK/mN) * Ga_mcs
                   + R(Mmu/mN, MD/mN, MB/mN) * Ga_mcb))
 
-    Ga_tud = w * 3 * thr/2 * Uesq * Vud**2 * I1(Mtau/mN, Mu/mN, Md/mN)
-    Ga_tus = w * 3 * thr/2 * Uesq * Vus**2 * I1(Mtau/mN, Mu/mN, Ms/mN)
-    Ga_tub = w * 3 * thr/2 * Uesq * Vub**2 * I1(Mtau/mN, Mu/mN, Mb/mN)
-    Ga_tcd = w * 3 * thr/2 * Uesq * Vcd**2 * I1(Mtau/mN, Mc/mN, Md/mN)
-    Ga_tcs = w * 3 * thr/2 * Uesq * Vcs**2 * I1(Mtau/mN, Mc/mN, Ms/mN)
-    Ga_tcb = w * 3 * thr/2 * Uesq * Vcb**2 * I1(Mtau/mN, Mc/mN, Mb/mN)
+    Ga_tud = w * 3 * thr/2 * Utsq * Vud**2 * I1(Mtau/mN, Mu/mN, Md/mN)
+    Ga_tus = w * 3 * thr/2 * Utsq * Vus**2 * I1(Mtau/mN, Mu/mN, Ms/mN)
+    Ga_tub = w * 3 * thr/2 * Utsq * Vub**2 * I1(Mtau/mN, Mu/mN, Mb/mN)
+    Ga_tcd = w * 3 * thr/2 * Utsq * Vcd**2 * I1(Mtau/mN, Mc/mN, Md/mN)
+    Ga_tcs = w * 3 * thr/2 * Utsq * Vcs**2 * I1(Mtau/mN, Mc/mN, Ms/mN)
+    Ga_tcb = w * 3 * thr/2 * Utsq * Vcb**2 * I1(Mtau/mN, Mc/mN, Mb/mN)
     Ga_thad = (R_QCD(mN - Mtau) * t2(Mtau, mN)
                * (R(Mtau/mN, Mpi/mN, Mpi/mN) * Ga_tud 
                   + R(Mtau/mN, Mpi/mN, MK/mN) * Ga_tus
