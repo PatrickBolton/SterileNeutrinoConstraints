@@ -133,6 +133,13 @@ uv run make-plots      # regenerate everything in plots/ (or e.g. uv run make-pl
 uv run jupyter lab     # or draw the figures interactively in the notebooks
 ```
 
+If you edit or run the notebooks, set up the git filter once per clone. It strips outputs and kernel metadata from notebooks on commit, so running them doesn't show up as changes:
+
+```bash
+uv run nbstripout --install --attributes .gitattributes
+git config filter.nbstripout.extrakeys "metadata.kernelspec metadata.language_info"
+```
+
 Which constraints each figure shows, label positions and axes are set in [``src/sterile_constraints/figures.py``](src/sterile_constraints/figures.py). In VS Code, select the ``.venv`` interpreter as the notebook kernel. The published plots are rendered with LaTeX, which needs ``latex`` and ``dvipng`` (e.g. from MacTeX or TeX Live). Without them, the plots fall back to matplotlib's mathtext with a warning; set ``STERILE_CONSTRAINTS_USETEX=1`` to require LaTeX or ``=0`` to always use mathtext.
 
 To check that a code change leaves the plots unchanged, save a baseline before the change and compare after:
