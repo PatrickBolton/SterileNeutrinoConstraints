@@ -1,0 +1,1516 @@
+# Constraint registry: one table per constraint, keyed by its path under data/ (without .csv).
+#
+# The CSV header is the source of truth for description, references and units (see units.py);
+# this file holds what the header cannot say:
+#   category      oscillation | beta_decay | 0vbb | decay_in_flight | peak_search | fixed_target |
+#                 collider | precision | low_energy | xray | supernovae | cosmology
+#   label, style  defaults used on figures (figures.py can override per figure)
+#   y_conversion  how a sin^2(2θ) / tan^2(θ) column becomes |U|^2: exact (default) | small_angle | none
+#   computed      parameters of a computed curve (no CSV), e.g. 0vbb half-life limits
+
+
+# ==================== UalphaNsq/current ===========================================
+
+
+["UalphaNsq/current/CMB_BAO_H"]
+category = "cosmology"
+label = 'Background cosmology'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UalphaNsq/current/CMB_linear"]
+category = "cosmology"
+label = 'Planck'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UalphaNsq/current/COMPTEL"]
+category = "xray"
+label = 'COMPTEL'
+style = { color = 'seagreen', lw = 0.0, ls = '-', fill = 1.0 }
+y_conversion = "small_angle"
+note = 'sin^2(2θ) down to ~1e-26: exact conversion underflows'
+
+["UalphaNsq/current/Chandra_M31"]
+category = "xray"
+label = 'Chandra'
+style = { color = 'dodgerblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/DELPHI"]
+category = "collider"
+label = 'DELPHI'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/DM_overproduction"]
+category = "cosmology"
+label = '$\Omega_N > \Omega_{\mathrm{DM}}$'
+style = { color = 'k', lw = 1.0, ls = ':', fill = 0.0 }
+
+["UalphaNsq/current/DM_underproduction"]
+category = "cosmology"
+label = '$\Omega_N < \Omega_{\mathrm{DM}}$'
+style = { color = 'k', lw = 1.0, ls = ':', fill = 0.0 }
+
+["UalphaNsq/current/Fermi_GBM"]
+category = "xray"
+label = 'Fermi'
+style = { color = 'indianred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/Hitomi"]
+category = "xray"
+label = 'Hitomi'
+style = { color = 'silver', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/INTEGRAL_COMPTEL_EGRET"]
+category = "xray"
+label = 'Diffuse x-ray'
+style = { color = 'seagreen', lw = 0.0, ls = '-', fill = 1.0 }
+
+["UalphaNsq/current/INTEGRAL_Essig"]
+category = "xray"
+label = 'INTEGRAL'
+style = { color = 'seagreen', lw = 0.0, ls = '-', fill = 1.0 }
+y_conversion = "small_angle"
+note = 'sin^2(2θ) down to ~1e-26: exact conversion underflows'
+
+["UalphaNsq/current/INTEGRAL_Fischer"]
+category = "xray"
+label = 'INTEGRAL'
+style = { color = 'blueviolet', lw = 1.5, ls = '-', fill = 0.075 }
+y_conversion = "small_angle"
+note = 'sin^2(2θ) down to ~1e-26: exact conversion underflows'
+
+["UalphaNsq/current/INTEGRAL_MW"]
+category = "xray"
+label = 'INTEGRAL'
+style = { color = 'blueviolet', lw = 1.5, ls = '-', fill = 0.075 }
+y_conversion = "small_angle"
+note = 'sin^2(2θ) down to ~1e-26: exact conversion underflows'
+
+["UalphaNsq/current/Lymanalpha"]
+category = "xray"
+label = 'Ly-$\alpha$'
+style = { color = 'lightcoral', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/NuSTAR_Bulge"]
+category = "xray"
+label = 'NuSTAR'
+style = { color = 'green', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/Pauli"]
+category = "cosmology"
+label = 'Pauli Exclusion'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UalphaNsq/current/XMM-Newton_BSO"]
+category = "xray"
+label = 'XMM-Newton'
+style = { color = 'mediumaquamarine', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/XMM-Newton_dwarf"]
+category = "xray"
+label = 'XMM-Newton'
+style = { color = 'mediumaquamarine', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/dSph"]
+category = "cosmology"
+label = 'Dwarf Galaxies'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+y_conversion = "none"
+note = 'CHECK: sin^2(2θ) plotted as |U|^2 (no factor 1/4); mass bound, y extent arbitrary?'
+
+["UalphaNsq/current/diffuse_xray"]
+category = "xray"
+label = 'Diffuse x-ray'
+style = { color = 'orangered', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/current/eROSITA_LMC"]
+category = "xray"
+label = 'eROSITA'
+style = { color = 'olivedrab', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UalphaNsq/future ============================================
+
+
+["UalphaNsq/future/ATHENA"]
+category = "xray"
+label = 'ATHENA'
+style = { color = 'orange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/future/FCC_ee"]
+category = "collider"
+label = 'FCC-ee'
+style = { color = 'limegreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/future/XRISM"]
+category = "xray"
+label = 'XRISM'
+style = { color = 'dodgerblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/future/eROSITA"]
+category = "xray"
+label = 'eROSITA'
+style = { color = 'olivedrab', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UalphaNsq/future/eXTP"]
+category = "xray"
+label = 'eXTP'
+style = { color = 'blueviolet', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UeNsq/current ===============================================
+
+
+["UeNsq/current/0vbb_KamLAND-Zen"]
+category = "0vbb"
+label = 'KamLAND-Zen'
+style = { color = 'royalblue', lw = 1.5, ls = '-', fill = 0.05 }
+computed = { model = "0vbb", thalf = 3.8e+26, isotope = "136Xe" }
+
+["UeNsq/current/0vbb_LEGEND"]
+category = "0vbb"
+label = 'LEGEND'
+style = { color = 'royalblue', lw = 1.5, ls = '--', fill = 0.05 }
+computed = { model = "0vbb", thalf = 1.9e+26, isotope = "76Ge" }
+
+["UeNsq/current/ATLAS_dispW"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ATLAS_prompt1l_disp2l"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ATLAS_prompt2l_j"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ATLAS_prompt3l"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ATLAS_prompt3l_1905.09787"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ATLAS_samesignl_VBF"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ATLAS_ttbar"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/B8"]
+category = "oscillation"
+label = '$^{8}\mathrm{B}$'
+style = { color = 'goldenrod', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/BBN"]
+category = "cosmology"
+label = 'BBN'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UeNsq/current/BEBC"]
+category = "fixed_target"
+label = 'BEBC'
+style = { color = 'yellowgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/BESIII_D0"]
+category = "collider"
+label = 'BESIII'
+style = { color = 'paleturquoise', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UeNsq/current/BESIII_Dplus"]
+category = "collider"
+label = 'BESIII'
+style = { color = 'paleturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Be7"]
+category = "oscillation"
+label = '$^{7}\mathrm{Be}$'
+style = { color = 'skyblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/BeEST"]
+category = "beta_decay"
+label = 'BeEST'
+style = { color = 'rosybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Belle"]
+category = "collider"
+label = 'Belle'
+style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Borexino"]
+category = "decay_in_flight"
+
+["UeNsq/current/Borexino_reanalysis"]
+category = "decay_in_flight"
+label = 'Borexino'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Bugey"]
+category = "decay_in_flight"
+label = 'Bugey'
+style = { color = 'turquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CHARM"]
+category = "fixed_target"
+label = 'CHARM'
+style = { color = 'darkslategray', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CMB_high"]
+category = "cosmology"
+label = 'CMB energy injection'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UeNsq/current/CMS_prompt1l_MDS"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CMS_prompt1l_disp1j"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CMS_prompt1l_disp2l"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CMS_prompt3l"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CMS_samesign2l_j"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Ca45"]
+category = "beta_decay"
+label = '$^{45}$Ca'
+style = { color = 'plum', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/CePr144"]
+category = "beta_decay"
+label = '$^{144}\mathrm{Ce} - ^{144} \mathrm{Pr}$'
+style = { color = 'crimson', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Cu64"]
+category = "beta_decay"
+label = '$^{64}$Cu'
+style = { color = 'darkcyan', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/DANSS"]
+category = "oscillation"
+label = 'DANSS'
+style = { color = 'darkslateblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Daya_Bay"]
+category = "oscillation"
+label = 'Daya Bay'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/F20"]
+category = "beta_decay"
+label = '$^{20}$F'
+style = { color = 'green', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Fermi2"]
+category = "beta_decay"
+label = '$0^+ \to 0^+$'
+style = { color = 'deeppink', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Gosgen_Oberauer"]
+category = "decay_in_flight"
+label = 'G\"{o}sgen'
+style = { color = 'palevioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Gosgen_Vogel"]
+category = "decay_in_flight"
+label = 'G\"{o}sgen'
+style = { color = 'palevioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Hardy_SuperAllowed"]
+category = "beta_decay"
+label = '$0^+ \to 0^+$'
+style = { color = 'deeppink', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Hiddemann"]
+category = "beta_decay"
+label = '$^{3}$H'
+style = { color = 'lime', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Higgs"]
+category = "collider"
+label = 'Higgs'
+style = { color = 'sandybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/IHEP_JINR"]
+category = "fixed_target"
+label = 'IHEP-JINR'
+style = { color = 'sienna', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/JUNO"]
+category = "oscillation"
+label = 'JUNO'
+style = { color = 'coral', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/KARMEN"]
+category = "decay_in_flight"
+label = 'KARMEN'
+style = { color = 'seagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/KATRIN"]
+category = "beta_decay"
+label = 'KATRIN'
+style = { color = '#002E63', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/KATRIN_oscillation"]
+category = "oscillation"
+label = 'KATRIN'
+style = { color = '#002E63', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/KamLAND"]
+category = "oscillation"
+label = 'KamLAND'
+style = { color = 'mediumturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Kaon_universality"]
+category = "peak_search"
+label = '$K$ univ.'
+style = { color = 'darkkhaki', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UeNsq/current/L3"]
+category = "collider"
+label = 'L3'
+style = { color = 'salmon', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/L3_high"]
+category = "collider"
+label = 'L3'
+style = { color = 'salmon', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/LNV_MesonDecays"]
+category = "peak_search"
+label = 'LNV decays'
+style = { color = 'greenyellow', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/LSND"]
+category = "decay_in_flight"
+label = 'LSND'
+style = { color = 'lightpink', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Mainz"]
+category = "beta_decay"
+label = '$^{3}$H'
+style = { color = 'lime', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/MicroBooNE_oscillation"]
+category = "oscillation"
+label = 'MicroBooNE'
+style = { color = 'fuchsia', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/NA3"]
+category = "fixed_target"
+label = 'NA3'
+style = { color = 'cornsilk', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/NA62"]
+category = "peak_search"
+label = 'NA62'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/NA62_pi"]
+category = "peak_search"
+label = 'NA62'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/NEOS"]
+category = "oscillation"
+label = 'NEOS'
+style = { color = 'forestgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Ni63"]
+category = "beta_decay"
+label = '$^{63}$Ni'
+style = { color = 'darkmagenta', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/PIBETA"]
+category = "beta_decay"
+label = 'PIBETA'
+style = { color = 'indigo', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/PIENU"]
+category = "peak_search"
+label = 'PIENU'
+style = { color = 'gold', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/PROSPECT"]
+category = "oscillation"
+label = 'PROSPECT'
+style = { color = 'darkturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/PS191"]
+category = "fixed_target"
+
+["UeNsq/current/PS191_reanalysis"]
+category = "fixed_target"
+label = 'PS191'
+style = { color = 'magenta', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Pion_universality"]
+category = "peak_search"
+label = '$\pi$ univ.'
+style = { color = 'darkkhaki', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Planck"]
+category = "cosmology"
+label = 'Planck'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UeNsq/current/Pu241"]
+category = "beta_decay"
+label = 'MAGNETO-$\nu$'
+style = { color = '#FFA812', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/RENO"]
+category = "oscillation"
+label = 'RENO'
+style = { color = 'firebrick', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/RENO_NEOS"]
+category = "oscillation"
+label = 'RENO + NEOS'
+style = { color = 'cornflowerblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Re187"]
+category = "beta_decay"
+label = '$^{187}$Re'
+style = { color = 'violet', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Rovno_Derbin"]
+category = "decay_in_flight"
+label = 'Rovno'
+style = { color = 'tomato', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Rovno_Kopeikin"]
+category = "decay_in_flight"
+label = 'Rovno'
+style = { color = 'tomato', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/S35"]
+category = "beta_decay"
+label = '$^{35}$S'
+style = { color = 'y', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/SKICDC"]
+category = "oscillation"
+label = '$\mathrm{SK,IC,DC}$'
+style = { color = 'darkorange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/SNe_Abazajian"]
+category = "supernovae"
+
+["UeNsq/current/SNe_Nunokawa"]
+category = "supernovae"
+
+["UeNsq/current/SNe_ShiSigl"]
+category = "supernovae"
+
+["UeNsq/current/SNe_Zhou"]
+category = "supernovae"
+
+["UeNsq/current/Solar_Cirelli"]
+category = "oscillation"
+
+["UeNsq/current/Solar_Dentler"]
+category = "oscillation"
+label = '$\mathrm{SK,IC,DC}$'
+style = { color = 'mediumturquoise', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UeNsq/current/SuperAllowed"]
+category = "beta_decay"
+label = '$0^+ \to 0^+$'
+style = { color = 'deeppink', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/SuperK"]
+category = "decay_in_flight"
+label = 'Super-K'
+style = { color = 'mediumpurple', lw = 0.0, ls = '-', fill = 1.0 }
+
+["UeNsq/current/SuperK_decay"]
+category = "decay_in_flight"
+label = 'Super-K'
+style = { color = 'mediumseagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/T2K"]
+category = "fixed_target"
+label = 'T2K'
+style = { color = 'purple', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/TRIUMF"]
+category = "peak_search"
+label = 'TRIUMF'
+style = { color = 'grey', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Troitsk_2013"]
+category = "beta_decay"
+label = '$^{3}$H'
+style = { color = 'lime', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/Troitsk_2017"]
+category = "beta_decay"
+label = '$^{3}$H'
+style = { color = 'lime', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/ionisation"]
+category = "cosmology"
+label = 'Reionization'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UeNsq/current/pep_CNO"]
+category = "oscillation"
+label = 'pep + CNO'
+style = { color = 'mediumslateblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/pp"]
+category = "oscillation"
+label = 'pp'
+style = { color = 'orchid', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/current/unitarity"]
+category = "precision"
+label = 'Unitarity'
+style = { color = 'darkgoldenrod', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UeNsq/future ================================================
+
+
+["UeNsq/future/0vbb_nEXO"]
+category = "0vbb"
+label = 'nEXO'
+style = { color = 'royalblue', lw = 1.5, ls = '-', fill = 0.05 }
+computed = { model = "0vbb", thalf = 1e+28, isotope = "136Xe" }
+
+["UeNsq/future/AL3X_disp"]
+category = "fixed_target"
+label = 'AL3X'
+style = { color = 'sienna', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/ANUBIS"]
+category = "fixed_target"
+label = 'ANUBIS'
+style = { color = 'magenta', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/ATLAS_disp"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/BeEST_PhaseIII"]
+category = "low_energy"
+label = 'BeEST'
+style = { color = 'rosybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/BeEST_PhaseIV"]
+category = "low_energy"
+label = 'BeEST'
+style = { color = 'rosybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/BeEST_PhaseIV_improved"]
+category = "low_energy"
+label = 'BeEST'
+style = { color = 'rosybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/CLIC_Chakraborty"]
+category = "collider"
+label = 'CLIC'
+style = { color = 'darkslategrey', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/CLIC_Das"]
+category = "collider"
+label = 'CLIC'
+style = { color = 'darkslategrey', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/CMS_disp"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/DUNE_Ballett"]
+category = "fixed_target"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/DUNE_Krasnov"]
+category = "fixed_target"
+
+["UeNsq/future/DUNE_PRISM_oscillations"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/DUNE_indirect"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/DUNE_osc_Berryman"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = ':', fill = 0.075 }
+
+["UeNsq/future/DUNE_osc_Parveen"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UeNsq/future/DUNE_osc_Penedo"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-.', fill = 0.075 }
+
+["UeNsq/future/FASER_disp"]
+category = "fixed_target"
+label = 'FASER'
+style = { color = 'c', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/FCC_ee_Alimena"]
+category = "collider"
+label = 'FCC-ee'
+style = { color = 'limegreen', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UeNsq/future/HUNTER_1"]
+category = "low_energy"
+label = 'HUNTER'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/HUNTER_2"]
+category = "low_energy"
+label = 'HUNTER'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/HUNTER_3"]
+category = "low_energy"
+label = 'HUNTER'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/ILC"]
+category = "collider"
+label = 'ILC'
+style = { color = 'fuchsia', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/KATRIN"]
+category = "low_energy"
+label = 'KATRIN'
+style = { color = 'tomato', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/LHCb_disp"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/LHeC"]
+category = "collider"
+label = 'LHeC'
+style = { color = 'indianred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/LiquidO"]
+category = "low_energy"
+label = 'LiquidO'
+style = { color = 'crimson', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/MATHUSLA_disp"]
+category = "fixed_target"
+label = 'MATHUSLA'
+style = { color = 'gold', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/NA62"]
+category = "fixed_target"
+label = 'NA62'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/PIONEER"]
+category = "peak_search"
+label = 'PIONEER'
+style = { color = 'olive', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/SHiP"]
+category = "fixed_target"
+label = 'SHiP'
+style = { color = 'purple', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/TRISTAN"]
+category = "low_energy"
+label = 'TRISTAN'
+style = { color = 'mediumslateblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/collider_100TeV"]
+category = "collider"
+label = 'FCC-hh'
+style = { color = 'y', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/collider_14TeV"]
+category = "collider"
+label = 'HL-LHC'
+style = { color = 'cadetblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UeNsq/future/lept_disp"]
+category = "collider"
+
+["UeNsq/future/vSTORM"]
+category = "low_energy"
+label = '$\nu$STORM'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UmuNsq/current ==============================================
+
+
+["UmuNsq/current/ATLAS_dispW_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_prompt1l_disp2l_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_prompt1l_disp2l_mu_1905.09787"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_prompt2l_j_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_prompt3l_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_prompt3l_mu_1905.09787"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_samesignl_VBF_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ATLAS_ttbar_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/B8_mu"]
+category = "oscillation"
+label = '$^{8}\mathrm{B}$'
+style = { color = 'goldenrod', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/BBN_mu"]
+category = "cosmology"
+label = 'BBN'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UmuNsq/current/BEBC"]
+category = "fixed_target"
+label = 'BEBC'
+style = { color = 'yellowgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/Be7_mu"]
+category = "oscillation"
+label = '$^{7}\mathrm{Be}$'
+style = { color = 'skyblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/Belle_mu"]
+category = "collider"
+label = 'Belle'
+style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CCFR"]
+category = "oscillation"
+label = 'CCFR'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CDHS"]
+category = "oscillation"
+label = 'CDHS'
+style = { color = 'crimson', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CHARMII"]
+category = "fixed_target"
+label = 'CHARM II'
+style = { color = 'darkslategray', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CHARM_mu"]
+category = "fixed_target"
+label = 'CHARM'
+style = { color = 'darkslategray', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMB_high_mu"]
+category = "cosmology"
+label = 'CMB energy injection'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UmuNsq/current/CMS_Bparking_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMS_prompt1l_MDS_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMS_prompt1l_disp1j_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMS_prompt1l_disp2l_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMS_prompt3l_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMS_samesign2l_j_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/CMS_samesignl_VBF_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/DeepCore_mu"]
+category = "oscillation"
+label = 'IceCube DeepCore'
+style = { color = 'lightseagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/E733"]
+category = "fixed_target"
+label = 'E733'
+style = { color = 'chocolate', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/E949"]
+category = "fixed_target"
+label = 'E949'
+style = { color = 'green', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/Higgs_mu"]
+category = "collider"
+label = 'Higgs'
+style = { color = 'sandybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/IceCube"]
+category = "oscillation"
+label = 'IceCube'
+style = { color = 'fuchsia', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/KARMEN_mu"]
+category = "decay_in_flight"
+label = 'KARMEN'
+style = { color = 'seagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/KEK"]
+category = "fixed_target"
+label = 'KEK'
+style = { color = 'tomato', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/KM3NeT_ORCA_mu"]
+category = "oscillation"
+label = 'KM3NeT/ORCA'
+style = { color = 'crimson', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/KamLAND_mu"]
+category = "oscillation"
+label = 'KamLAND'
+style = { color = 'mediumturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/L3_mu"]
+category = "collider"
+label = 'L3'
+style = { color = 'salmon', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LHCb"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'indianred', lw = 0.0, ls = '-', fill = 1.0 }
+
+["UmuNsq/current/LHCb_BmuNX_high"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'mediumspringgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LHCb_BmuNX_intermediate"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'mediumspringgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LHCb_BmuNX_low"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'mediumspringgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LHCb_Bpimumu"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'mediumspringgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LHCb_Wmumujet"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'mediumspringgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LNV_MesonDecays_mu"]
+category = "peak_search"
+label = '$LNV$ decays'
+style = { color = 'greenyellow', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/LSND_mu"]
+category = "decay_in_flight"
+label = 'LSND'
+style = { color = 'lightpink', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/MINOS"]
+category = "oscillation"
+label = 'MINOS(+)'
+style = { color = 'forestgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/MicroBooNE_2020"]
+category = "fixed_target"
+label = 'MicroBooNE'
+style = { color = 'plum', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/MicroBooNE_2022"]
+category = "fixed_target"
+label = 'MicroBooNE'
+style = { color = 'plum', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/MicroBooNE_recast"]
+category = "fixed_target"
+label = 'MicroBooNE'
+style = { color = 'plum', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/MiniBooNE"]
+category = "oscillation"
+label = 'MiniBooNE + SciBooNE'
+style = { color = 'indigo', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/MuSpectrum"]
+category = "peak_search"
+label = '$\mu$ spectrum'
+style = { color = 'darkturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/NA3_mu"]
+category = "fixed_target"
+label = 'NA3'
+style = { color = 'cornsilk', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/NA62_mu"]
+category = "fixed_target"
+label = 'NA62'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/NuTeV"]
+category = "fixed_target"
+label = 'NuTeV'
+style = { color = 'blueviolet', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/PIENU_mu"]
+category = "peak_search"
+label = 'PIENU'
+style = { color = 'gold', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/PS191_mu"]
+category = "fixed_target"
+label = 'PS191'
+style = { color = 'magenta', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/PS191_mu_reanalysis"]
+category = "fixed_target"
+
+["UmuNsq/current/PSI"]
+category = "peak_search"
+label = 'PSI'
+style = { color = 'dodgerblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/Planck_mu"]
+category = "cosmology"
+label = 'Planck'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UmuNsq/current/Planck_mu_Bridle"]
+category = "cosmology"
+label = 'Planck'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UmuNsq/current/SNe_511keV_mu"]
+category = "supernovae"
+label = '511 keV'
+style = { color = 'orange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/SNe_Abazajian_mu"]
+category = "supernovae"
+
+["UmuNsq/current/SNe_Arguelles_mu"]
+category = "supernovae"
+
+["UmuNsq/current/SNe_Explosion_mu"]
+category = "supernovae"
+label = 'SNe explosion'
+style = { color = 'darkseagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/SNe_cooling_mu"]
+category = "supernovae"
+label = 'SNe Cooling'
+style = { color = 'rosybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/SNe_diffuse_mu"]
+category = "supernovae"
+label = 'Diffuse $\gamma$'
+style = { color = 'forestgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/SNe_gammaray_mu"]
+category = "supernovae"
+label = 'SN1987A ($\gamma$)'
+style = { color = 'darkturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/Solar_Cirelli_mu"]
+category = "oscillation"
+
+["UmuNsq/current/SuperK_decay_mu"]
+category = "decay_in_flight"
+label = 'Super-K'
+style = { color = 'mediumseagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/SuperK_mu"]
+category = "oscillation"
+label = 'Super-K'
+style = { color = 'darkorange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/T2K_mu"]
+category = "fixed_target"
+label = 'T2K'
+style = { color = 'purple', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/ionisation_mu"]
+category = "cosmology"
+label = 'Reionization'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UmuNsq/current/pep_CNO_mu"]
+category = "oscillation"
+label = 'pep + CNO'
+style = { color = 'mediumslateblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/pp_mu"]
+category = "oscillation"
+label = 'pp'
+style = { color = 'orchid', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/current/unitarity_mu"]
+category = "precision"
+label = 'Unitarity'
+style = { color = 'darkgoldenrod', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UmuNsq/future ===============================================
+
+
+["UmuNsq/future/AL3X_disp_mu"]
+category = "fixed_target"
+label = 'AL3X'
+style = { color = 'sienna', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/ANUBIS_mu"]
+category = "fixed_target"
+label = 'ANUBIS'
+style = { color = 'magenta', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/ATLAS_1_mu"]
+category = "collider"
+
+["UmuNsq/future/ATLAS_2_mu"]
+category = "collider"
+
+["UmuNsq/future/ATLAS_3_mu"]
+category = "collider"
+
+["UmuNsq/future/ATLAS_disp_mu"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/CMS_disp_mu"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/CODEX_b_mu"]
+category = "collider"
+
+["UmuNsq/future/DUNE_Ballett_mu"]
+category = "fixed_target"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/DUNE_PRISM_oscillations_mu"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/DUNE_indirect_mu"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/DUNE_osc_Berryman_mu"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = ':', fill = 0.075 }
+
+["UmuNsq/future/DUNE_osc_Parveen_mu"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UmuNsq/future/DUNE_osc_Penedo_mu"]
+category = "low_energy"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-.', fill = 0.075 }
+
+["UmuNsq/future/FASER_disp_mu"]
+category = "fixed_target"
+label = 'FASER'
+style = { color = 'c', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/FCC_ee_mu_Alimena"]
+category = "collider"
+label = 'FCC-ee'
+style = { color = 'limegreen', lw = 1.5, ls = '--', fill = 0.075 }
+
+["UmuNsq/future/HCsquared"]
+category = "low_energy"
+label = '$\mathrm{HC}^2$'
+style = { color = 'tomato', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/LHCb_disp_mu"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/MATHUSLA_disp_mu"]
+category = "fixed_target"
+label = 'MATHUSLA'
+style = { color = 'gold', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/NA62_mu"]
+category = "fixed_target"
+label = 'NA62'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/PIONEER_mu"]
+category = "peak_search"
+label = 'PIONEER'
+style = { color = 'olive', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/SHiP_mu"]
+category = "fixed_target"
+label = 'SHiP'
+style = { color = 'purple', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/collider_100TeV_mu"]
+category = "collider"
+label = 'FCC-hh'
+style = { color = 'y', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/collider_14TeV_mu"]
+category = "collider"
+label = 'HL-LHC'
+style = { color = 'cadetblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UmuNsq/future/vSTORM_mu"]
+category = "low_energy"
+label = '$\nu$STORM'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UtauNsq/current =============================================
+
+
+["UtauNsq/current/ATLAS_samesignl_VBF_tau"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/ATLAS_ttbar_tau"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/ArgoNeuT"]
+category = "fixed_target"
+label = 'ArgoNeuT'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/B8_tau"]
+category = "oscillation"
+label = '$^{8}\mathrm{B}$'
+style = { color = 'goldenrod', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/BBN_tau"]
+category = "cosmology"
+label = 'BBN'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UtauNsq/current/BEBC_tau"]
+category = "fixed_target"
+label = 'BEBC'
+style = { color = 'yellowgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/BaBar_tau"]
+category = "collider"
+label = 'BaBar'
+style = { color = 'y', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/Be7_tau"]
+category = "oscillation"
+label = '$^{7}\mathrm{Be}$'
+style = { color = 'skyblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/Belle_tau"]
+category = "collider"
+label = 'Belle'
+style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/Borexino_tau"]
+category = "decay_in_flight"
+label = 'Borexino'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/CHARM_tau"]
+category = "fixed_target"
+label = 'CHARM'
+style = { color = 'darkslategray', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/CHARM_tau_2"]
+category = "fixed_target"
+label = 'CHARM'
+style = { color = 'darkslategray', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/CMB_high_tau"]
+category = "cosmology"
+label = 'CMB energy injection'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UtauNsq/current/CMS_prompt1l_MDS_tau"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/CMS_prompt1l_disp1j_tau"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/CMS_prompt3l_tau"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/DeepCore_tau"]
+category = "oscillation"
+label = 'IceCube DeepCore'
+style = { color = 'crimson', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/KM3NeT_ORCA_tau"]
+category = "oscillation"
+label = 'KM3NeT/ORCA'
+style = { color = 'lightseagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/L3_tau"]
+category = "collider"
+label = 'L3'
+style = { color = 'salmon', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/NOMAD"]
+category = "fixed_target"
+label = 'NOMAD'
+style = { color = 'dodgerblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/Planck_tau"]
+category = "cosmology"
+label = 'Planck'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UtauNsq/current/SNe_511keV_tau"]
+category = "supernovae"
+label = '511 keV'
+style = { color = 'orange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/SNe_Abazajian_tau"]
+category = "supernovae"
+
+["UtauNsq/current/SNe_Arguelles_tau"]
+category = "supernovae"
+
+["UtauNsq/current/SNe_Raffelt"]
+category = "supernovae"
+
+["UtauNsq/current/SNe_Suliga"]
+category = "supernovae"
+label = 'SNe feedback'
+style = { color = 'burlywood', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/SNe_cooling_tau"]
+category = "supernovae"
+label = 'SNe Cooling'
+style = { color = 'rosybrown', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/SNe_diffuse_tau"]
+category = "supernovae"
+label = 'Diffuse $\gamma$'
+style = { color = 'forestgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/SNe_explosion_tau"]
+category = "supernovae"
+label = 'SNe explosion'
+style = { color = 'darkseagreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/SNe_gammaray_tau"]
+category = "supernovae"
+label = 'SN1987A ($\gamma$)'
+style = { color = 'darkturquoise', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/SOHO"]
+category = "decay_in_flight"
+label = 'SOHO'
+style = { color = 'mediumvioletred', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/Solar_Cirelli_tau"]
+category = "oscillation"
+
+["UtauNsq/current/SuperK_tau"]
+category = "oscillation"
+label = 'Super-K'
+style = { color = 'darkorange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/atmospheric_Cirelli_tau"]
+category = "oscillation"
+label = 'SK+MACRO'
+style = { color = 'limegreen', lw = 1.5, ls = '-', fill = 0.075 }
+y_conversion = "small_angle"
+note = 'tan^2(θ) taken as |U|^2'
+
+["UtauNsq/current/ionisation_tau"]
+category = "cosmology"
+label = 'Reionization'
+style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
+
+["UtauNsq/current/pep_CNO_tau"]
+category = "oscillation"
+label = 'pep + CNO'
+style = { color = 'mediumslateblue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/pp_tau"]
+category = "oscillation"
+label = 'pp'
+style = { color = 'orchid', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/tau_universality"]
+category = "peak_search"
+label = '$\tau$ univ.'
+style = { color = 'darkmagenta', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/current/unitarity_tau"]
+category = "precision"
+label = 'Unitarity'
+style = { color = 'darkgoldenrod', lw = 1.5, ls = '-', fill = 0.075 }
+
+# ==================== UtauNsq/future ==============================================
+
+
+["UtauNsq/future/ATLAS_disp_tau"]
+category = "collider"
+label = 'ATLAS'
+style = { color = 'blue', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/B_factory_tau"]
+category = "collider"
+label = 'B factory'
+style = { color = 'firebrick', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/CMS_disp_tau"]
+category = "collider"
+label = 'CMS'
+style = { color = 'red', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/CODEX_b_tau"]
+category = "collider"
+
+["UtauNsq/future/DUNE_Ballett_tau"]
+category = "fixed_target"
+label = 'DUNE'
+style = { color = 'navy', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/FASER_disp_tau"]
+category = "fixed_target"
+label = 'FASER'
+style = { color = 'c', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/HL_LHC_tau"]
+category = "collider"
+
+["UtauNsq/future/IceCUBE_tau"]
+category = "low_energy"
+label = 'IceCube'
+style = { color = 'darkorange', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/LHCb_disp_tau"]
+category = "collider"
+label = 'LHCb'
+style = { color = 'darkgreen', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/MATHUSLA_disp_tau"]
+category = "fixed_target"
+label = 'MATHUSLA'
+style = { color = 'gold', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/MesonDecays_LNV_tau"]
+category = "peak_search"
+
+["UtauNsq/future/NA62_tau"]
+category = "fixed_target"
+label = 'NA62'
+style = { color = 'teal', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/SHiP_tau"]
+category = "fixed_target"
+label = 'SHiP'
+style = { color = 'purple', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/collider_100TeV_tau"]
+category = "collider"
+label = 'FCC-hh'
+style = { color = 'y', lw = 1.5, ls = '-', fill = 0.075 }
+
+["UtauNsq/future/collider_14TeV_tau"]
+category = "collider"
+label = 'FCC-hh'
+style = { color = 'cadetblue', lw = 1.5, ls = '-', fill = 0.075 }

@@ -1,6 +1,6 @@
 # MiniBooNE and SciBooNE 3+1 vmu disappearance analysis
 # Fig. 9 in https://arxiv.org/pdf/1106.5685
-# log10(sin^2(2θ)), log10(Δm41^2/eV^2)
+# sin^2(2θ), log10(Δm41^2/eV^2)
 0.9251199999999999, 1.9999999999999996
 0.8963199999999999, 1.9955752212389377
 0.87328, 1.9911504424778756
