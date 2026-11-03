@@ -109,6 +109,26 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/UeNsq_future.png))
 
+## Regenerating the plots
+
+The plotting code is a small Python package (``src/sterile_constraints``) managed with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync                                   # create .venv with all dependencies
+uv run jupyter lab                        # run the notebooks interactively, or
+uv run python scripts/make_plots.py       # regenerate everything in plots/ headlessly
+```
+
+In VS Code, select the ``.venv`` interpreter as the notebook kernel. The published plots are rendered with LaTeX, which needs ``latex`` and ``dvipng`` (e.g. from MacTeX or TeX Live). Without them, the plots fall back to matplotlib's mathtext with a warning; set ``STERILE_CONSTRAINTS_USETEX=1`` to require LaTeX or ``=0`` to always use mathtext.
+
+To check that a code change leaves the plots unchanged, save a baseline before the change and compare after:
+
+```bash
+uv run python scripts/compare_plots.py --save   # before: copy plots/*.png to tests/baseline/
+uv run python scripts/compare_plots.py          # after: pixel-compare against the baseline
+```
+
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## References
