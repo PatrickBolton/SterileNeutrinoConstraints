@@ -1511,5 +1511,5 @@ style = { color = 'y', lw = 1.5, ls = '-', fill = 0.075 }
 
 ["UtauNsq/future/collider_14TeV_tau"]
 category = "collider"
-label = 'FCC-hh'
+label = 'HL-LHC'
 style = { color = 'cadetblue', lw = 1.5, ls = '-', fill = 0.075 }
