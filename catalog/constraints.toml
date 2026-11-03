@@ -114,8 +114,8 @@ style = { color = 'mediumaquamarine', lw = 1.5, ls = '-', fill = 0.075 }
 category = "cosmology"
 label = 'Dwarf Galaxies'
 style = { color = 'dimgrey', lw = 0.5, ls = '-', fill = 0.05 }
-y_conversion = "none"
-note = 'CHECK: sin^2(2θ) plotted as |U|^2 (no factor 1/4); mass bound, y extent arbitrary?'
+y_conversion = "small_angle"
+note = 'sin^2(2θ) down to ~1e-40: exact conversion underflows'
 
 ["UalphaNsq/current/diffuse_xray"]
 category = "xray"
