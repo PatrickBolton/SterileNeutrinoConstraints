@@ -1,6 +1,6 @@
 # Kling and Trojanowski FASER displaced sensitivity (muon)
 # Fig. 6 in https://arxiv.org/pdf/1801.08947
-# log10(mN/GeV), log10(|UmuN|^2)
+# log10(mN/GeV), log10(|UmuN|)
 -0.8988471787895778, -2.014913080097029
 -0.8922899933843633, -2.0442450601916673
 -0.8824489015120318, -2.093129036800476

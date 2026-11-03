@@ -1,6 +1,6 @@
 # Kling and Trojanowski FASER displaced sensitivity (tau)
 # Fig. 7 in https://arxiv.org/pdf/1801.08947
-# log10(mN/GeV), log10(|UtauN|^2)
+# log10(mN/GeV), log10(|UtauN|)
 -0.9965802008662237, -1.4594180704441042
 -0.972002743355349, -1.5084226646248085
 -0.9474252858444742, -1.5574272588055131
