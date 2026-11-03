@@ -58,3 +58,7 @@ build/
 *.log
 # Claude Code notes
 CLAUDE.md
+
+# Plot regression testing (local baseline, see scripts/compare_plots.py)
+tests/baseline/
+plots/*-failed-diff.png
