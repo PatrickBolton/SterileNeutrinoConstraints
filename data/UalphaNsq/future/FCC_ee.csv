@@ -1,6 +1,6 @@
 # Blondel et al. FCC-ee displaced sensitivity
 # Fig. 8 in https://arxiv.org/pdf/1411.5230
-# log10(mN/GeV), log10(|UeN|^2)
+# log10(mN/GeV), log10(|UalphaN|^2)
 -0.006679012345678359, -6.009999999999999
 0.002641975308642, -6.1099999999999985
 0.011969135802469, -6.219999999999999

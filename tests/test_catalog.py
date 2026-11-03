@@ -13,11 +13,6 @@ CATEGORIES = {"oscillation", "beta_decay", "0vbb", "decay_in_flight", "peak_sear
 CSV_IDS = sorted(str(p.relative_to(DATA_DIR).with_suffix("")) for p in DATA_DIR.glob("*/*/*.csv"))
 REGISTRY = load_registry()
 
-# Known inconsistencies awaiting a decision (units line vs directory)
-KNOWN_FLAVOUR_MISMATCH = {
-    "UalphaNsq/future/FCC_ee": "units line says |UeN|^2 but the file is used as flavour-universal",
-}
-
 
 def test_every_csv_is_registered():
     assert sorted(set(CSV_IDS) - set(REGISTRY)) == []
@@ -49,8 +44,6 @@ def test_csv_loads(cid):
         warnings.warn(f"{cid}: CSV header pending, not checked")
         pytest.skip("header pending")
     assert c.description and c.references, "header needs a description and a source line"
-    if cid in KNOWN_FLAVOUR_MISMATCH:
-        pytest.xfail(KNOWN_FLAVOUR_MISMATCH[cid])
     if c.units.flavour is not None:
         assert c.units.flavour == c.flavour, "units line flavour does not match directory"
     mN, Usq = load_curve(c)
