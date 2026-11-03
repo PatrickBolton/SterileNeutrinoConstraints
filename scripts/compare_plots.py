@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 from matplotlib.testing.compare import compare_images
+from matplotlib.testing.exceptions import ImageComparisonFailure
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PLOTS_DIR = REPO_ROOT / "plots"
@@ -46,7 +47,12 @@ def compare(plots_dir, baseline_dir, tol):
             print(f"NEW      {name}")
             failures += 1
             continue
-        result = compare_images(str(baseline_dir / name), str(plots_dir / name), tol=tol, in_decorator=True)
+        try:
+            result = compare_images(str(baseline_dir / name), str(plots_dir / name), tol=tol, in_decorator=True)
+        except ImageComparisonFailure as err:
+            print(f"DIFFERS  {name}  ({err})")
+            failures += 1
+            continue
         if result is None:
             print(f"OK       {name}")
         else:
