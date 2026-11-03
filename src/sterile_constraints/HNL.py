@@ -3,14 +3,12 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import matplotlib.cm as cm
 import matplotlib.ticker as ticker
-import os
-os.environ['PATH'] += os.pathsep + "/Library/TeX/texbin"
-from matplotlib import rc
-rc('font', **{'family': 'serif', 'serif': ['Computer Modern']})
-rc('text', usetex=True)
 
 from .paths import PLOTS_DIR, REPO_ROOT
 from .physics import N_0vbb_bound, N_DarkMatter_lifetime
+from .style import apply_style
+
+apply_style()
 
 def transform(value, *operations):
     functions = {
