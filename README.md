@@ -109,17 +109,31 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_future.png))
 
+## Using the data in your own code
+
+Every curve in ``data`` has an id (its path under ``data/`` without ``.csv``) and can be loaded in common units, $m_N$ in GeV and $|U_{\alpha N}|^2$, whatever units it was digitised in:
+
+```python
+from sterile_constraints.catalog import load_curve, load_registry
+
+mN, Usq = load_curve("UeNsq/current/KATRIN")
+c = load_registry()["UeNsq/current/KATRIN"]
+c.description, c.references, c.category
+```
+
+The raw CSVs are kept exactly as digitised. Their last header line states the units (e.g. ``# log10(mN/GeV), log10(|UeN|^2)``), which ``src/sterile_constraints/units.py`` converts. [``catalog/constraints.toml``](catalog/constraints.toml) lists every constraint with its category and default plot label and style.
+
 ## Regenerating the plots
 
 The plotting code is a small Python package (``src/sterile_constraints``) managed with [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv sync                                   # create .venv with all dependencies
-uv run jupyter lab                        # run the notebooks interactively, or
-uv run python scripts/make_plots.py       # regenerate everything in plots/ headlessly
+uv sync                # create .venv with all dependencies
+uv run make-plots      # regenerate everything in plots/ (or e.g. uv run make-plots UeNsq_constraints)
+uv run jupyter lab     # or draw the figures interactively in the notebooks
 ```
 
-In VS Code, select the ``.venv`` interpreter as the notebook kernel. The published plots are rendered with LaTeX, which needs ``latex`` and ``dvipng`` (e.g. from MacTeX or TeX Live). Without them, the plots fall back to matplotlib's mathtext with a warning; set ``STERILE_CONSTRAINTS_USETEX=1`` to require LaTeX or ``=0`` to always use mathtext.
+Which constraints each figure shows, label positions and axes are set in [``src/sterile_constraints/figures.py``](src/sterile_constraints/figures.py). In VS Code, select the ``.venv`` interpreter as the notebook kernel. The published plots are rendered with LaTeX, which needs ``latex`` and ``dvipng`` (e.g. from MacTeX or TeX Live). Without them, the plots fall back to matplotlib's mathtext with a warning; set ``STERILE_CONSTRAINTS_USETEX=1`` to require LaTeX or ``=0`` to always use mathtext.
 
 To check that a code change leaves the plots unchanged, save a baseline before the change and compare after:
 
