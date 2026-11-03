@@ -109,7 +109,11 @@ Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/Ster
 Current limits ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_constraints.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_constraints.png))\
 Future sensitivities ([pdf](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_future.pdf), [png](https://raw.githubusercontent.com/PatrickBolton/SterileNeutrinoConstraints/main/plots/DM_future.png))
 
-## Using the data in your own code
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+---
+
+### Using the data in your own code
 
 Every curve in ``data`` has an id (its path under ``data/`` without ``.csv``) and can be loaded in common units, $m_N$ in GeV and $|U_{\alpha N}|^2$, whatever units it was digitised in:
 
@@ -123,7 +127,7 @@ c.description, c.references, c.category
 
 The raw CSVs are kept exactly as digitised. Their last header line states the units (e.g. ``# log10(mN/GeV), log10(|UeN|^2)``), which ``src/sterile_constraints/units.py`` converts. [``catalog/constraints.toml``](catalog/constraints.toml) lists every constraint with its category and default plot label and style.
 
-## Regenerating the plots
+### Regenerating the plots
 
 The plotting code is a small Python package (``src/sterile_constraints``) managed with [uv](https://docs.astral.sh/uv/):
 
@@ -148,10 +152,6 @@ To check that a code change leaves the plots unchanged, save a baseline before t
 uv run python scripts/compare_plots.py --save   # before: copy plots/*.png to tests/baseline/
 uv run python scripts/compare_plots.py          # after: pixel-compare against the baseline
 ```
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 ## References
 
 1. <a id="ref-1"></a>P. D. Bolton, F. F. Deppisch and P. S. Bhupal Dev,
